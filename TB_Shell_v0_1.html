@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
   xmlns:o="urn:schemas-microsoft-com:office:office">
 
@@ -222,6 +222,13 @@
 
        /* Feature item*/
 
+       .feature_wrapper-top,
+       .feature_wrapper-bot {
+         height: 50px !important;
+         font-size: 50px !important;
+         line-height: 50px !important;
+       }
+
        .feature_wrapper_spacer {
         width: 20px !important;
        }
@@ -274,7 +281,7 @@
 
 
 
-    @media (max-width:320px) { 
+    @media (max-width:360px) { 
 
        /* HERO 1 : start */
       .hero_button .hero_button_wrapper {
@@ -305,6 +312,31 @@
          height: 30px !important;
          font-size: 30px !important;
          line-height: 30px !important;
+       }
+
+
+       .feature_item_image {
+         width: 100% !important;
+         max-width: 100% !important;
+         margin-bottom: 20px;
+         float: left;
+       }
+
+       .feature_item_image img {
+         width: 100% !important;
+         height: auto !important;
+       }
+
+       .feature_item_content{
+         width: 100% !important;
+         float: left;
+         padding-bottom: 0px !important;
+       }
+
+       .feature_item_spacer {
+         visibility: hidden;
+         display: none;
+         width: 0px !important;
        }
 
 
@@ -554,7 +586,7 @@
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
               
                 <tr>
-                  <td colspan="3" class="hero-background-top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
+                  <td colspan="3" class="feature_wrapper-top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
                 </tr>
 
                 <tr>
@@ -565,11 +597,11 @@
                       <tr>
                         <td width="280px" align="left" class="fontPoppins feature_item_image" style="width: 280px;">
 
-                          <img width="280" height="280" src="images/square-280x280.jpg" alt=""/>
+                          <img width="280" height="280" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/square-280x280.jpg" alt=""/>
 
                         </td>
                         <td class="feature_item_spacer" width="40px" style="width: 40px;">&nbsp;</td>
-                        <td valign="middle" align="left" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 16px; line-height: 24px; padding-bottom: 30px">
+                        <td class="fontPoppins feature_item_content" valign="middle" align="left" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 16px; line-height: 24px; padding-bottom: 30px">
 
                           <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
@@ -592,7 +624,7 @@
                             <tr>
                               <td align="left" class="fontPoppins feature_item_copy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 22px;padding-bottom: 20px">
 
-                                Sub-copy lorem ipsum dolor sit amet, purus elementum.
+                                Sub-copy lorem ipsum dolor sit amet, purus.
                               </td>
                             </tr>
 
@@ -617,7 +649,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="hero-background-top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
+                  <td colspan="3" class="feature_wrapper-bot" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
                 </tr>
               
               </table>
