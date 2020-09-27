@@ -327,9 +327,18 @@
         text-align: center !important;
         padding-bottom: 30px !important;
         font-size: 14px !important;
+    
        }
 
-       .get_app_cta a {
+       .get_app_cta table {
+         margin: 0 auto;
+       }
+
+       .get_app_cta_button {
+         width: 210px !important;
+       }
+
+       .get_app_cta_button a {
          padding-right: 10px !important;
          padding-left: 10px !important;
          padding-top: 18px !important;
@@ -864,10 +873,23 @@
                                     </tr>
         
                                     <tr>
-                                      <td align="left" class="fontPoppins get_app_cta" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff ; font-size: 16px; line-height: 16px;padding-bottom: 50px">
-                                        <a href="http://www.example.com" target="_blank" style="background-color:#FF1988;color:#ffffff; text-decoration: none; font-weight: bold; padding-left: 33px; padding-right:33px; padding-top:13px; padding-bottom:13px; display: inline-block;">
-                                          Get Started on the App
-                                        </a>
+                                      <td align="left" class="get_app_cta" style="padding-bottom: 50px">
+
+                                        <table border="0" cellpadding="0" cellspacing="0" style="font-size: 0px;" role="presentation">
+                                          <tr>
+                                            <td class="fontPoppins get_app_cta_button" width="252px" heigh="50px" bgcolor="#FF1988" style="font-family:Helvetica, Arial, sans-serif; background-color:#FF1988;width: 252px; height: 50px;font-size: 16px; line-height: 16px;">
+
+                                              <a href="http://www.example.com" target="_blank" style="color:#ffffff; text-decoration: none; font-weight: bold; padding-left: 33px; padding-right:33px; padding-top:16px; padding-bottom:16px; display: inline-block;">
+                                                Get Started on the App
+                                              </a>
+                                            </td>
+                                           
+                                          </tr>
+                                        </table>
+
+
+
+
                                       </td>
                                     </tr>
         
@@ -882,7 +904,7 @@
         
                                 <td align="left" class="fontPoppins get_app_image rtl" style="direction: ltr;">
         
-                                  <img width="180" height="230" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/iPhone_11.png" alt=""/>
+                                  <img width="180" height="230" style="display: inline-block;" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/iPhone_11.png" alt=""/>
         
                                 </td>
         
