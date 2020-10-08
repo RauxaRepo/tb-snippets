@@ -106,10 +106,7 @@
       
     
 
- 	  u + .body .hero_bodycopy {
-      background-color: red;
-      
-    } 
+
 
 
     @media (max-width:540px) {
@@ -182,19 +179,24 @@
       .hero_spacer_mid {
         font-size: 0 !important;
         line-height:0 !important;
-        height:0vh !important;     
-        padding-bottom: 0%; 
+        height:0 !important;     
+        padding-bottom: 92%;
+        position: relative;
+        overflow: hidden;
       }
 
       .hero_fake_link_wrapper {
+        width: 100% !important;
+        height: 100% !important;
         display: inline-block;
-        overflow: hidden;
+        position:absolute;
       }
 
       .hero_fake_link {
         width: 100% !important;
         height: 100% !important;
         display: inline-block;
+        position:absolute;
         
       }
 
@@ -207,7 +209,7 @@
       .hero_bodycopy {
         font-size: 16px !important;
         line-height: 24px !important;
-        padding-top: 27px !important;
+        padding-top: 20px !important;
       }
       
 
@@ -341,14 +343,20 @@
     }
 
 
+  /*iphone xr*/   
+  @media (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
       
+      .hero_bodycopy {
+        padding-top: 40px !important;
+      }
+  }
 
 
 
-    @media (min-device-width:411px) {
+    @media (device-width:411px) {
 
       .hero_bodycopy {
-        padding-top: 50px !important
+        padding-top: 45px !important
       }
 
     }
@@ -387,9 +395,7 @@
       }
 
       .hero_bodycopy {
-        font-size: 16px !important;
-        line-height: 24px !important;
-        padding-top: 20px !important;
+        padding-top: 10px !important;
     
       }
 
@@ -398,15 +404,12 @@
         padding-bottom: 36px;
       }
 
-      .hero_spacer_mid {
-        font-size: 0 !important;
-        line-height:0 !important;
-        height:0vh !important;     
-        padding-bottom: 0%; 
+      .hero_spacer_mid {  
+        padding-bottom: 95%; 
       }
-      
 
        /* HERO 1 : end */
+
 
        .download_app_top {
         font-size: 0 !important;
@@ -428,20 +431,15 @@
 
     }
 
-    /* Galaxy Fold */
-    @media (max-width:280px) { 
 
-      .nav_spacer{
-        width: 10px !important;
-      }
-    }
-      
       
 
 </style>
 
-    
+  
   <style type="text/css">
+    
+    /*Gmail desktop tweaks*/
     
    u ~ div .hero_wrapper_top {
       font-size: 30px !important;
@@ -569,11 +567,11 @@
                   </td>
                 </tr>
               </table>
-              <!-- Logo Header end --
+              <!-- Logo Header end -->
 
 
                 
-              <!-- HEADER START Alt-->
+              <!-- HEADER START Alt -->
               <table cellpadding="0" bgColor="#000000" width="100%" align="center" cellspacing="0" border="0" style="width:100%;" role="presentation">
                 <tr>
                   <td align="center" style="padding-top: 20px; padding-bottom: 20px;">
@@ -735,7 +733,7 @@
 
 
 
-
+              <!-- Certona -->
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
                 <tr>
                     <td colspan="2" height="30" valign="top"><img height="30" name="Cont_11" src="https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_modular/spacer.gif" style="display: block; outline:none; text-decoration:none; border:none;" width="30" /></td>
@@ -767,6 +765,7 @@
                     <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-6" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=6&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
                 </tr>
               </table>
+              <!-- Certona -->
 
 
 
@@ -1074,7 +1073,7 @@
                             <tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
                                 You get emails from Taco Bell because you love tacos. <br class="hide_in_mobile"/>
-                                <a name="privacy_policy" href="View- links to https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=privacy_policy" target="_blank" style="text-decoration: underline; color: #000000;">View</a> our Privacy Policy.
+                                <a name="privacy_policy" href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=privacy_policy" target="_blank" style="text-decoration: underline; color: #000000;">View</a> our Privacy Policy.
                               </td>
                             </tr>
                             <tr>
