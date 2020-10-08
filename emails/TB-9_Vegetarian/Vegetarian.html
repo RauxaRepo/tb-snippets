@@ -180,10 +180,17 @@
         font-size: 0 !important;
         line-height:0 !important;
         height:0 !important;     
-        padding-bottom: 92%;
+        padding-bottom: 0%;
         position: relative;
         overflow: hidden;
       }
+
+
+
+
+
+
+
 
       .hero_fake_link_wrapper {
         width: 100% !important;
@@ -209,7 +216,7 @@
       .hero_bodycopy {
         font-size: 16px !important;
         line-height: 24px !important;
-        padding-top: 20px !important;
+        padding-top: 0px !important;
       }
       
 
@@ -335,52 +342,80 @@
 
 
     /*iphone plus*/
-    @media (max-width:540px)  and (-webkit-device-pixel-ratio : 3) {
 
+    @media (width:414px){
+      .hero_spacer_mid {
+        padding-bottom: 92%;
+      }
       .hero_bodycopy {
         padding-top: 48px !important
       }
     }
+    
+
+    /* iphone 6/7/8/+ */
+ 
+    @media (width:375px){
+      .hero_spacer_mid {
+        padding-bottom: 85%;
+      }
+      .hero_bodycopy {
+        padding-top: 48px !important
+      }
+
+    }
+    
+    
+    
+
 
 
   /*iphone xr*/   
+  /*
   @media (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
       
+      .hero_spacer_mid {
+        padding-bottom: 92%;
+      }
+    
       .hero_bodycopy {
         padding-top: 40px !important;
       }
   }
+  */
+  
 
 
 
-    @media (device-width:411px) {
+  @media (device-width:411px) {
 
-      .hero_bodycopy {
-        padding-top: 45px !important
-      }
-
+    .hero_spacer_mid {
+      padding-bottom: 92%;
     }
 
-
-
-    /* iphone X*/
-    @media (device-width:375px)  and (-webkit-device-pixel-ratio : 3) {
-
-      .hero_bodycopy {
-        padding-top: 27px !important
-      }
-
+    .hero_bodycopy {
+      padding-top: 45px !important
     }
+
+  }
+
+
+
+  /* iphone X*/
+  /*
+  @media (device-width:375px)  and (-webkit-device-pixel-ratio : 3) {
+
+    .hero_bodycopy {
+      padding-top: 27px !important
+    }
+
+  }
+  */
+  
       
-      
-
-
-
-
       
 
     @media (max-width:360px) { 
-
 
       /* nav mobile  */
       .nav_link_mobile {
@@ -406,6 +441,7 @@
 
       .hero_spacer_mid {  
         padding-bottom: 95%; 
+       
       }
 
        /* HERO 1 : end */
@@ -432,7 +468,10 @@
     }
 
 
-      
+    /* Apple Mail */
+    [class^="apple-mail"] .hero_spacer_mid {
+        padding-bottom: 98%;
+    }
 
 </style>
 
