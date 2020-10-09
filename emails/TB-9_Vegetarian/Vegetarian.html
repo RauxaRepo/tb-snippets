@@ -233,6 +233,8 @@
         line-height: 20px !important;
         padding-bottom: 16px !important;
         padding-top: 16px !important;
+        padding-right: 65px !important;
+        padding-left: 65px !important;
       }
 
       .hero_button {
@@ -279,6 +281,8 @@
        .drive_thru_cta_link {
         font-size: 20px !important;
         line-height: 20px !important;
+        padding-left: 65px !important;
+        padding-right: 65px !important;
        }
        
        /*Drive thru : end*/
@@ -337,6 +341,11 @@
        }
 
        /* legal : end*/
+
+      /* Apple Mail */
+      [class^="apple-mail"] .hero_spacer_mid {
+          padding-bottom: 98%;
+      }
 
     }
 
@@ -400,17 +409,19 @@
   }
 
 
+    /*pixel*/   
 
-  /* iphone X*/
-  /*
-  @media (device-width:375px)  and (-webkit-device-pixel-ratio : 3) {
-
-    .hero_bodycopy {
-      padding-top: 27px !important
-    }
-
+    @media (device-width : 414px) and (device-height : 731px) and (-webkit-device-pixel-ratio : 2.6) {
+      
+      .hero_spacer_mid {
+        padding-bottom: 0%;
+      }
+    
+      .hero_bodycopy {
+        padding-top: 40px !important;
+      }
   }
-  */
+
   
       
       
@@ -468,10 +479,7 @@
     }
 
 
-    /* Apple Mail */
-    [class^="apple-mail"] .hero_spacer_mid {
-        padding-bottom: 98%;
-    }
+
 
 </style>
 
@@ -692,7 +700,7 @@
                         </tr>
                         
                         <tr>
-                          <td class="hero_spacer_mid" height="595px" style="font-size: 595px; line-height:595px; height:595px;">
+                          <td class="hero_spacer_mid" height="585px" style="font-size: 585px; line-height:585px; height:585px;">
 
                           <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/vegetarian?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=img" target="_blank" style="width: 100%; height: 100%;">
                             <img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/link.png" alt="" aria-hidden="true" />
@@ -703,7 +711,7 @@
                         
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:54px;">
+                          <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:50px;">
                             A variety of choices, <br/>all made just for you.
                           </td>
 
@@ -711,13 +719,13 @@
                         
                         <tr>
 
-                            <td class="hero_cta_wrapper" align="center" style="padding-top: 38px;">
+                            <td class="hero_cta_wrapper" align="center" style="padding-top: 35px;">
                               <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
                                 <tr>
                                   <td>&nbsp;</td>
                                   <td class="hero_cta" align="center" bgcolor="#000000" height="90" width="350">
-                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/vegetarian?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=cta" target="_blank" style="width: 100%; color:#ffffff; text-decoration:none; padding-top:10px; padding-bottom:10px; font-size: 27px; line-height: 27px; font-weight: bold;">
+                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/vegetarian?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=cta" target="_blank" style="width: 100%; color:#ffffff; text-decoration:none; padding-top:19px; padding-bottom:19px; font-size: 27px; padding-left:100px; padding-right: 100px; line-height: 27px; font-weight: bold;">
 
                                       <span style="font-family: Helvetica, Arial, sans-serif;">
                                        Order Now
@@ -860,7 +868,7 @@
                                     <tr>
                                       <td>&nbsp;</td>
                                       <td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;">
-                                        <a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold;">
+                                        <a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:19px; padding-bottom:19px; padding-left:80px; padding-right: 80px;">
                                           <span style="font-family: Helvetica, Arial, sans-serif;">
                                            Order Now
                                           </span> 
@@ -1029,7 +1037,8 @@
                         </td>
                         <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
                         <td>
-                          <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=youtube" target="_blank">
+
+                          <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians" target="_blank">
                             <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_youtube.jpg" alt="Youtube">
                           </a>
                         </td>
@@ -1060,11 +1069,14 @@
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 20px;">
 
                                 Available at participating U.S. Taco Bell® locations. <br class="hide_in_mobile"/>
-                                Contact store or price, hours and participation which <br class="hide_in_mobile"/>
+                                Contact store for price, hours and participation which <br class="hide_in_mobile"/>
                                 vary. Additional terms apply. Tax extra. Visit <br class="hide_in_mobile"/>
                                 <a href="https://www.tacobell.com/delivery" target="_blank" style="text-decoration: none; color: #000000">www.tacobell.com/delivery</a> for delivery availability. Delivery, <br class="hide_in_mobile"/>
                                 service and small order delivery fees <br class="hide_in_mobile"/>
-                                mayapply.
+                                may apply.
+
+
+
 
                               </td>
                             </tr>
@@ -1121,8 +1133,8 @@
 
                             <tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                <span style="color:#000000">This email was sent by Taco Bell, located at<br class="hide_in_mobile"/>
-                                1&zwnj; Glen Bell Way, Irvine, California 92618.</span>
+                                <span style="color:#000000">This email was sent by Taco Bell located at<br class="hide_in_mobile"/>
+                                &nbsp;1&zwnj; Glen Bell Way, Irvine, California 92618</span>
                               </td>
                             </tr>
                             <tr>
