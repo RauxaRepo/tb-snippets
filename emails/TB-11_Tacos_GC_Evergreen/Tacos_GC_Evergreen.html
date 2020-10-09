@@ -106,7 +106,7 @@
       
     
 
- 
+
 
 
     @media (max-width:540px) {
@@ -125,7 +125,8 @@
         max-height: 0!important;
       }
 
-      .image_full_width {
+      .image_full_width,
+      .device-width {
         width: 100% !important;
         height: auto !important;
       }
@@ -178,36 +179,54 @@
       .hero_spacer_mid {
         font-size: 0 !important;
         line-height:0 !important;
-        height: 0vh !important;     
-        padding-bottom: 80%; 
+        height:0 !important;     
+        padding-bottom: 0%;
+        position: relative;
+        overflow: hidden;
       }
 
+
+
+
+
+
+
+
       .hero_fake_link_wrapper {
-		display: inline-block;
-		width: 100% !important;
-		height: 100% !important;
-		position: relative;
+        width: 100% !important;
+        height: 100% !important;
+        display: inline-block;
+        position:absolute;
       }
 
       .hero_fake_link {
-		width: 100% !important;
-		height: 100% !important;
-		display: inline-block;
-		position: absolute;
-      }     
+        width: 100% !important;
+        height: 100% !important;
+        display: inline-block;
+        position:absolute;
+        
+      }
+
+
+      .hero_headline {
+        font-size: 32px !important;
+        line-height: 40px !important;
+      }
 
       .hero_bodycopy {
         font-size: 16px !important;
         line-height: 24px !important;
-        padding-top: 20px !important;
-      
+        padding-top: 0px !important;
       }
+      
+
 
       .hero_cta_wrapper {
         padding-top: 19px !important;
-        padding-bottom: 20px;
-       
+        padding-bottom: 42px;
       }
+      
+
 
       .hero_cta_link {
         font-size: 20px !important;
@@ -234,7 +253,7 @@
 
        /* HERO 1 : end */
 		
-	   /*HERO 2: GIFT CARD START*/
+		/*HERO 2: GIFT CARD START*/
 		.gift_cards_spacer {
         font-size: 0 !important;
         line-height:0 !important;
@@ -346,13 +365,96 @@
     }
 
 
+    /*iphone plus*/
+
+    @media (width:414px){
+      .hero_spacer_mid {
+        padding-bottom: 92%;
+      }
+      .hero_bodycopy {
+        padding-top: 48px !important
+      }
+		 .gift_cards_spacer {
+			padding-bottom: 20%;
+		}
+    }
+    
+
+    /* iphone 6/7/8/+ */
+ 
+    @media (width:375px){
+      .hero_spacer_mid {
+        padding-bottom: 85%;
+      }
+      .hero_bodycopy {
+        padding-top: 48px !important
+      }
+		 .gift_cards_spacer {
+			padding-bottom: 20%;
+		}
+
+    }
+    
+    
+    
 
 
 
+  /*iphone xr*/   
+  /*
+  @media (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+      
+      .hero_spacer_mid {
+        padding-bottom: 92%;
+      }
+    
+      .hero_bodycopy {
+        padding-top: 40px !important;
+      }
+		 .gift_cards_spacer {
+			padding-bottom: 20%;
+		}
+  }
+  */
+  
 
+
+
+  @media (device-width:411px) {
+
+    .hero_spacer_mid {
+      padding-bottom: 92%;
+    }
+
+    .hero_bodycopy {
+      padding-top: 45px !important
+    }
+	   .gift_cards_spacer {
+			padding-bottom: 20%;
+		}
+
+  }
+
+
+
+  /* iphone X*/
+  /*
+  @media (device-width:375px)  and (-webkit-device-pixel-ratio : 3) {
+
+    .hero_bodycopy {
+      padding-top: 27px !important
+    }
+		 .gift_cards_spacer {
+			padding-bottom: 20%;
+		}
+
+  }
+  */
+  
+      
+      
 
     @media (max-width:360px) { 
-
 
       /* nav mobile  */
       .nav_link_mobile {
@@ -362,21 +464,25 @@
 
        /* HERO 1 : start */
       .hero_headline {
-        font-size: 34px !important;
-        line-height: 40px !important;
+        font-size: 25px !important;
+        line-height: 33px !important;
+      }
+
+      .hero_bodycopy {
+        padding-top: 10px !important;
+    
       }
 
       .hero_cta_wrapper {
         padding-top: 8px !important;
-        padding-bottom: 12px;
+        padding-bottom: 36px;
       }
 
-      .hero_spacer_mid {
-        font-size: 0 !important;
-        line-height:0 !important;
-        height:0vh !important;     
-        padding-bottom: 85%; 
+      .hero_spacer_mid {  
+        padding-bottom: 95%; 
+       
       }
+
        /* HERO 1 : end */
 		/* HERO 2 GIFT CARD: START */ 
 		.gift_cards_spacer {
@@ -392,6 +498,7 @@
 			padding-top: 5px !important;
 		}
 		/* HERO 2 GIFT CARD: END */ 
+
 
        .download_app_top {
         font-size: 0 !important;
@@ -413,23 +520,37 @@
 
     }
 
-    /* Galaxy Fold */
-    @media (max-width:280px) { 
 
-      .nav_spacer{
-        width: 10px !important;
-      }
+    /* Apple Mail */
+    [class^="apple-mail"] .hero_spacer_mid {
+        padding-bottom: 98%;
     }
-      
-  
-            
-
-
 
 </style>
 
+  
+  <style type="text/css">
     
+    /*Gmail desktop tweaks*/
+    
+   u ~ div .hero_wrapper_top {
+      font-size: 30px !important;
+      line-height: 30px !important;
+      height: 30px !important;
+   }
+    
+    u ~ div .hero_spacer_mid {
+      font-size: 500px !important;
+      line-height: 500px !important;
+      height: 500px !important;
+    }
 
+    u ~ div .hero_bodycopy {
+      padding-top: 0px !important;
+
+    } 
+
+  </style>
 
 
 
@@ -508,7 +629,7 @@
                 <tr>
                   <td class="fontPoppins" valign="top" align="center"
                     style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;">
-                    Everything you love, even better rolled up together 
+                    Crunchy. Soft. A little Locos. Get yours delivered, or pick up in our drive-thru. 
                     <!--[if !mso]><!-->
                     <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
                       &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
@@ -592,7 +713,7 @@
 
 
               <!-- Hero START -->
-              <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+				  <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
                 <tr>
                   <td class="hero_background" align="center" valign="top" width="100%" style="height:1125px; background-image:url('https://rauxa-email.s3.amazonaws.com/double_stacked_tacos.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
@@ -603,15 +724,14 @@
                       <v:fill opacity="0%" color="#ffffff"/>
                       <v:textbox inset="0,0,0,0">
                       <![endif]--> 
+                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
-                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
-
-
-                        <tr>
+						 
+						<tr>
                           <td colspan="3" class="hero_wrapper_top yahooAOLshow" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
                         </tr>
-        
-                        <tr>
+                        
+                       <tr>
                           <td class="hero_spacer" width="30px" style="width: 30px;">&nbsp;</td>
                           <td align="center">
         
@@ -680,7 +800,8 @@
                           </td>
                           <td class="hero_spacer" width="30px" style="width: 30px;">&nbsp;</td>
                         </tr>
-        
+                        
+                        
         
 
                       </table>
@@ -698,6 +819,7 @@
 
               
               </table>
+              
               <!-- Hero EMD -->
 
 
@@ -714,11 +836,11 @@
                       <v:textbox inset="0,0,0,0">
                       <![endif]--> 
 
-                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
+                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
 
                         <tr>
-                          <td colspan="3" class="gift_cards_wrapper_top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
+                          <td class="gift_cards_wrapper_top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
                         </tr>
         
                         <tr>
