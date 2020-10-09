@@ -223,7 +223,7 @@
 
       .hero_cta_wrapper {
         padding-top: 19px !important;
-        padding-bottom: 35px;
+        padding-bottom: 25px;
       }
       
 
@@ -233,6 +233,8 @@
         line-height: 20px !important;
         padding-bottom: 16px !important;
         padding-top: 16px !important;
+        padding-right: 65px !important;
+        padding-left: 65px !important;
       }
 
       .hero_button {
@@ -279,6 +281,8 @@
        .drive_thru_cta_link {
         font-size: 20px !important;
         line-height: 20px !important;
+        padding-left: 65px !important;
+        padding-right: 65px !important;
        }
        
        /*Drive thru : end*/
@@ -337,6 +341,12 @@
        }
 
        /* legal : end*/
+      
+      
+      /* Apple Mail */
+      [class^="apple-mail"] .hero_spacer_mid {
+          padding-bottom: 88%;
+      }
 
     }
 
@@ -360,12 +370,10 @@
         padding-bottom: 85%;
       }
       .hero_bodycopy {
-        padding-top: 30px !important
+        padding-top: 20px !important
       }
 
     }
-    
-    
     
 
 
@@ -400,17 +408,19 @@
   }
 
 
+    /*pixel*/   
 
-  /* iphone X*/
-  /*
-  @media (device-width:375px)  and (-webkit-device-pixel-ratio : 3) {
-
-    .hero_bodycopy {
-      padding-top: 27px !important
-    }
-
+    @media (device-width : 414px) and (device-height : 731px) and (-webkit-device-pixel-ratio : 2.6) {
+      
+      .hero_spacer_mid {
+        padding-bottom: 0%;
+      }
+    
+      .hero_bodycopy {
+        padding-top: 40px !important;
+      }
   }
-  */
+  
   
       
       
@@ -468,10 +478,7 @@
     }
 
 
-    /* Apple Mail */
-    [class^="apple-mail"] .hero_spacer_mid {
-        padding-bottom: 98%;
-    }
+
 
 </style>
 
@@ -531,29 +538,28 @@
 
   <body style="padding:0px; margin:0 auto;">
     
-    <style>
-      .& .hero_wrapper_top {
-          display: none;
-          visibility: none;
-      }
-        
-      .& .hero_headline {
-        padding-top: 30px;
-      }
-        
-      .& .hero_cta_wrapper {
-        padding-bottom: 50px;
-      }
+  <style>
+    .& .hero_wrapper_top {
+      	display: none;
+      	visibility: none;
+    }
       
-      .& .download_app_wrapper {
-        padding-bottom: 20px;
-      }
+    .& .hero_headline {
+      padding-top: 30px;
+    }
+      
+    .& .hero_cta_wrapper {
+      padding-bottom: 50px;
+    }
     
-    </style>
+    .& .download_app_wrapper {
+      padding-bottom: 20px;
+    }
   
+	</style>
 
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
       <tr>
         <td valign="top" align="center">
           <!-- CONTAINER START -->
@@ -570,21 +576,21 @@
               <!-- PREHEADER START -->
               <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%; max-width: 640px;" role="presentation">
                 <tr>
-                  <td class="fontPoppins" valign="top" align="center"
-                    style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;">
-                    Everything you love, even better rolled up together 
+                  <td class="fontPoppins" valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;">
+                    Everything you love, even better rolled up together
                     <!--[if !mso]><!-->
                     <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
                       &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
                     </div>
-                    <!--<![endif]--></td>
+                    <!--<![endif]-->
+                  </td>
                 </tr>
-              </table>
+               </table>
               <!-- PREHEADER END -->
-
-
-
-
+                
+                
+                
+                
               <!-- Logo Header start -->
               <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" bgcolor="#ffffff" role="presentation">
                 <tr>
@@ -609,11 +615,8 @@
               </table>
               <!-- Logo Header end -->
 
-
-
-
-
-              <!-- HEADER START Alt-->
+                
+              <!-- HEADER START Alt -->
               <table cellpadding="0" bgColor="#000000" width="100%" align="center" cellspacing="0" border="0" style="width:100%;" role="presentation">
                 <tr>
                   <td align="center" style="padding-top: 20px; padding-bottom: 20px;">
@@ -654,8 +657,11 @@
               </table>
               <!-- HEADER END Alt -->
 
-
-
+                
+                
+                
+                
+                
               <!-- Hero START -->
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
@@ -719,7 +725,7 @@
                                 <tr>
                                   <td>&nbsp;</td>
                                   <td class="hero_cta" align="center" bgcolor="#000000" height="90" width="350">
-                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/burritos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=cta" target="_blank" style="width: 100%; color:#ffffff; text-decoration:none; padding-top:10px; padding-bottom:10px; font-size: 27px; line-height: 27px; font-weight: bold;">
+                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/burritos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=cta" target="_blank" style="width: 100%; color:#ffffff; text-decoration:none; padding-top:19px; padding-bottom:19px; font-size: 27px; padding-left:100px; padding-right: 100px; line-height: 27px; font-weight: bold;">
 
                                       <span style="font-family: Helvetica, Arial, sans-serif;">
                                        Order Now
@@ -757,31 +763,44 @@
               <!-- Hero EMD -->
 
 
-
-
-
-
-
-
-
+                
+                
+                
+                
+                
+                
               <!-- Taco Bell Foundation -->
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
                 
                 <tr>
-                  <Td>
+                  <td>
                     <a name="foundation_img" href="https://www.tacobellfoundation.org?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=foundation_img" target="_blank">
-                    <img width="640" height="881" class="image_full_width" src="https://rauxa-email.s3.amazonaws.com/TB/tb_foundation_01.png" alt="Taco Bell Foundation. Helping educational programs across the country that are in need of our support. Learn More"/>
+                    <img class="image_full_width" src="https://rauxa-email.s3.amazonaws.com/TB/tb_foundation_01.png" alt="Taco Bell Foundation. Helping educational programs across the country that are in need of our support. Learn More"/>
                     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
                     <a name="foundation_CTA" href="https://www.tacobellfoundation.org?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=foundation_CTA" target="_blank">
-                      <img width="640" height="139" class="image_full_width" src="https://rauxa-email.s3.amazonaws.com/TB/tb_foundation_02.png" alt="Taco Bell Foundation. Helping educational programs across the country that are in need of our support. Learn More"/>
-                    </a>
+                      <img class="image_full_width" src="https://rauxa-email.s3.amazonaws.com/TB/tb_foundation_02.png" alt="Taco Bell Foundation. Helping educational programs across the country that are in need of our support. Learn More"/>
+                    </a>  
+                  </td>
+                </tr>
+                <tr>
+                  <td>
                     <a name="foundation_img" href="https://www.tacobellfoundation.org?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=foundation_img_2" target="_blank">
-                      <img width="640" height="321" class="image_full_width" src="https://rauxa-email.s3.amazonaws.com/TB/tb_foundation_03.png" alt="Taco Bell Foundation. Helping educational programs across the country that are in need of our support. Learn More"/>
+                      <img class="image_full_width" src="https://rauxa-email.s3.amazonaws.com/TB/tb_foundation_03.png" alt="Taco Bell Foundation. Helping educational programs across the country that are in need of our support. Learn More"/>
                     </a>
-                  </Td>
+                  </td>
                 </tr>
               </table>
-              <!-- Taco Bell Foundation -->
+              <!-- Taco Bell Foundation -->              
+                
+                
+
+
+
+
 
 
 
@@ -836,7 +855,7 @@
                                     <tr>
                                       <td>&nbsp;</td>
                                       <td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;">
-                                        <a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold;">
+                                        <a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:19px; padding-bottom:19px; padding-left:80px; padding-right: 80px;">
                                           <span style="font-family: Helvetica, Arial, sans-serif;">
                                            Order Now
                                           </span> 
@@ -1064,7 +1083,7 @@
                             <tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
                                 <span style="color:#000000">This email was sent by Taco Bell, located at<br class="hide_in_mobile"/>
-                                1&zwnj; Glen Bell Way, Irvine, California 92618.</span>
+                                1&zwnj; Glen Bell Way, Irvine, California 92618</span>
                               </td>
                             </tr>
                             <tr>
