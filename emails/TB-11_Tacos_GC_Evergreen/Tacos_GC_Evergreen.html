@@ -506,6 +506,19 @@
       padding-top: 0px !important;
 
     } 
+    
+    u ~ div .drive_thru_top {
+      font-size: 0 !important;
+      line-height:0 !important;
+      height: 0 !important;
+    }
+    
+    u ~ div .drive_thru_headline {
+      padding-bottom: 0px !important;
+      margin-bottom: 0;
+    }
+    
+
 
   </style>
 
@@ -556,12 +569,26 @@
       height: 400px !important;
 
     }
-      
     
     .& .download_app_wrapper {
       padding-bottom: 20px;
     }
-  
+    
+    
+    .& .drive_thru_top {
+      font-size: 0 !important;
+      line-height:0 !important;
+      height: 0 !important;
+      diplay: none;
+      visibility: hidden;
+      border: 1px solid red;
+    }
+    
+    .& .drive_thru_headline {
+      padding-bottom: 0px !important;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
 	</style>
 
 
@@ -905,10 +932,10 @@
                         <tr>
                           <td width="30px" style="width: 30px;">&nbsp;</td>
                           <td>
-                            <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
+                            <table  valing="top" border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
                             
                               <tr>
-                                <td align="left">
+                                <td valing="top" align="left">
                                  
                                   <h3  class="fontPoppins drive_thru_headline" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 42px; line-height: 52px;">
 
@@ -919,8 +946,9 @@
                                   </h3>
                                 </td>
                               </tr>
+                              
                               <tr>
-                                <td  class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 24px; line-height: 28px; padding-top: 12px;">
+                                <td valing="top"  class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 24px; line-height: 28px; padding-top: 12px;">
                                   Order ahead and 
                                   drive-thru for pickup
                                 </td>
