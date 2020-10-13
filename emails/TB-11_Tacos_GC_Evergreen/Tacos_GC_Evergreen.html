@@ -106,7 +106,7 @@
       
     
 
- 
+
 
 
     @media (max-width:540px) {
@@ -125,7 +125,8 @@
         max-height: 0!important;
       }
 
-      .image_full_width {
+      .image_full_width,
+      .device-width {
         width: 100% !important;
         height: auto !important;
       }
@@ -178,20 +179,27 @@
       .hero_spacer_mid {
         font-size: 0 !important;
         line-height:0 !important;
-        height:0vh !important;     
-        padding-bottom: 0%; 
+        height:0 !important;     
+        padding-bottom: 92%;
+        position: relative;
+        overflow: hidden;
       }
 
+
       .hero_fake_link_wrapper {
+        width: 100% !important;
+        height: 100% !important;
         display: inline-block;
+        position:absolute;
       }
 
       .hero_fake_link {
         width: 100% !important;
         height: 100% !important;
         display: inline-block;
+        position:absolute;
+        
       }
-
 
       .hero_headline {
         font-size: 32px !important;
@@ -201,21 +209,21 @@
       .hero_bodycopy {
         font-size: 16px !important;
         line-height: 24px !important;
-        padding-top: 20px !important;
-      
+        padding-top: 0px !important;
       }
-
+		
       .hero_cta_wrapper {
         padding-top: 19px !important;
-        padding-bottom: 20px;
-       
+        padding-bottom: 25px;
       }
-
+      
       .hero_cta_link {
         font-size: 20px !important;
         line-height: 20px !important;
         padding-bottom: 16px !important;
         padding-top: 16px !important;
+        padding-right: 65px !important;
+        padding-left: 65px !important;
       }
 
       .hero_button {
@@ -235,7 +243,17 @@
        }
 
        /* HERO 1 : end */
-
+		/* HERO 2 Gift card: start*/
+		.gift_card_spacer {
+        font-size: 0 !important;
+        line-height:0 !important;
+        height:0 !important;     
+        padding-bottom: 45%;
+        position: relative;
+        overflow: hidden;
+      }
+		
+		/*HERO 2 Gift card: end*/
 
        /*Drive thru : start */
        .drive_thru_top {
@@ -262,6 +280,8 @@
        .drive_thru_cta_link {
         font-size: 20px !important;
         line-height: 20px !important;
+        padding-left: 65px !important;
+        padding-right: 65px !important;
        }
        
        /*Drive thru : end*/
@@ -320,6 +340,31 @@
        }
 
        /* legal : end*/
+      
+      
+      /* Apple Mail */
+      [class^="apple-mail"] .hero_spacer_mid {
+          padding-bottom: 88%;
+      }
+
+      /*outlook app ios/android*/
+      body[data-outlook-cycle] .gift_card_spacer {
+        padding-bottom: 0%;
+      }
+
+      body[data-outlook-cycle] .hero_spacer_mid {
+        padding-bottom: 0%;
+      }
+
+      /*Samsung email*/
+      #MessageViewBody .hero_spacer_mid { 
+        padding-bottom: 0%;
+      }
+
+      #MessageViewBody .gift_card_spacer {
+        padding-bottom: 0%;
+      }
+
 
     }
 
@@ -327,10 +372,48 @@
 
 
 
+    /*iphone plus*/
+
+    @media (width:414px){
+
+      .hero_bodycopy {
+        padding-top: 40px !important
+      }
+
+    }
+
+
+
+
+
+    /*pixel*/   
+
+    @media (device-width : 414px) and (device-height : 731px) and (-webkit-device-pixel-ratio : 2.6) {
+    
+      .hero_bodycopy {
+        padding-top: 40px !important;
+      }
+
+  }
+
+
+
+
+          
+
+    /* iphone 6/7/8/+ */
+ 
+    @media (width:375px){
+
+      .hero_bodycopy {
+        padding-top: 20px !important
+      }
+
+    }
+    
 
 
     @media (max-width:360px) { 
-
 
       /* nav mobile  */
       .nav_link_mobile {
@@ -344,18 +427,32 @@
         line-height: 33px !important;
       }
 
-      .hero_cta_wrapper {
-        padding-top: 8px !important;
-        padding-bottom: 12px;
+      .hero_bodycopy {
+        padding-top: 20px !important;
+    
       }
 
-      .hero_spacer_mid {
-        font-size: 0 !important;
-        line-height:0 !important;
-        height:0vh !important;     
-        padding-bottom: 0%; 
+      .hero_cta_wrapper {
+        padding-top: 8px !important;
+        padding-bottom: 25px;
       }
+
+
+
+
+
+
        /* HERO 1 : end */
+
+		.gift_card_headline {
+        font-size: 25px !important;
+        line-height: 33px !important;
+      }
+		.gift_card_bodycopy {
+        font-size: 18px !important;
+        line-height: 23px !important;
+      }
+
 
        .download_app_top {
         font-size: 0 !important;
@@ -377,23 +474,40 @@
 
     }
 
-    /* Galaxy Fold */
-    @media (max-width:280px) { 
-
-      .nav_spacer{
-        width: 10px !important;
-      }
-    }
-      
-  
-            
 
 
 
 </style>
 
+  
+  <style type="text/css">
     
+    /*Gmail desktop tweaks*/
+    
+   u ~ div .hero_wrapper_top {
+      font-size: 30px !important;
+      line-height: 30px !important;
+      height: 30px !important;
+   }
+    
+    u ~ div .hero_spacer_mid {
+      font-size: 500px !important;
+      line-height: 500px !important;
+      height: 500px !important;
+    }
+	  
+	  u ~ div .gift_card_spacer {
+      font-size: 300px !important;
+      line-height: 300px !important;
+      height: 300px !important;
+    }
 
+    u ~ div .hero_bodycopy {
+      padding-top: 0px !important;
+
+    } 
+
+  </style>
 
 
 
@@ -436,10 +550,13 @@
     .& .hero_headline {
       padding-top: 30px;
     }
-      
-    .& .hero_cta_wrapper {
-      padding-bottom: 50px;
+	
+    
+    .& .hero_spacer_mid {
+      height: 400px !important;
+
     }
+      
     
     .& .download_app_wrapper {
       padding-bottom: 20px;
@@ -448,7 +565,7 @@
 	</style>
 
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
       <tr>
         <td valign="top" align="center">
           <!-- CONTAINER START -->
@@ -457,47 +574,55 @@
 
 
 
-          <table lang="en" border="0" cellspacing="0" cellpadding="0" width="640" align="center" style="margin:0 auto;"  class="mobile_container" role="presentation">
+          <table lang="en" border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;"  class="mobile_container" role="presentation">
             <tr>
               <td width="100%" style="width:100%; vertical-align:top;">
 
 
               <!-- PREHEADER START -->
-              <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%; max-width: 640px;" role="presentation">
+              <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" role="presentation">
                 <tr>
-                  <td class="fontPoppins" valign="top" align="center"
-                    style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;">
-                    Everything you love, even better rolled up together 
+                  <td class="fontPoppins" valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;">
+                    Crunchy. Soft. A little Locos. Get yours delivered, or pick up in our drive-thru.
                     <!--[if !mso]><!-->
                     <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
                       &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
                     </div>
-                    <!--<![endif]--></td>
+                    <!--<![endif]-->
+                  </td>
                 </tr>
-              </table>
+               </table>
               <!-- PREHEADER END -->
-
-
-
+                
+                
+                
+                
               <!-- Logo Header start -->
-              <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%; max-width: 640px;" bgcolor="#ffffff" role="presentation">
+              <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" bgcolor="#ffffff" role="presentation">
                 <tr>
 
                   <td class="tb_logo_wrappe" align="center" style=" padding-top:48px; padding-bottom:48px; padding-left:25px; padding-right:25px;">
-                    <a name="nav_logo" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=nav_logo" target="_blank">
-
-                      <img class="tb_logo_mobile" width="431" height="93" style="width: 431px; height: 93px; display: inline-block;" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/>
-  
-                     </a>
+                    
+                  	<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+	
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td align="center">
+                          <a name="nav_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=nav_logo" target="_blank">
+                          	<img class="tb_logo_mobile" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/>
+                          </a>
+                        </td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>
+ 	
                   </td>
                 </tr>
               </table>
               <!-- Logo Header end -->
+
                 
-
-
-
-              <!-- HEADER START Alt-->
+              <!-- HEADER START Alt -->
               <table cellpadding="0" bgColor="#000000" width="100%" align="center" cellspacing="0" border="0" style="width:100%;" role="presentation">
                 <tr>
                   <td align="center" style="padding-top: 20px; padding-bottom: 20px;">
@@ -505,26 +630,26 @@
                     <table cellpadding="0" align="center" cellspacing="0" border="0" role="presentation">
                       <tr>
                         <td align="center" valign="middle">
-                          <a name="nav_menu" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=nav_menu" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif; font-weight: bold; color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;">
+                          <a name="nav_menu" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=nav_menu" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif; font-weight: bold; color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;">
                             <span style="color:#ffffff">Menu</span>
                           </a>
                         </td>
                         <td width="40" class="nav_spacer"></td>
                         <td align="center" valign="middle">
-                          <a name="nav_locations" href="https://www.tacobell.com/locations?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=nav_locations" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;">
+                          <a name="nav_locations" href="https://www.tacobell.com/locations?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=nav_locations" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;">
                             <span style="color:#ffffff">Locations</span>
                           </a>
                         </td>
 
                         <td width="40" class="nav_spacer"></td>
                         <td align="center" valign="middle">
-                          <a name="nav_delivery" href="https://www.tacobell.com/delivery?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=nav_delivery" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;">
+                          <a name="nav_delivery" href="https://www.tacobell.com/delivery?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=nav_delivery" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;">
                             <span style="color:#ffffff">Delivery</span>
                           </a>
                         </td>
                         <td width="40" class="nav_spacer"></td>
                         <td align="center" valign="middle">
-                          <a name="nav_taco_merch" href="https://www.tacobelltacoshop.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=nav_taco_merch" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;">
+                          <a name="nav_taco_merch" href="https://www.tacobelltacoshop.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=nav_taco_merch" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;">
                             <span style="color:#ffffff">Taco Merch</span>
                           </a>
                         </td>
@@ -538,9 +663,11 @@
               </table>
               <!-- HEADER END Alt -->
 
-
-
-
+                
+                
+                
+                
+                
               <!-- Hero START -->
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
@@ -553,84 +680,76 @@
                       <v:fill opacity="0%" color="#ffffff"/>
                       <v:textbox inset="0,0,0,0">
                       <![endif]--> 
+                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
-                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
 
+                       <tr>
+                        <td  class="hero_wrapper_top" height="75" style="font-size: 75px; line-height:75px; height:75px;">&nbsp;</td>
+                       </tr>
+                        
+                       <tr>
 
-                        <tr>
-                          <td colspan="3" class="hero_wrapper_top yahooAOLshow" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
-                        </tr>
-        
-                        <tr>
-                          <td class="hero_spacer" width="30px" style="width: 30px;">&nbsp;</td>
                           <td align="center">
-        
-                            <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
-                              <tr>
-        
-                                <td align="center">
 
-                                  <h1 class="fontPoppins hero_headline" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 45px; line-height: 52px;">
-                                    <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif; font-size: 45px; line-height: 52px;">
+                            <h1 class="fontPoppins hero_headline" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 45px; line-height: 51px;">
+                              <span class="fontPoppin" style="font-family: Helvetica, Arial, sans-serif;">
 
-                                        Never Enough <br/>Tacos
-                                     </span>                                 
-                                  </h1>
+                                Never Enough <br>Tacos
 
-                                </td>
-        
-                              </tr>
 
-                              <tr>
-                                <td class="hero_spacer_mid" height="575px" style="font-size: 575px; line-height:575px; height:575px;">
+                              </span>                                 
+                            </h1>
 
-                                  <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/burritos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=img" target="_blank" style="width: 100%; height: 100%;">
-                                  <img class="hero_fake_link" width="580px" height="575px" src="https://rauxa-email.s3.amazonaws.com/TB/link.png" alt="" aria-hidden="true" />
-                                 </a>
-
-                                </td>
-                              </tr>
-
-                              <tr>
-        
-                                <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:54px;">
-
-                                  Crunchy. Soft. Supreme. Order now<br/>
-                                  for drive-thru pickup. 
-                                </td>
-        
-                              </tr>
-
-                              <tr>
-        
-                                <td class="hero_cta_wrapper" align="center" style="padding-top: 70px;">
-                                  <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
-                                  
-                                    <tr>
-                                      <td>&nbsp;</td>
-                                      <td class="hero_cta" align="center" bgcolor="#ffffff" height="90" width="350">
-                                        <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/burritos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=cta" target="_blank" style="width: 100%; color:#000000; text-decoration:none; padding-top:10px; padding-bottom:10px; font-size: 27px; line-height: 27px; font-weight: bold;">
-                                          
-                                          <span style="font-family: Helvetica, Arial, sans-serif;">
-                                           Order Now
-                                          </span> 
-                                          
-                                        </a>
-                                      </td>
-                                      <td>&nbsp;</td>
-                                    </tr>
-
-                                  </table>
-                                </td>
-        
-                              </tr>
-
-                            </table>
-        
                           </td>
-                          <td class="hero_spacer" width="30px" style="width: 30px;">&nbsp;</td>
+
                         </tr>
-        
+                        
+                        <tr>
+                          <td class="hero_spacer_mid" height="632px" style="font-size: 632px; line-height:632px; height:632px;">
+
+                            
+                          <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/tacos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=img" target="_blank" style="width: 100%; height: 100%;">
+                            <img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/link.png" alt="" aria-hidden="true" />
+                           </a>
+
+                          </td>
+                        </tr>
+                        
+                        <tr>
+
+                          <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:54px;">
+                            Crunchy. Soft. Supreme. Order now<br> 
+							               for drive-thru pickup.
+                          </td>
+
+                        </tr> 
+                        
+                        <tr>
+
+                            <td class="hero_cta_wrapper" align="center" style="padding-top: 38px; padding-bottom: 38px">
+                              <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
+
+                                <tr>
+                                  <td>&nbsp;</td>
+                                  <td class="hero_cta" align="center" bgcolor="#ffffff" height="90" width="350">
+                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/tacos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=cta" target="_blank" style="width: 100%; color:#000000; text-decoration:none; padding-top:19px; padding-bottom:19px; font-size: 27px; padding-left:100px; padding-right: 100px; line-height: 27px; font-weight: bold;">
+
+                                      <span style="font-family: Helvetica, Arial, sans-serif;">
+                                       Order Now
+                                      </span> 
+
+                                    </a>
+                                  </td>
+                                  <td>&nbsp;</td>
+                                </tr>
+
+                              </table>
+                            </td>
+
+                          </tr>
+
+                        
+                        
         
 
                       </table>
@@ -650,100 +769,91 @@
               </table>
               <!-- Hero EMD -->
 
-
-              <!-- gift cards-->
-              <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+                
+                
+                
+                
+              <!-- Gift Card start -->
+              <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f8785f" style="width:100%;  font-size: 0px;" role="presentation">
 
                 <tr>
-                  <td class="hero_background" align="center" valign="top" width="100%" style="height:694px; background-image:url('https://rauxa-email.s3.amazonaws.com/gift_cards.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                  <td class="hero_background" align="center" valign="top" width="100%" style="height:695px; background-image:url('https://rauxa-email.s3.amazonaws.com/gift_cards.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
                     <div>
                       <!--[if gte mso 9]>
-                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 694px;" src="https://rauxa-email.s3.amazonaws.com/gift_cards.jpg" />
-                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:694px">
+                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 695px;" src="https://rauxa-email.s3.amazonaws.com/gift_cards.jpg" />
+                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:695px">
                       <v:fill opacity="0%" color="#ffffff"/>
                       <v:textbox inset="0,0,0,0">
                       <![endif]--> 
+                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
-                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
 
-
+                       <tr>
+                        <td  class="hero_wrapper_top" height="75" style="font-size: 75px; line-height:75px; height:75px;">&nbsp;</td>
+                       </tr>
                         <tr>
-                          <td colspan="3" class="gift_cards_wrapper_top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
-                        </tr>
-        
-                        <tr>
-                          <td class="hero_spacer" width="30px" style="width: 30px;">&nbsp;</td>
-                          <td align="center">
-        
-                            <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
+                          <td class="gift_card_spacer" height="316px" style="font-size: 316px; line-height:316px; height:316px;">
 
+                          <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/gift-cards?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=img-gc" target="_blank" style="width: 100%; height: 100%;">
+                            <img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/link_giftCard.png" alt="" aria-hidden="true" />
+                           </a>
 
-                              <tr>
-                                <td class="gift_cards_spacer_top" height="303px" style="font-size: 303px; line-height:303px; height:303px;">
-
-                                  <a name="img" class="gift_cards_fake_link_wrapper" href="https://www.tacobell.com/food/burritos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=img" target="_blank" style="width: 100%; height: 100%;">
-                                  <img class="hero_fake_link" width="580px" height="303px" style="height: 303px;" src="https://rauxa-email.s3.amazonaws.com/TB/link.png" alt="" aria-hidden="true" />
-                                 </a>
-
-                                </td>
-                              </tr>
-
-                              <tr>
-        
-                                <td align="center">
-
-                                  <h1 class="fontPoppins gift_cards_headline" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 45px; line-height: 52px;">
-                                    <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif; font-size: 45px; line-height: 52px;">
-
-                                        Show Your Love
-                                     </span>                                 
-                                  </h1>
-
-                                </td>
-        
-                              </tr>
-
-                              <tr>
-        
-                                <td align="center" class="fontPoppins gift_cards_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:18px;">
-
-                                    Nothing says it quite like a <br/>
-                                    Taco Bell e-Gift Card. 
-
-                                </td>
-        
-                              </tr>
-
-                              <tr>
-        
-                                <td class="gift_cards_cta_wrapper" align="center" style="padding-top: 34px;">
-                                  <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
-                                  
-                                    <tr>
-                                      <td>&nbsp;</td>
-                                      <td class="gift_cards_cta" align="center" bgcolor="#ffffff" height="90" width="350">
-                                        <a name="cta" class="fontPoppins gift_cards_cta_link" href="https://www.tacobell.com/food/burritos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=cta" target="_blank" style="width: 100%; color:#000000; text-decoration:none; padding-top:10px; padding-bottom:10px; font-size: 27px; line-height: 27px; font-weight: bold;">
-                                          
-                                          <span style="font-family: Helvetica, Arial, sans-serif;">
-                                           Order Now
-                                          </span> 
-                                          
-                                        </a>
-                                      </td>
-                                      <td>&nbsp;</td>
-                                    </tr>
-
-                                  </table>
-                                </td>
-        
-                              </tr>
-
-                            </table>
-        
                           </td>
-                          <td class="hero_spacer" width="30px" style="width: 30px;">&nbsp;</td>
                         </tr>
-        
+                       <tr>
+
+                          <td align="center">
+
+                            <h1 class="fontPoppins gift_card_headline" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 33px; line-height: 36px; padding-bottom: 10px">
+                              <span class="fontPoppin" style="font-family: Helvetica, Arial, sans-serif;">
+
+                                 Show Your Love
+
+
+                              </span>                                 
+                            </h1>
+
+                          </td>
+
+                        </tr>
+                        
+                        
+                        
+                        <tr>
+
+                          <td align="center" class="fontPoppins gift_card_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 22px; line-height: 28px;">
+                            Nothing says it quite like a <br>
+							  Taco Bell e-Gift Card. 
+                          </td>
+
+                        </tr> 
+                        
+                        <tr>
+
+                            <td class="hero_cta_wrapper" align="center" style="padding-top: 30px; padding-bottom: 30px;">
+                              <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
+
+                                <tr>
+                                  <td>&nbsp;</td>
+                                  <td class="hero_cta" align="center" bgcolor="#000000" height="90" width="350">
+                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/gift-cards?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=cta-gc" target="_blank" style="width: 100%; color:#ffffff; text-decoration:none; padding-top:19px; padding-bottom:19px; font-size: 27px; padding-left:100px; padding-right: 100px; line-height: 27px; font-weight: bold;">
+
+                                      <span style="font-family: Helvetica, Arial, sans-serif;">
+                                       Order Now
+                                      </span> 
+
+                                    </a>
+                                  </td>
+                                  <td>&nbsp;</td>
+                                </tr>
+
+                              </table>
+                            </td>
+
+                          </tr>
+
+                        
+                        
         
 
                       </table>
@@ -761,7 +871,13 @@
 
               
               </table>
-              <!-- gift cards-->
+              <!-- Gift card end -->
+
+                
+
+
+
+
 
 
 
@@ -816,7 +932,7 @@
                                     <tr>
                                       <td>&nbsp;</td>
                                       <td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;">
-                                        <a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold;">
+                                        <a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:19px; padding-bottom:19px; padding-left:80px; padding-right: 80px;">
                                           <span style="font-family: Helvetica, Arial, sans-serif;">
                                            Order Now
                                           </span> 
@@ -831,7 +947,7 @@
 
                               <tr>
                                 <td align="center"  class="fontPoppins drive_thru_disclaimer" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 14px; line-height: 18px; padding-top: 0px; padding-bottom: 30px;">
-                                  For details on contactless service see <a href="https://www.tacobell.com/news/taco-bells-enhanced-restaurant-safty-steps?selectedTag=&selectYear=2020?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=contactless-url" style="text-decoration: underline; color: #ffffff;">www.tacobell.com/contactless_drive-thru</a>
+                                  For details on contactless service see <a href="https://www.tacobell.com/news/taco-bells-enhanced-restaurant-safty-steps?selectedTag=&selectYear=2020?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=contactless-url" style="text-decoration: underline; color: #ffffff;">www.tacobell.com/contactless_drive-thru</a>
                                 </td>
                               
                               </tr>    
@@ -961,31 +1077,31 @@
                     <table border="0" align="center" valign="middle" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style=" font-size: 0px;" role="presentation">
                       <tr>
                         <td>
-                          <a href="https://www.facebook.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos" target="_blank">
+                          <a href="https://www.facebook.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=facebook" target="_blank">
                             <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_fb.jpg" alt="Facebook">
                           </a>
                         </td>
                         <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
                         <td>
-                          <a href="https://www.instagram.com/tacobell/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos" target="_blank">
+                          <a href="https://www.instagram.com/tacobell/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=instagram" target="_blank">
                             <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_instagram.jpg" alt="Instagram">
                           </a>
                         </td>
                         <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
                         <td>
-                          <a name="footer_logo" href="https://www.tacobell.com?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=footer_logo" target="_blank">
+                          <a name="footer_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=footer_logo" target="_blank">
                             <img class="social_tb_logo" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_tb_logo.png" alt="Taco Bell">
                           </a>
                         </td>
                         <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
                         <td>
-                          <a href="https://twitter.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos" target="_blank">
+                          <a href="https://twitter.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=twitter" target="_blank">
                             <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_twitter.jpg" alt="Twitter">
                           </a>
                         </td>
                         <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
                         <td>
-                          <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos" target="_blank">
+                          <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=youtube" target="_blank">
                             <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_youtube.jpg" alt="Youtube">
                           </a>
                         </td>
@@ -1014,51 +1130,61 @@
 
                             <tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 20px;">
-                                Available at participating U.S. Taco Bell® locations. <br class="hide_in_mobile"/>
-                                Contact store for price, hours and participation, which <br class="hide_in_mobile"/>
-                                vary. Tax extra. ©2020 Taco Bell IP Holder, LLC.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
-                            </tr>
-                            <tr>
+                                Available at participating U.S. Taco Bell&reg; locations.<br class="hide_in_mobile" />
+															Contact store for price, hours and participation which<br class="hide_in_mobile" />
+															vary. Additional terms apply. Tax extra.</td>
+														</tr>
+														<tr>
+															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+														</tr>
+														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                All beverage related trademarks are owned by PepsiCo, <br class="hide_in_mobile"/>
-                                Inc. and its affiliates and Subsidiaries.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
-                            </tr>
-                            <tr>
+                                All beverage related trademarks are owned by PepsiCo,<br class="hide_in_mobile" />
+															Inc. and its affiliates and Subsidiaries.</td>
+														</tr>
+														<tr>
+															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+														</tr>
+														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                You get emails from Taco Bell because you love tacos. <br class="hide_in_mobile"/>
-                                <a name="privacy_policy" href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_1007-burritos&utm_content=privacy_policy" target="_blank" style="text-decoration: underline; color: #000000;">View</a> our Privacy Policy.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
-                            </tr>
-
-                            <tr>
+                                *Gift cards are redeemable at participating U.S. Taco Bell&reg; locations, <br class="hide_in_mobile" />
+                              at www.tacobell.com or through the Taco Bell&reg; App for food and <br class="hide_in_mobile" /> 
+                              drink purchases (pick-up only). No expiration date and no fees apply <br class="hide_in_mobile" /> 
+                              to gift card balances. See complete terms and conditions at <br class="hide_in_mobile" /> 
+                              <a href="https://www.tacobell.com/legal-notices/gift-cards-terms-of-use" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">www.tacobell.com/legal-notices/gift-cards-terms-of-use</a>.</td>
+														</tr>
+														<tr>
+															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+														</tr>
+														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                <span style="color:#000000">This email was sent by Taco Bell, located at<br class="hide_in_mobile"/>
-                                1&zwnj; Glen Bell Way, Irvine, California 92618.</span>
+                                &copy;2020 Taco Bell IP Holder, LLC
                               </td>
-                            </tr>
-                            <tr>
-                              <td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
-                            </tr>
-
-                            <tr>
+														</tr>
+														<tr>
+															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+														</tr>
+														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                If you <a href="http://tacobellunsubscribe.com/marketing.php?email=%%Email%%" target="_blank" style="text-decoration: underline; color: #000000;">Unsubscribe</a>, your inbox will have a serious lack of tacos.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="" height="70" style="font-size: 70px; line-height:70px; height:70px;">&nbsp;</td>
-                            </tr>
+                                You get emails from Taco Bell because you love tacos.<br class="hide_in_mobile" />
+															<a href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101320-tacos&utm_content=privacy_policy" name="privacy_policy" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">View</a> our Privacy Policy.</td>
+														</tr>
+														<tr>
+															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+														</tr>
+														<tr>
+															<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"><span style="color:#000000">This email was sent by Taco Bell, located at<br class="hide_in_mobile" />
+															1&zwnj; Glen Bell Way, Irvine, California 92618</span></td>
+														</tr>
+														<tr>
+															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+														</tr>
+														<tr>
+															<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">If you <a href="http://tacobellunsubscribe.com/marketing.php?email=%%Email%%" name="tacobellunsubscribe_com_marketing_p" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">Unsubscribe</a>, your inbox will have a serious lack of tacos.</td>
+														</tr>
+														<tr>
+															<td height="70" style="font-size: 70px; line-height:70px; height:70px;">&nbsp;</td>
+														</tr>
 
                           </table>
 
