@@ -272,8 +272,8 @@
        .drive_thru_cta_link {
         font-size: 20px !important;
         line-height: 20px !important;
-        padding-left: 65px !important;
-        padding-right: 65px !important;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
        }
        
        /*Drive thru : end*/
@@ -343,10 +343,17 @@
       body[data-outlook-cycle] .hero_spacer_mid {
         padding-bottom: 0%;
       }
+		body[data-outlook-cycle] .hero_fake_link {
+			height: 250px !important; 
+		}
 
       /*Samsung email*/
       #MessageViewBody .hero_spacer_mid { 
         padding-bottom: 0%;
+      }
+		
+	  #MessageViewBody .hero_fake_link {
+        height: 4vh !important;
       }
 
 
@@ -367,9 +374,6 @@
     }
 
 
-
-
-
     /*pixel*/   
 
     @media (device-width : 414px) and (device-height : 731px) and (-webkit-device-pixel-ratio : 2.6) {
@@ -383,6 +387,12 @@
 		
 
   }
+		/*Yahoo mobile*/
+	@media (max-width:480px){
+        .& .hero_fake_link {
+		  height: 200px !important;
+	  }
+    }
 
 
 
@@ -538,6 +548,7 @@
       height: 390px !important;
 
     }
+	
       
     
     .& .download_app_wrapper {
@@ -1075,6 +1086,13 @@
 														<tr>
 															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
 														</tr>
+							  <tr>
+                              <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 20px;"> Visit www.tacobell.com/delivery for delivery availability. <br class="hide_in_mobile" >Delivery, service and small order delivery fees may apply.</td>
+														</tr>
+							  
+							  <tr>
+															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+														</tr>
 														
 														
 														
@@ -1084,6 +1102,12 @@
                               </td>
 														</tr>
 														<tr>
+															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+														</tr>
+							  <tr>
+                              <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 20px;"> All beverage related trademarks are owned by PepsiCo, Inc.<br class="hide_in_mobile"> and its affiliates and Subsidiaries.</td>
+														</tr>
+							  <tr>
 															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
 														</tr>
 														<tr>
