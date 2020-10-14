@@ -272,8 +272,8 @@
        .drive_thru_cta_link {
         font-size: 20px !important;
         line-height: 20px !important;
-        padding-left: 50px !important;
-        padding-right: 50px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
        }
        
        /*Drive thru : end*/
@@ -387,12 +387,7 @@
 		
 
   }
-		/*Yahoo mobile*/
-	@media (max-width:480px){
-        .& .hero_fake_link {
-		  height: 200px !important;
-	  }
-    }
+	
 
 
 
@@ -534,6 +529,48 @@
   <body style="padding:0px; margin:0 auto;">
     
   <style>
+	@media (max-width:480px){
+		.& .drive_thru_background.background_full_width {
+			background-size: 100% !important;
+			background-position: top right !important;
+		}
+		
+		.& .download_app_background.background_full_width {
+			background-size: 100% !important;
+			background-position: center top !important;
+		}
+		
+		.& .download_app.drive_thru_cta {
+			padding-top: 38% !important;
+		}
+		
+		.& .drive_thru_cta img {
+			width: 75% !important;
+		}
+		
+		.& .download_app_top {
+			font-size: 0 !important;
+			line-height: 0 !important;
+			height: 0vh !important;
+			padding-bottom: 0%;
+			display: none;
+			visibility: hidden;
+		}
+		
+		.& .hero_fake_link {
+  			height: 0vh !important;
+		}
+		
+		.& .hero_spacer_mid {
+			padding-bottom: 0% !important;
+		}
+		
+		.&  .drive_thru_cta_link {
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+       }
+	}
+	  
     .& .hero_wrapper_top {
       	display: none;
       	visibility: none;
@@ -960,13 +997,13 @@
                                   <table border="0" cellpadding="0" cellspacing="0" style="font-size: 0px;" role="presentation">
                                     <tr>
                                       
-                                      <td class="drive_thru_cta" align="right">
+                                      <td class="download_app drive_thru_cta" align="right">
                                         <a class="fontPoppins download_app_link" href="https://apps.apple.com/us/app/taco-bell/id497387361" target="_blank">
                                           <img alt="Apple app store" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-ios.png"/>
                                         </a>
                                       </td>
                                       <td width="30px" style="width: 30px;">&nbsp; </td>
-                                      <td class="drive_thru_cta" align="left">
+                                      <td class="download_app drive_thru_cta" align="left">
                                         <a class="fontPoppins download_app_link" href="https://play.google.com/store/apps/details?id=com.tacobell.ordering" target="_blank">
                                           <img alt="Android app store" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-android.png"/>
                                         </a>
