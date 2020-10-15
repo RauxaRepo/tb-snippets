@@ -177,10 +177,10 @@
       
 
       .hero_spacer_mid {
-        font-size: 0 !important;
-        line-height:0 !important;
-        height:0 !important;     
-        padding-bottom: 66%;
+        font-size: 280px !important;
+        line-height: 280px !important;
+        height: 280px !important;     
+        padding-bottom: 72%;
         position: relative;
         overflow: hidden;
       }
@@ -207,8 +207,8 @@
       }
 
       .hero_bodycopy {
-        font-size: 16px !important;
-        line-height: 24px !important;
+        font-size: 18px !important;
+        line-height: 25px !important;
         padding-top: 0px !important;
       }
 		
@@ -371,7 +371,7 @@
 
       /*outlook app ios/android*/
       body[data-outlook-cycle] .hero_spacer_mid {
-        padding-bottom: 0%;
+        padding-bottom: 50%;
       }
 
       body[data-outlook-cycle] .hero_fake_link {
@@ -398,53 +398,34 @@
       }
     }
 
+      
+      
+      /*pixel*/   
 
+    @media (device-width : 414px) and (device-height : 731px) and (-webkit-device-pixel-ratio : 2.6) {
+        .hero_spacer_mid {
+        padding-bottom: 20%;
+      }
 
+      .hero_cta_wrapper {
+        padding-bottom: 58px !important;
+      }
 
-
-
-
-    /*iphone plus*/
+  }
+ 	 /*iphone plus*/
 
     @media (width:414px){
 
       .hero_bodycopy {
         padding-top: 40px !important
       }
+		
+	  .hero_spacer_mid {
+        height: 100px !important; 
+        padding-bottom: 20% !important;
+      }
 
     }
-
-    /* Pixel */
-    @media (width:411px){
-      .hero_spacer_mid {
-        padding-bottom: 78%;
-      }
-
-      .hero_cta_wrapper {
-        padding-bottom: 58px !important;
-      }
-      
- 
-    }
-      
-      
-      /*pixel*/   
-
-    @media (device-width : 414px) and (device-height : 731px) and (-webkit-device-pixel-ratio : 2.6) {
-      .hero_spacer_mid {
-        
-      }
-
-  }
-
-
-
-
-
-
-
-
-
 
           
 
@@ -455,6 +436,12 @@
       .hero_bodycopy {
         padding-top: 20px !important
       }
+		
+	  .hero_spacer_mid {
+        height: 100px !important; 
+        padding-bottom: 20% !important;
+      }
+
 
     }
     
@@ -485,7 +472,12 @@
       }
 
       .hero_spacer_mid {
-        padding-bottom: 60%;
+		 font-size: 300px !important;
+        line-height: 300px !important;
+        height: 300px !important;     
+        padding-bottom: 28%;
+        position: relative;
+        overflow: hidden;
       }
 
 
@@ -550,9 +542,9 @@
    }
     
     u ~ div .hero_spacer_mid {
-      font-size: 420px !important;
-      line-height: 420px !important;
-      height: 420px !important;
+      font-size: 400px !important;
+      line-height: 400px !important;
+      height: 400px !important;
     }
 	  
 
@@ -638,6 +630,39 @@
         display: none;
         visibility: hidden;
       }
+		
+		&. .hero_background.background_full_width {
+			background-size: 100% !important;
+			background-position: center top !important;
+			height: auto !important;
+		}
+		
+		& .hero_fake_link_wrapper {
+			width: 100% !important;
+			height: 100% !important;
+			position: absolute !important;
+		}
+		
+		& .hero_fake_link {
+			width: 100% !important;
+			height: 100% !important;
+			position: absolute !important;
+		}
+		
+		& .hero_spacer_mid {
+			height: 0px !important;     
+			position: relative;
+		}
+		
+		&  .hero_wrapper_top {
+			display: none;
+			visibility: none;
+			height: 0px !important;
+    	}
+		
+		&. .hero_bodycopy {
+			padding-top: 0px; 
+		}
     }
 
 
@@ -776,10 +801,10 @@
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
                 <tr>
-                  <td class="hero_background" align="center" valign="top" width="100%" style="height:1306px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/delivery_offer_hero.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                  <td class="hero_background background_full_width" align="center" valign="top" width="100%" style="height:1306px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/5_Grande_Stacker_Bg.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
                     <div>
                       <!--[if gte mso 9]>
-                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 1306px;" src="https://rauxa-email.s3.amazonaws.com/TB/delivery_offer_hero.jpg" />
+                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 1306px;" src="https://rauxa-email.s3.amazonaws.com/TB/5_Grande_Stacker_Bg.jpg" />
                       <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:1306px">
                       <v:fill opacity="0%" color="#ffffff"/>
                       <v:textbox inset="0,0,0,0">
@@ -788,7 +813,7 @@
 
 
                        <tr>
-                        <td  class="hero_wrapper_top" height="75" style="font-size: 75px; line-height:75px; height:75px;">&nbsp;</td>
+                        <td  class="hero_wrapper_top" height="20" style="font-size: 20px; line-height:20px; height:20px;">&nbsp;</td>
                        </tr>
                         
                        
@@ -796,11 +821,11 @@
                         
                         
                         <tr>
-                          <td class="hero_spacer_mid" height="420px" style="font-size: 420px; line-height:420px; height:420px;">
+                          <td class="hero_spacer_mid" height="900px" style="font-size: 900px; line-height:900px; height:900px;">
 
                             
                           <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/deals-and-combos/grande-stacker-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=img" target="_blank" style="width: 100%; height: 100%;">
-                            <img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/do_fake_link.png" alt="" aria-hidden="true" />
+                            <img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/fake_link_5_Grande_Stacker.png" alt="" aria-hidden="true" />
                            </a>
 
                           </td>
@@ -808,8 +833,8 @@
                         
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 22px; line-height: 28px; padding-top:40px;">
-                             Last chance for delicious layers <br class="hide_in_mobile" />of melty cheese and double <br class="hide_in_mobile" />the seasoned beef,* two Crunchy <br class="hide_in_mobile" />Tacos, and a Medium drink.
+                          <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:40px;">
+                             Last chance for delicious layers <br/>of melty cheese and double <br/>the seasoned beef,* two Crunchy <br/>Tacos, and a Medium drink.
                           </td>
 
                         </tr> 
