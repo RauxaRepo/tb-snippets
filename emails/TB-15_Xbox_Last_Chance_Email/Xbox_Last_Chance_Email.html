@@ -259,6 +259,13 @@
 				width: 76% !important;
 				height: auto !important;
 			}
+			
+			.hero_space{
+				font-size: 0 !important;
+				line-height: 0 !important;
+				height: 0vh !important;
+				padding-bottom: 53%;
+			}
 			/**/
 
 
@@ -320,13 +327,6 @@
 			}
 		}
 
-		/*iphone plus*/
-
-		@media (width:414px) {
-			.hero_spacer_mid {
-				padding-bottom: 64% !important;
-			}
-		}
 
 		
 
@@ -343,15 +343,37 @@
 				height: 500vh !important;
 				padding-bottom: 100% !important;
 			}
+			.hero_fake_link_wrapper {
+				height: 500vh !important;
+				padding-bottom: 100% !important;
+			}
+			.hero_space {
+				height: 800vh !important;
+				padding-bottom: 100% !important;
+			}
 			
+			
+			
+		}
+		
+		
+		/*iphone plus*/
+
+		@media (width:414px) {
+			.hero_spacer_mid {
+				padding-bottom: 64% !important;
+			}
+			.hero_space {
+				padding-bottom: 53% !important;
+			}
 		}
 
 		/* iphone 6/7/8/+ */
 
 		@media (width:375px) {
 			
-			.hero_spacer_mid {
-				padding-bottom: 54% !important;
+			.hero_space {
+				padding-bottom: 53% !important;
 			}
 		}
 
@@ -376,6 +398,12 @@
 			.hero_spacer_mid {
 				padding-bottom: 37%;
 			}
+			.hero_space {
+				font-size: 0 !important;
+				line-height: 0 !important;
+				height: 0vh !important;
+				padding-bottom: 50%;
+			}
 			/* HERO 1 : end */
 
 
@@ -386,6 +414,7 @@
 				height: 0vh !important;
 				padding-bottom: 27%;
 			}
+		    
 			.hide_320 {
 				display: none;
 				visibility: hidden;
@@ -406,6 +435,22 @@
 			line-height: 0 !important;
 			height: 17vh !important;
 			padding-bottom: 0%;
+		  }
+			
+		  u ~ div .hero_space {
+			font-size: 0 !important;
+			line-height: 0 !important;
+			height: 30vh !important;
+			padding-bottom: 0%;
+		  }
+			
+		u ~ div .hero_fake_link {
+			font-size: 0 !important;
+			line-height: 0 !important;
+		  }
+		u ~ div .hero_fake_link_wrapper {
+			font-size: 0 !important;
+			line-height: 0 !important;
 		  }
 		}
 
@@ -433,12 +478,29 @@
 
 		} 
 
-
 		u ~ div .download_app_top {
 			font-size: 0 !important;
 			line-height:0 !important;
 			height:0vh !important;     
 			padding-bottom: 36%;
+		}
+		
+		u ~ div .hero_space {
+			font-size: 0 !important;
+			line-height:0 !important;
+			height:0vh !important;     
+			padding-bottom: 50%;
+		}
+		
+		u ~ div .hero_fake_link {
+			font-size: 0 !important;
+			line-height:0 !important;
+			
+		}
+		
+		u ~ div .hero_fake_link_wrapper {
+			font-size: 0 !important;
+			line-height:0 !important;
 		}
 
 
@@ -504,22 +566,33 @@
 				visibility: hidden;
 			}
 			
-			.& .hero_fake_link {
-  			   
-			
-		    }
+			.& .hero_space {
+				font-size: 0 !important;
+				line-height: 0 !important;
+				height: 0vh !important;
+				padding-bottom: 0%;
+				display: none;
+				visibility: hidden;
+			}
+			.& .hero_cta_wrapper {
+				paddding-top: 70% !important;
+			}
 			
 			.& .hero_spacer_mid {
 				height: 50vh !important;
 				padding-bottom: 0% !important;
-				
-				
 			}
+			
 			.& .hero_wrapper_top {
 				height: 0px !important;
 				padding-top: 0 !important;
 				display: none;
 				visibility: none;
+			}
+			.& .hero_background.background_full_width {
+				background-size: 100% !important;
+				background-position: center top !important;
+				height: auto !important;
 			}
 		}
 
@@ -614,19 +687,22 @@
 				  <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 					<tr>
 						<td valing="top">
-							<a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/deals-and-combos/grande-stacker-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=img" target="_blank" style="width: 640px; height: 908px">
+							<a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/drinks?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102320-Xbox-Last-Chance&utm_content=img" target="_blank" style="width: 640px; height: 1105px">
 								<img class="hero_fake_link" style="min-height: 0;" src="https://rauxa-email.s3.amazonaws.com/TB/Xbox_lastchance_Bg.gif" alt="" aria-hidden="true" />
 							</a>
 						</td>
 					</tr>
-					  
-					<tr>
-						<td class="hero_cta_wrapper" align="center" style="padding-top: 25px; padding-bottom: 38px">
-						  <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
-
+					  <tr>
+					  	<td align="center" valign="top" bgcolor="#000000"><table cellpadding="0" cellspacing="0" border="0">
+							
 							<tr>
-							  <td>&nbsp;</td>
-							  <td class="hero_cta" align="center" bgcolor="#aeec58" height="90" width="350">
+
+                            <td class="hero_cta_wrapper" align="center" style="padding-top: 10px; padding-bottom: 38px">
+                              <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
+
+                                <tr>
+                                  <td>&nbsp;</td>
+                                  <td class="hero_cta" align="center" bgcolor="#aeec58" height="90" width="350">
 								<a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/deals-and-combos/grande-stacker-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=cta-order" target="_blank" style="width: 100%; color:#000000; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
 
 								  <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;">
@@ -635,13 +711,18 @@
 
 								</a>
 							  </td>
-							  <td>&nbsp;</td>
-							</tr>
+                                  <td>&nbsp;</td>
+                                </tr>
 
-						  </table>
-						</td>
+                              </table>
+                            </td>
 
-					</tr>
+                          </tr>
+							</table></td>					  
+					  </tr>
+					  
+					  
+					
 
 					  
 				  </table>
