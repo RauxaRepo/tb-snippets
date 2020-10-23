@@ -156,22 +156,21 @@
 			.hero_spacer_mid {
 				font-size: 0px !important;
 				line-height: 0px !important;
-				height: 0px !important;
-				padding-bottom: 30%;
+				height: auto !important;
 				position: relative;
 				overflow: hidden;
 			}
 			
 			.hero_fake_link_wrapper {
 				width: 100% !important;
-				height: 100% !important;
-				display: inline-block;
+				height: auto !important;
+				display: block;
 			}
 			
 			.hero_fake_link {
 				width: 100% !important;
 				height: auto !important;
-				display: inline-block;
+				display: block;
 			}
 			
 			.hero_headline {
@@ -374,7 +373,7 @@
 		@media (min-resolution: 1dpi) and (max-width:540px) {
 		
 			body[data-outlook-cycle] .hero_spacer_mid {
-				padding-bottom: 20%;
+				
 			}
 		}
 
@@ -394,7 +393,6 @@
 			}
 			.hero_spacer_mid {
 				height: 100vh !important;
-				padding-bottom: 25%;
 			}
 			
 			
@@ -405,7 +403,7 @@
 
 		@media (width:414px) {
 			.hero_spacer_mid {
-				padding-bottom: 10% !important;
+				
 			}
 			.hero_space {
 				padding-bottom: 53% !important;
@@ -424,7 +422,7 @@
 			}
 			
 			.hero_spacer_mid {
-				padding-bottom: 20% !important;
+				
 			}
 		}
 
@@ -453,7 +451,7 @@
 				padding-bottom: 4px;
 			}
 			.hero_spacer_mid {
-				padding-bottom: 5%;
+				
 			}
 			
 			/* HERO 1 : end */
@@ -582,7 +580,7 @@
 			.& .hero_background.background_full_width {
 				background-size: 100% !important;
 				background-position: center top !important;
-				height: auto!important;
+				
 			}
 
 			.& .drive_thru_cta img {
@@ -612,13 +610,14 @@
 									
 		
 			.& .hero_spacer_mid {
-				min-height: 20px !important;
-				padding-bottom: 0%;
+				height: 0vh !important;
+				display: block;
 				position: relative;
 			}
 			
 			.& .hero_fake_link {
-				position: absolute;
+				width: 100%;
+				height: 100%;
 			}
 
 			.& h1,
@@ -645,8 +644,7 @@
 
 
 		.& .hero_spacer_mid {
-		  	min-height: 300px !important;
-			padding-bottom: 10%;
+		  	height: 300px !important;
 
 		}
 
@@ -792,7 +790,7 @@
                         
                         
                         <tr>
-                          <td class="hero_spacer_mid" height="530" style="font-size: 530px; line-height:530px; height:530px; max-height: 530px; margin:0 auto;">
+                          <td class="hero_spacer_mid" height="530" style="font-size: 530px; line-height:530px; height:530px; max-height: 530px; min-height: 50px; margin:0 auto;">
                             
                           <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/nachos/nachos-party-pack?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_103020-Halloween-NPP&utm_content=img" target="_blank" style="width: 100%; height: 100%;">
                             <img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/fake_link_Halloween.png" alt="" aria-hidden="true" />
