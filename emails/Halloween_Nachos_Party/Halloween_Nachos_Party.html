@@ -126,8 +126,8 @@
 				height: auto !important;
 			}
 			.tb_logo_wrapper {
-				padding-top: 24px !important;
-				padding-bottom: 24px !important;
+				padding-top: 0px !important;
+				padding-bottom: 0px !important;
 			}
 			.tb_logo_mobile {
 				width: 75% !important;
@@ -244,18 +244,26 @@
 				line-height: 35px !important;
 				height: 35px !important;
 			}
+			
 			.drive_thru_headline {
 				font-size: 32px !important;
 				line-height: 40px !important;
 			}
+			
 			.drive_thru_copy {
 				font-size: 16px !important;
 				line-height: 24px !important;
 			}
+			
+			.drive_thru_cta_wrapper {
+				padding-bottom: 30px !important;
+			}
+			
 			.drive_thru_cta {
 				width: 240px !important;
 				height: 60px !important;
 			}
+			
 			.drive_thru_cta_link {
 				font-size: 20px !important;
 				line-height: 20px !important;
@@ -269,8 +277,13 @@
 				font-size: 0 !important;
 				line-height: 0 !important;
 				height: 0vh !important;
-				padding-bottom: 30%;
+				padding-bottom: 28%;
 			}
+			
+			.download_app_wrapper {
+				padding-bottom: 10px;
+			}
+			
 			.download_app_link img {
 				width: 76% !important;
 				height: auto !important;
@@ -312,16 +325,24 @@
 
 				  /* Apple Mail */
 			[class^="apple-mail"] .sabsat_top{
-        margin-bottom: -1px;
-        padding-bottom: 0%;
+				margin-bottom: -1px;
+				padding-bottom: 0%;
+			}
+			
+			[class^="apple-mail"] .download_app_wrapper {
+				padding-bottom: 8px;
+			}
+
+			[class^="apple-mail"] .hero_cta_wrapper {
+				padding-top: 10px !important;
+    			padding-bottom: 30px !important;
 			}
 			/*outlook app ios/android*/
 
 
-      body[data-outlook-cycle] .sabsat_top {
-        margin-bottom: -1px;
-        padding-bottom: 0%;
-      }
+			body[data-outlook-cycle] .sabsat_top {
+				
+			}
 
 			/*Samsung email*/
 			#MessageViewBody .hero_fake_link {
@@ -428,6 +449,9 @@
 				padding-top: 20px !important;
 				padding-bottom: 26px !important;
 			}
+			.download_app_wrapper {
+				padding-bottom: 4px;
+			}
 			.hero_spacer_mid {
 				padding-bottom: 5%;
 			}
@@ -441,6 +465,10 @@
 				height: 0vh !important;
 				padding-bottom: 27%;
 			}
+			.social_spacer {
+				width: 25px !important;
+			}
+		    
 		    
 			.hide_320 {
 				display: none;
@@ -460,10 +488,9 @@
 		  u ~ div .download_app_top {
 			font-size: 0 !important;
 			line-height: 0 !important;
-			height: 17vh !important;
-			padding-bottom: 0%;
-		  }		
-		 
+			height: 0vh !important;
+			padding-bottom: 27%;
+		  }				 
 		
 		}
 
@@ -485,17 +512,11 @@
 		  height: 570px !important;
 		}
 
-
-		u ~ div .hero_bodycopy {
-		  padding-top: 0px !important;
-
-		} 
-
 		u ~ div .download_app_top {
 			font-size: 0 !important;
 			line-height:0 !important;
 			height:0vh !important;     
-			padding-bottom: 36%;
+			padding-bottom: 32%;
 		}
 		
 		u ~ div .hero_space {
@@ -577,6 +598,13 @@
 				visibility: hidden;
 			}
 			
+			.& .drive_thru_cta_wrapper {
+				padding-bottom: 30px !important;
+			}
+
+			 .& .hero_cta_wrapper {
+				padding-top: 30px !important;
+			 }
 			
 			.& .hero_cta_wrapper {
 				paddding-top: 0% !important;
@@ -597,6 +625,9 @@
 			.& h2,
 			.& h3 {
 			  margin: 0;
+			}
+			.& .social_spacer {
+				width: 25px !important;
 			}
 
 			
@@ -1024,10 +1055,10 @@
 
 							  <tr>
 								<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-									At participating U.S. Taco Bell® locations for a limited time <br class="hide_in_mobile" />
-									only. Check local restaurant for hours and participation, <br class="hide_in_mobile" />
-									which vary. All beverage-related trademarks are owned <br class="hide_in_mobile" />
-									by PepsiCo, Inc. and its Affiliates and Subsidiaries. <br class="hide_in_mobile" />
+									At participating U.S. Taco Bell® locations for a limited time<br class="hide_in_mobile" />&nbsp;
+									only. Check local restaurant for hours and participation,<br class="hide_in_mobile" />&nbsp;
+									which vary. All beverage-related trademarks are owned<br class="hide_in_mobile" />&nbsp;
+									by PepsiCo, Inc. and its Affiliates and Subsidiaries.<br class="hide_in_mobile" />&nbsp;
 									©2020 Taco Bell IP Holder, LLC.</td>
 							  </tr>
 							 
@@ -1042,7 +1073,7 @@
 								<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
 							  </tr>
 							  <tr>
-								<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"><span style="color:#000000">This email was sent by Taco Bell located at <br class="hide_in_mobile" />1&zwnj; Glen Bell Way, Irvine, California 92618</span></td>
+								<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"><span style="color:#000000">This email was sent by Taco Bell located at<br class="hide_in_mobile" />&nbsp;1&zwnj; Glen Bell Way, Irvine, California 92618</span></td>
 							  </tr>
 							  <tr>
 								<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
