@@ -140,8 +140,8 @@
 
 
       .tb_logo_wrapper {
-        padding-top: 24px !important;
-        padding-bottom: 24px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
       }
 
       .tb_logo_mobile {
@@ -174,7 +174,12 @@
         height: 0 !important;
         padding-bottom: 8%;
       }
-      
+      .tb_logo_top,
+			.tb_logo_bot {
+				font-size: 0 !important;
+				line-height: 0 !important;
+				height: 24px !important;
+			}
 
       .hero_spacer_mid {
 
@@ -294,6 +299,10 @@
          width: 240px !important;
          height: 60px !important;
        }
+		
+		.drive_thru_cta_wrapper {
+				padding-bottom: 30px !important;
+			}
 
        .drive_thru_cta_link {
         font-size: 20px !important;
@@ -309,8 +318,12 @@
         font-size: 0 !important;
         line-height:0 !important;
         height:0vh !important;     
-        padding-bottom: 30%;
+        padding-bottom: 28%;
        }
+		
+		.download_app_wrapper {
+				padding-bottom: 10px;
+			}
 
        .download_app_link img {
          width: 76% !important;
@@ -364,6 +377,15 @@
       [class^="apple-mail"] .hero_spacer_mid {
 
       }
+		
+		[class^="apple-mail"] .download_app_wrapper {
+				padding-bottom: 8px;
+			}
+
+			[class^="apple-mail"] .hero_cta_wrapper {
+				padding-top: 10px !important;
+    			padding-bottom: 30px !important;
+			}
 
       /*outlook app ios/android*/
       body[data-outlook-cycle] .hero_spacer_mid {
@@ -460,6 +482,10 @@
         padding-top: 20px !important;
         padding-bottom: 30px !important;
       }
+		
+		.download_app_wrapper {
+				padding-bottom: 4px;
+			}
 
 
 
@@ -490,6 +516,10 @@
          display: table-cell !important;
          visibility: visible !important;
        }
+		
+		.social_spacer {
+				width: 25px !important;
+			}
 
     }
 
@@ -507,8 +537,8 @@
       u ~ div .download_app_top {
         font-size: 0 !important;
         line-height: 0 !important;
-        height: 17vh !important;
-        padding-bottom: 0%;
+        height: 0vh !important;
+		padding-bottom: 27%;
       }
     }
     
@@ -522,10 +552,7 @@
       font-size: 30px !important;
       line-height: 30px !important;
       height: 30px !important;
-   }
-    
-
-	  
+   }  
 
 
 
@@ -533,7 +560,7 @@
         font-size: 0 !important;
         line-height:0 !important;
         height:0vh !important;     
-        padding-bottom: 36%;
+        padding-bottom: 32%;
       }
     
     
@@ -605,6 +632,10 @@
         display: none;
         visibility: hidden;
       }
+		
+		.& .drive_thru_cta_wrapper {
+				padding-bottom: 30px !important;
+			}
     
 		
       .& .hero_background.background_full_width {
@@ -612,7 +643,9 @@
         background-position: center top !important;
         height: auto !important;
       }
-		
+		.& .social_spacer {
+				width: 25px !important;
+			}
     
 
 
@@ -677,27 +710,47 @@
                 
                 
               <!-- Logo Header start -->
-              <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" bgcolor="#ffffff" role="presentation">
-                <tr>
-
-                  <td class="tb_logo_wrappe" align="center" style=" padding-top:48px; padding-bottom:48px; padding-left:25px; padding-right:25px;">
-                    
-                  	<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
-	
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td align="center">
-                          <a name="nav_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=nav_logo" target="_blank">
-                          	<img class="tb_logo_mobile" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/>
-                          </a>
+              <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" role="presentation">
+				  <tr>
+					<td class="tb_logo_wrapper" align="center" style="background-image: url('https://rauxa-email.s3.amazonaws.com/TB/bg_white_square.png'); background-repeat: repeat;">
+			
+					<div>
+					<!--[if gte mso 9]>
+					<v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 189px;" src="https://rauxa-email.s3.amazonaws.com/TB/bg_white_square.png" />
+					<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:189px">
+					<v:fill  type="pattern" opacity="1%" color="#ffffff"/>
+					<v:textbox inset="0,0,0,0">
+					<![endif]--> 
+						
+						
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                    <tr>
+                        <td class="tb_logo_top" colspan="3" height="48" width="100%" style="height: 48px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;mso-line-height-rule: exactly;line-height: 48px;">
+                        <!--[if gte mso 15]>&nbsp;<![endif]-->
                         </td>
+                    </tr>
+                        <tr>
                         <td>&nbsp;</td>
-                      </tr>
+                        <td align="center"><a name="nav_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102420-Delivery-DD-Offer-LC&utm_content=nav_logo" target="_blank"> <img class="tb_logo_mobile" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/> </a></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tb_logo_bot" colspan="3" height="48" width="100%" style="height: 48px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;mso-line-height-rule: exactly;line-height: 48px;">
+                        <!--[if gte mso 15]>&nbsp;<![endif]-->
+                        </td>
+                    </tr>
                     </table>
- 	
-                  </td>
-                </tr>
-              </table>
+
+                    <!--[if gte mso 9]> 
+                    </v:textbox>
+                    </v:fill>
+                    </v:rect>
+                    </v:image>
+                    <![endif]--> 
+                    </div>					  
+					</td>
+				  </tr>
+				</table>
               <!-- Logo Header end -->
 
                 
@@ -825,7 +878,9 @@
               </table>
               <!-- Hero EMD -->
 				   
+				  
 				  <!-- Certona -->
+				  <!--
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
                 <tr>
                     <td colspan="2" height="30" valign="top"><img height="30" name="Cont_11" src="https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_modular/spacer.gif" style="display: block; outline:none; text-decoration:none; border:none;" width="30" /></td>
@@ -859,6 +914,7 @@
 
                 </tr>
               </table>
+-->
               <!-- Certona -->              
                 
 
@@ -1116,10 +1172,10 @@
 														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
 								  
-								  At limited participating U.S. Taco Bell locations <br class="hide_in_mobile" />
-								  for a limited time only. Contact local restaurant <br class="hide_in_mobile" />
-								  for prices, hours and participation, which vary. Taxes <br class="hide_in_mobile" />
-								  extra. Drinks exclude Freezes. *Double the seasoned <br class="hide_in_mobile" />
+								  At limited participating U.S. Taco Bell locations<br class="hide_in_mobile" />&nbsp;
+								  for a limited time only. Contact local restaurant<br class="hide_in_mobile" />&nbsp;
+								  for prices, hours and participation, which vary. Taxes<br class="hide_in_mobile" />&nbsp;
+								  extra. Drinks exclude Freezes. *Double the seasoned<br class="hide_in_mobile" />&nbsp;
 								  beef as compared to a Crunchy Taco.
                             
                             
@@ -1131,7 +1187,7 @@
 
 														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                All beverage related trademarks are owned by PepsiCo,<br class="hide_in_mobile" />
+                                All beverage related trademarks are owned by PepsiCo,<br class="hide_in_mobile" />&nbsp;
 															Inc. and its affiliates and Subsidiaries.</td>
 														</tr>
 														<tr>
@@ -1150,14 +1206,14 @@
 
 														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                You get emails from Taco Bell because you love tacos.<br class="hide_in_mobile" />
+                                You get emails from Taco Bell because you love tacos.<br class="hide_in_mobile" />&nbsp;
 															<a href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=privacy_policy" name="privacy_policy" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">View</a> our Privacy Policy.</td>
 														</tr>
 														<tr>
 															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
 														</tr>
 														<tr>
-															<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"><span style="color:#000000">This email was sent by Taco Bell located at<br class="hide_in_mobile" />
+															<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"><span style="color:#000000">This email was sent by Taco Bell located at<br class="hide_in_mobile" />&nbsp;
 															1&zwnj; Glen Bell Way, Irvine, California 92618</span></td>
 														</tr>
 														<tr>
