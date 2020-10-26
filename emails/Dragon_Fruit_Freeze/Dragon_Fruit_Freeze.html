@@ -192,11 +192,11 @@
 			.hero_bodycopy {
 				font-size: 16px !important;
 				line-height: 24px !important;
-				padding-top: 20px !important;
+				padding-top: 0px !important;
 			}
 			.hero_cta_wrapper {
 				padding-top: 20px !important;
-				padding-bottom: 60px !important;
+				padding-bottom: 40px !important;
 			}
 			.hero_cta_link {
 				font-size: 20px !important;
@@ -379,9 +379,10 @@
 
 		/* outlook android*/
 		@media (min-resolution: 1dpi) and (max-width:540px) {
-			body[data-outlook-cycle] .sabsat_top {
-			
+			body[data-outlook-cycle] .hero_cta_wrapper {
+    			padding-bottom: 20px !important;
 			}
+			
 		}
 
 
@@ -448,7 +449,7 @@
 				line-height: 33px !important;
 			}
 			.hero_bodycopy {
-				padding-top: 10px !important;
+				padding-top: 0px !important;
 				font-size: 14px !important;
 				line-height: 18px !important;
 			}
@@ -457,7 +458,7 @@
 			}
 			.hero_cta_wrapper {
 				padding-top: 10px !important;
-				padding-bottom: 32px !important;
+				padding-bottom: 20px !important;
 			}
 
 
@@ -610,6 +611,7 @@
 			.& .hero_background.background_full_width {
 				background-size: 100% !important;
 				background-position: center top !important;
+				height: auto !important;
 			}
 
 			.& .download_app.drive_thru_cta {
@@ -634,8 +636,12 @@
 			}
 
 			 .& .hero_cta_wrapper {
-				padding-top: 30px !important;
+				padding-top: 15px !important;
+				 padding-bottom: 10px !important;
 			 }
+			.& .hero_cta {
+				height: 60px !important;
+			}
 			
 			.& .hero_space {
 				font-size: 0 !important;
@@ -644,9 +650,6 @@
 				padding-bottom: 0%;
 				display: none;
 				visibility: hidden;
-			}
-			.& .hero_cta_wrapper {
-				paddding-top: 70% !important;
 			}
 			
 			.& .hero_spacer_mid {
@@ -660,14 +663,17 @@
 				display: none;
 				visibility: none;
 			}
-			.& .hero_background.background_full_width {
-				background-size: 100% !important;
-				background-position: center top !important;
-				height: auto !important;
-			}
+			
 
 			.& .social_spacer {
 				width: 25px !important;
+			}
+			
+			.& .mb_yahoo {
+				font-size: 20px !important;
+				line-height: 22px !important;
+				padding-top: 0px !important;
+				margin: 0px !important;
 			}
 		}
 
@@ -697,6 +703,10 @@
 		  padding-bottom: 0px !important;
 		  margin-bottom: 0;
 		  margin-top: 0;
+		}
+		
+		.& .drive_thru_cta_wrapper {
+			padding-bottom: 40px !important;
 		}
 
 	</style>
@@ -792,7 +802,7 @@
 
 
                 <!--  HERO -->
-                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+                <table border="0" width="100%" cellpadding="0" cellspacing="0"  style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
 
                 <tr>
@@ -806,7 +816,7 @@
                 </tr>
                 
                 <tr>
-                    <td class="hero_background sabsat_bottom" align="center" valign="top" width="100%" style="height:326px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/Dragon_Fruit_Bg_bottom.png');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                    <td class="hero_background background_full_width" align="center" valign="top" width="100%" style="height:326px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/Dragon_Fruit_Bg_bottom.png');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
                     <div>
                         <!--[if gte mso 9]>
                         <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 326px;" src="https://rauxa-email.s3.amazonaws.com/TB/Dragon_Fruit_Bg_bottom.png" />
@@ -819,7 +829,7 @@
                         
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:60px;">
+                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:60px;">
                              Never tasted the flavor <br>
 							  of dragon fruit? It's an <br>
 							  experience you won't forget.	
@@ -878,10 +888,10 @@
 
 				<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 				  <tr>
-					<td class="drive_thru_background background_full_width" align="center" valign="top" width="100%" style="height:425px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;"><div> 
+					<td class="drive_thru_background background_full_width" align="center" valign="top" width="100%" style="height:400px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;"><div> 
 						<!--[if gte mso 9]>
 						  <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 425px;" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg" />
-						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:425px">
+						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:400px">
 						  <v:fill opacity="0%" color="#ffffff"/>
 						  <v:textbox inset="0,0,0,0">
 						  <![endif]-->
@@ -905,7 +915,7 @@
 								  <td class="drive_thru_cta_wrapper" align="center" style="padding-top: 30px; padding-bottom: 15px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 0px;" role="presentation">
 									  <tr>
 										<td>&nbsp;</td>
-										<td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;"> <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span> </a></td>
+										<td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102420-Delivery-DD-Offer-LC&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;"> <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span> </a></td>
 										<td>&nbsp;</td>
 									  </tr>
 									</table></td>
@@ -1035,10 +1045,10 @@
 							  <tr>
                                 <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
 									
-									Available at participating U.S. Taco Bell® locations. Contact store<br>
-									for price, hours and participation which vary. Additional terms <br>
-									apply. Tax extra. Visit <a href="https://www.tacobell.com/delivery" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">www.tacobell.com/delivery</a> for delivery <br>
-									availability. Delivery, service and small order delivery fees may<br>
+									Available at participating U.S. Taco Bell® locations. Contact store<br class="hide_in_mobile" />&nbsp;
+									for price, hours and participation which vary. Additional terms<br class="hide_in_mobile" />&nbsp;
+									apply. Tax extra. Visit <a href="https://www.tacobell.com/delivery" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">www.tacobell.com/delivery</a> for delivery<br class="hide_in_mobile" />&nbsp;
+									availability. Delivery, service and small order delivery fees may<br class="hide_in_mobile" />&nbsp;
 									apply. Freezes are made with artificial flavors and contain no fruit juice.
 
                                 
