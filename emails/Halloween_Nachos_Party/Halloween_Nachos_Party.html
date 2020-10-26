@@ -154,11 +154,7 @@
 				padding-bottom: 8%;
 			}
 			.hero_spacer_mid {
-				font-size: 0px !important;
-				line-height: 0px !important;
-				height: auto !important;
-				position: relative;
-				overflow: hidden;
+
 			}
 			
 			.hero_fake_link_wrapper {
@@ -171,6 +167,10 @@
 				width: 100% !important;
 				height: auto !important;
 				display: block;
+			}
+
+			.hero_headline_wrapper {
+				padding-bottom: 10% !important;
 			}
 			
 			.hero_headline {
@@ -324,8 +324,7 @@
 
 				  /* Apple Mail */
 			[class^="apple-mail"] .sabsat_top{
-				margin-bottom: -1px;
-				padding-bottom: 0%;
+
 			}
 			
 			[class^="apple-mail"] .download_app_wrapper {
@@ -338,9 +337,9 @@
 			}
 			/*outlook app ios/android*/
 
-
-			body[data-outlook-cycle] .sabsat_top {
-				
+			body[data-outlook-cycle]  .hero_headline_wrapper {
+				padding-bottom: 8% !important;
+			
 			}
 
 			/*Samsung email*/
@@ -356,9 +355,7 @@
 		}
 
 		@media (max-width:375px) {
-		  .hero_spacer_mid {
-				padding-bottom: 0% !important;
-			}
+
 		.hero_bodycopy {
 				padding-top: 0px !important;
 				margin-top: 0px !important;
@@ -371,9 +368,8 @@
 
 		/* outlook android*/
 		@media (min-resolution: 1dpi) and (max-width:540px) {
-		
-			body[data-outlook-cycle] .hero_spacer_mid {
-				
+			body[data-outlook-cycle]  .hero_headline_wrapper {
+				padding-bottom: 4.5% !important;
 			}
 		}
 
@@ -382,19 +378,15 @@
 
 		/*pixel*/   
 
-		@media (device-width : 414px) and (device-height : 731px) and (-webkit-device-pixel-ratio : 2.6) {
+		@media (width : 411px) {
 			
-			.hero_cta_wrapper {
-				padding-bottom: 30px !important;
+
+
+			.hero_headline_wrapper {
+				padding-bottom: 17% !important;
 			}
-			.download_app_top {
-				height: 500vh !important;
-				padding-bottom: 100% !important;
-			}
-			.hero_spacer_mid {
-				height: 100vh !important;
-			}
-			
+
+
 			
 		}
 		
@@ -402,12 +394,12 @@
 		/*iphone plus*/
 
 		@media (width:414px) {
-			.hero_spacer_mid {
-				
+
+			.hero_headline_wrapper {
+				padding-bottom: 17% !important;
 			}
-			.hero_space {
-				padding-bottom: 53% !important;
-			}
+
+
 			.hero_bodycopy {
 				padding-top: 0px !important
 			}
@@ -421,9 +413,7 @@
 				padding-top: 0px !important
 			}
 			
-			.hero_spacer_mid {
-				
-			}
+
 		}
 
 
@@ -435,6 +425,9 @@
 				line-height: 18px !important;
 			}
 			/* HERO 1 : start */
+			.hero_headline_wrapper {
+				padding-bottom: 9% !important;
+			}
 			.hero_headline {
 				font-size: 25px !important;
 				line-height: 33px !important;
@@ -450,9 +443,7 @@
 			.download_app_wrapper {
 				padding-bottom: 4px;
 			}
-			.hero_spacer_mid {
-				
-			}
+
 			
 			/* HERO 1 : end */
 
@@ -504,11 +495,7 @@
 		  height: 50px !important;
 	   }
 
-		u ~ div .hero_spacer_mid {
-		  font-size: 570px !important;
-		  line-height: 570px !important;
-		  height: 570px !important;
-		}
+
 
 		u ~ div .download_app_top {
 			font-size: 0 !important;
@@ -563,6 +550,9 @@
 	<style>
 
 		@media screen and (max-width:480px){
+
+
+
 			.& .drive_thru_background.background_full_width {
 				background-size: 100% !important;
 				background-position: top right !important;
@@ -580,7 +570,6 @@
 			.& .hero_background.background_full_width {
 				background-size: 100% !important;
 				background-position: center top !important;
-				
 			}
 
 			.& .drive_thru_cta img {
@@ -600,25 +589,35 @@
 				padding-bottom: 30px !important;
 			}
 
-			 .& .hero_cta_wrapper {
-				padding-top: 30px !important;
-			 }
+
 			
 			.& .hero_cta_wrapper {
-				paddding-top: 0% !important;
-			}
+				padding-top: 0px !important;
+				padding-bottom: 20px !important;
+			 }
+
+			 .& .hero_headline_wrapper {
+				padding-bottom: 0% !important;
+			 }
+
+			 .& .hero_bodycopy {
+				 padding-top: 15px !important;
+				 padding-bottom: 0px !important;
+				 font-size: 18px !important;
+				 line-height: 24px !important;
+			 }
+
+			 .& .hero_bodycopy_two {
+				 padding-bottom: 15px !important;
+				 padding-top: 0px !important;
+				 font-size: 18px !important;
+				 line-height: 24px !important;
+			 }
 									
 		
-			.& .hero_spacer_mid {
-				height: 0vh !important;
-				display: block;
-				position: relative;
-			}
+
 			
-			.& .hero_fake_link {
-				width: 100%;
-				height: 100%;
-			}
+
 
 			.& h1,
 			.& h2,
@@ -643,10 +642,6 @@
 		}
 
 
-		.& .hero_spacer_mid {
-		  	height: 300px !important;
-
-		}
 
 		.& .download_app_wrapper {
 		  padding-bottom: 20px;
@@ -772,7 +767,7 @@
                         
                        <tr>
 
-                          <td align="center">
+                          <td class="hero_headline_wrapper" align="center" style="padding-bottom: 60px;">
 
                             <h1 class="fontPoppins hero_headline" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ff8a2d; text-decoration:none; font-size: 45px; line-height: 51px; margin: 0px;">
                               <span class="fontPoppin" style="font-family: Helvetica, Arial, sans-serif;">
@@ -790,10 +785,10 @@
                         
                         
                         <tr>
-                          <td class="hero_spacer_mid" height="530" style="font-size: 530px; line-height:530px; height:530px; max-height: 530px; min-height: 50px; margin:0 auto;">
+                          <td class="hero_spacer_mid" style="">
                             
-                          <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/nachos/nachos-party-pack?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_103020-Halloween-NPP&utm_content=img" target="_blank" style="width: 100%; height: 100%;">
-                            <img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/fake_link_Halloween.png" alt="" aria-hidden="true" />
+                          <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/nachos/nachos-party-pack?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_103020-Halloween-NPP&utm_content=img" target="_blank" style="">
+                            <img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/halloween_fake_link_v2.png" alt="" aria-hidden="true" />
                            </a>
 
                           </td>
@@ -801,7 +796,7 @@
                         
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#ff8a2d; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:80px; font-weight: bold;">
+                          <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#ff8a2d; text-decoration:none; font-size: 27px; line-height: 33px; padding-top: 35px; font-weight: bold;">
                              Nachos Party Pack	
                           </td>
 
