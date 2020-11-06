@@ -187,18 +187,13 @@
 				line-height: 24px !important;
 				padding-top: 5px !important;
 			}
+			.hero_bodycopy_two {
+				font-size: 16px !important;
+				line-height: 24px !important;
+				padding-top: 0px !important;
+			}
 			.hero_cta_wrapper {
 				padding-top: 20px !important;
-				padding-bottom: 40px !important;
-				
-			}
-			.hero_cta_wrapper_up {
-				padding-top: 20px !important;
-				padding-bottom: 20px !important;
-				
-			}
-			.hero_cta_wrapper_down {
-				padding-top: 0px !important;
 				padding-bottom: 20px !important;
 			}
 			.hero_cta_link {
@@ -357,17 +352,6 @@
 				padding-top: 10px !important;
     			padding-bottom: 30px !important;
 			}
-			
-			[class^="apple-mail"] .hero_cta_wrapper_up {
-				padding-top: 10px !important;
-				padding-bottom: 30px !important;
-			}
-			
-			[class^="apple-mail"] .hero_cta_wrapper_down {
-				padding-top: 0px !important;
-    			padding-bottom: 30px !important;
-			}
-			
 			/*outlook app ios/android*/
 
 
@@ -386,24 +370,10 @@
 			
 			}
 			
-			#MessageViewBody .hero_cta_wrapper_down {
-				padding-top: 0px !important;
-    			padding-bottom: 15px !important;
-			}
-			
-			#MessageViewBody .hero_cta_wrapper_up {
-				padding-top: 10px !important;
-    			padding-bottom: 10px !important;
-			}
-			
 			
 		}
 
 		@media (max-width:375px) {
-			.hero_cta_wrapper_down {
-				padding-top: 0px !important;
-				padding-bottom: 20px !important;
-			}
 
 		}
 
@@ -411,7 +381,10 @@
 		@media (min-resolution: 1dpi) and (max-width:540px) {
 			
 			
-		}		
+		}
+
+
+		
 
 		/*pixel*/   
 
@@ -419,12 +392,16 @@
 				
 			.hero_fake_link_wrapper {
 				position: relative;
-				/*height: 100% !important;*/
+				height: 100% !important;
 			}
 			
 			.hero_fake_link {
 				position: relative;
 			}
+			
+
+					
+			
 			
 		}
 		
@@ -432,20 +409,14 @@
 		/*iphone plus*/
 
 		@media (width:414px) {
-			.hero_cta_wrapper_down {
-				padding-top: 0px !important;
-				padding-bottom: 20px !important;
-			}
+			
 			
 		}
 
 		/* iphone 6/7/8/+ */
 
 		@media (width:375px) {
-			.hero_cta_wrapper_down {
-				padding-top: 0px !important;
-				padding-bottom: 20px !important;
-			}
+			
 			
 		}
 
@@ -467,18 +438,19 @@
 				font-size: 14px !important;
 				line-height: 18px !important;
 			}
+			.hero_bodycopy_two {
+				padding-top: 0px !important;
+				font-size: 14px !important;
+				line-height: 18px !important;
+			}
 			
 			.hero_cta_wrapper {
 				padding-top: 10px !important;
 				padding-bottom: 20px !important;
 			}
-			.hero_cta_wrapper_up {
+			.cta_yellow_bg {
 				padding-top: 10px !important;
 				padding-bottom: 10px !important;
-			}
-			.hero_cta_wrapper_down {
-				padding-top: 0px !important;
-				padding-bottom: 25px !important;
 			}
 
 
@@ -520,20 +492,20 @@
 		/*Gmail desktop tweaks*/
 		@media screen and  (max-width:480px) {
 
-			  u ~ div .download_app_top {
-				font-size: 0 !important;
-				line-height: 0 !important;
-				height: 0vh !important;
-				padding-bottom: 27%;
-			  }
-			u ~ div .hero_fake_link {
-				position: relative;
-			}
-
-			u ~ div .hero_fake_link_wrapper {
-				position: relative;
-				height: auto !important;
-			}
+		  u ~ div .download_app_top {
+			font-size: 0 !important;
+			line-height: 0 !important;
+			height: 0vh !important;
+			padding-bottom: 27%;
+		  }
+		u ~ div .hero_fake_link {
+			position: relative;
+		}
+		
+		u ~ div .hero_fake_link_wrapper {
+			position: relative;
+			height: 100% !important;
+		}
 
 		}
 
@@ -563,7 +535,7 @@
 		
 		u ~ div .hero_fake_link_wrapper {
 			position: relative;
-			/*height: auto !important;*/
+			height: auto !important;
 		}
 	
 
@@ -639,17 +611,9 @@
 				padding-top: 20px !important;
 				padding-bottom: 30px !important;
 			 }
-			.& .hero_cta_wrapper_up {
-				padding-top: 20px !important;
-				padding-bottom: 20px !important;
-			 }
-			.& .hero_cta_wrapper_down {
-				padding-top: 0px !important;
-				padding-bottom: 30px !important;
-			 }
 			
 			.& .hero_cta {
-				height: 40px !important;
+				height: 60px !important;
 			}
 			
 			
@@ -681,7 +645,7 @@
 				margin: 0px !important;
 			}
 		}
-		
+
 
 		.& .hero_wrapper_top {
 			display: none;
@@ -696,7 +660,7 @@
 		
 
 		.& .download_app_wrapper {
-		  padding-bottom: 30px;
+		  padding-bottom: 20px;
 		}
 
 
@@ -718,25 +682,23 @@
 		  <table lang="en" border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;"  class="mobile_container" role="presentation">
 			<tr>
 			  <td width="100%" style="width:100%; vertical-align:top;">
-
-				<!-- PREHEADER START -->
-				  <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" role="presentation">
-				  <tr>
-					<td class="fontPoppins" valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;"> 
-						Satisfy your cravings with the Chicken Quesadilla.<br class="hide_in_mobile" />&nbsp;
-						Get it delivered or order ahead for drive-thru pickup.	
-					  </td>
-				  </tr>
-				  <tr> 
-					<td valign="top"> 
-					  <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden">
-						 &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; 
-					  </div>
-					</td> 
-				  </tr>
-				</table>
-				
-				<!-- PREHEADER END --> 
+                
+                <!-- PREHEADER START -->
+				<table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" role="presentation">
+                    <tr>
+                      <td class="fontPoppins" valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;"> 
+                        Buy one Toasted Cheddar Chalupa Box and get<br class="hide_in_mobile" />&nbsp;one Free to celebrate Taco Bell dropping on Uber&nbsp;Eats
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td valign="top"> 
+                        <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden">
+                           &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; 
+                        </div>
+                      </td> 
+                    </tr>
+                  </table>
+                  <!-- PREHEADER END --> 
 
 				<!-- Logo Header start -->
 				<table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" role="presentation">
@@ -760,7 +722,7 @@
                     </tr>
                         <tr>
                         <td>&nbsp;</td>
-                        <td align="center"><a name="nav_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=nav_logo" target="_blank"> <img class="tb_logo_mobile" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/> </a></td>
+                        <td align="center"><a name="nav_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=nav_logo" target="_blank"> <img class="tb_logo_mobile" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/> </a></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
@@ -787,13 +749,13 @@
 				  <tr>
 					<td align="center" style="padding-top: 20px; padding-bottom: 20px;"><table cellpadding="0" align="center" cellspacing="0" border="0" role="presentation">
 						<tr>
-						  <td align="center" valign="middle"><a name="nav_menu" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=nav_menu" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif; font-weight: bold; color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Menu</span> </a></td>
+						  <td align="center" valign="middle"><a name="nav_menu" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=nav_menu" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif; font-weight: bold; color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Menu</span> </a></td>
 						  <td width="40" class="nav_spacer"></td>
-						  <td align="center" valign="middle"><a name="nav_locations" href="https://www.tacobell.com/locations?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=nav_locations" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Locations</span> </a></td>
+						  <td align="center" valign="middle"><a name="nav_locations" href="https://www.tacobell.com/locations?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=nav_locations" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Locations</span> </a></td>
 						  <td width="40" class="nav_spacer"></td>
-						  <td align="center" valign="middle"><a name="nav_delivery" href="https://www.tacobell.com/delivery?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=nav_delivery" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Delivery</span> </a></td>
+						  <td align="center" valign="middle"><a name="nav_delivery" href="https://www.tacobell.com/delivery?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=nav_delivery" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Delivery</span> </a></td>
 						  <td width="40" class="nav_spacer"></td>
-						  <td align="center" valign="middle"><a name="nav_taco_merch" href="https://www.tacobelltacoshop.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=nav_taco_merch" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Taco Merch</span> </a></td>
+						  <td align="center" valign="middle"><a name="nav_taco_merch" href="https://www.tacobelltacoshop.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=nav_taco_merch" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Taco Merch</span> </a></td>
 						</tr>
 					  </table></td>
 				  </tr>
@@ -809,25 +771,25 @@
 
                 <!--  HERO -->
 				  
-                <table border="0" width="100%" cellpadding="0" cellspacing="0"  bgcolor="#a6561b" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+                <table border="0" width="100%" cellpadding="0" cellspacing="0"  bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
 
                 <tr>
                     <td valign="top">
 
-                    <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/quesadillas?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=cta-img" target="_blank" style="width: 640px; height: 1105px">
-                        <img class="hero_fake_link" style="min-height: 0;" src="https://rauxa-email.s3.amazonaws.com/TB/Quesadillas_bg_top.jpg" alt="" aria-hidden="true" />
+                    <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/uber-eats?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=cta-img" target="_blank" style="width: 640px; height: 871px">
+                        <img class="hero_fake_link" style="min-height: 0;" src="https://rauxa-email.s3.amazonaws.com/TB/E920_Email_TCCBox_UBER_LAUNCH_FINAL_03.jpg" alt="" aria-hidden="true" />
                     </a>
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td class="hero_background background_full_width" align="center" valign="top"  width="100%" style="height:441px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/Quesadillas_bg_bottom.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                    <td class="hero_background background_full_width" align="center" valign="top"  width="100%" style="height:267px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/E920_Email_TCCBox_UBER_LAUNCH_FINAL_05.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
                     <div>
                         <!--[if gte mso 9]>
-                        <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 441px;" src="https://rauxa-email.s3.amazonaws.com/TB/Quesadillas_bg_bottom.jpg" />
-                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:441px">
+                        <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 267px;" src="https://rauxa-email.s3.amazonaws.com/TB/E920_Email_TCCBox_UBER_LAUNCH_FINAL_05.jpg" />
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:267px">
                         <v:fill opacity="0%" color="#ffffff"/>
                         <v:textbox inset="0,0,0,0">
                         <![endif]--> 
@@ -836,49 +798,25 @@
                         
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:10px;">
-							Get your Chicken Quesadilla<br>
-							Combo delivered or swing by our<br>
-							  drive-thru for pickup. 
+                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding: 0px 20px 0px 20px;">
+
+                            Here's two cheddary reasons to<br class="hide_in_mobile" />&nbsp;celebrate Taco Bell on Uber Eats.*
                           </td>
 
                         </tr> 
                         
                         <tr>
 
-                            <td class="hero_cta_wrapper_up" align="center" style="padding-top: 25px; padding-bottom: 30px">
+                            <td class="hero_cta_wrapper" align="center" style="padding-top: 25px; padding-bottom: 25px">
                               <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
                                 <tr>
                                   <td>&nbsp;</td>
                                   <td class="hero_cta" align="center" bgcolor="#ffffff" height="90" width="350">
-                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/quesadillas?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=cta-order" target="_blank" style="width: 100%; color:#000000; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
+                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/uber-eats?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=cta-order" target="_blank" style="width: 100%; color:#000000; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
 
                                       <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;">
-                                        Order Now
-                                      </span> 
-
-                                    </a>
-                                  </td>
-                                  <td>&nbsp;</td>
-                                </tr>
-
-                              </table>
-                            </td>
-
-                          </tr>
-						<tr>
-
-                            <td class="hero_cta_wrapper_down" align="center" style="padding-bottom: 38px">
-                              <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
-
-                                <tr>
-                                  <td>&nbsp;</td>
-                                  <td class="hero_cta" align="center" bgcolor="#ffffff" height="90" width="350">
-                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/delivery?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=cta-delivery" target="_blank" style="width: 100%; color:#000000; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
-
-                                      <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;">
-                                        Get Delivery	
+                                        Get Delivery
                                       </span> 
 
                                     </a>
@@ -911,8 +849,6 @@
                 </table> 
 	
 
-                <!--  HERO -->
-				  
 
 
 
@@ -920,10 +856,10 @@
 
 				<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 				  <tr>
-					<td class="drive_thru_background background_full_width" align="center" valign="top" width="100%" style="height:400px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;"><div> 
+					<td class="drive_thru_background background_full_width" align="center" valign="top" width="100%" style="height:360px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;"><div> 
 						<!--[if gte mso 9]>
-						  <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 425px;" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg" />
-						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:400px">
+						  <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 360px;" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg" />
+						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:360px">
 						  <v:fill opacity="0%" color="#ffffff"/>
 						  <v:textbox inset="0,0,0,0">
 						  <![endif]-->
@@ -936,18 +872,18 @@
 							<td width="30px" style="width: 30px;">&nbsp;</td>
 							<td><table  valing="top" border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
 								<tr>
-								  <td valing="top" align="left"><h3  class="fontPoppins drive_thru_headline" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 42px; line-height: 52px;"> <span style="font-family: Helvetica, Arial, sans-serif;"> Our Contactless <br/>
-									  Drive-Thru is Open </span> </h3></td>
+								  <td valing="top" align="left"><h3 class="fontPoppins drive_thru_headline" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 42px; line-height: 52px;"> <span style="font-family: Helvetica, Arial, sans-serif;"> Our Contactless <br/>
+									  Drive-Thru is&nbsp;Open </span></h3></td>
 								</tr>
 								<tr>
 								  <td valing="top"  class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 24px; line-height: 28px; padding-top: 12px;"> Order ahead and 
-									drive-thru for pickup </td>
+									drive-thru for&nbsp;pickup </td>
 								</tr>
 								<tr>
 								  <td class="drive_thru_cta_wrapper" align="center" style="padding-top: 30px; padding-bottom: 15px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 0px;" role="presentation">
 									  <tr>
 										<td>&nbsp;</td>
-										<td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;"> <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span> </a></td>
+										<td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;"> <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span> </a></td>
 										<td>&nbsp;</td>
 									  </tr>
 									</table></td>
@@ -1032,31 +968,31 @@
 					<td align="center"><table border="0" align="center" valign="middle" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style=" font-size: 0px;" role="presentation">
 						<tr>
 						  <td>
-							  <a href="https://www.facebook.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=facebook" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_fb.jpg" alt="Facebook"> </a>
+							  <a href="https://www.facebook.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=facebook" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_fb.jpg" alt="Facebook"> </a>
 						  </td>
 
 						  <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
 						  <td>
-							  <a href="https://www.instagram.com/tacobell/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=instagram" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_instagram.jpg" alt="Instagram"> </a>
+							  <a href="https://www.instagram.com/tacobell/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=instagram" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_instagram.jpg" alt="Instagram"> </a>
 						  </td>
 
 						  <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
 						  <td>
-							  <a name="footer_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=footer_logo" target="_blank"> <img class="social_tb_logo" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_tb_logo.png" alt="Taco Bell"> </a>
+							  <a name="footer_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=footer_logo" target="_blank"> <img class="social_tb_logo" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_tb_logo.png" alt="Taco Bell"> </a>
 						  </td>
 
 						  <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
 						  <td>
-							  <a href="https://twitter.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=twitter" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_twitter.jpg" alt="Twitter"> </a>
+							  <a href="https://twitter.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=twitter" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_twitter.jpg" alt="Twitter"> </a>
 						  </td>
 
 						  <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
 						  <td>
-							  <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=youtube" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_youtube.jpg" alt="Youtube"> </a>
+							  <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=youtube" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_youtube.jpg" alt="Youtube"> </a>
 						  </td>
 						</tr>
 					  </table></td>
@@ -1074,25 +1010,15 @@
 						  <td class="legal_spacer_hori" width="70px" style="width: 70px;">&nbsp;</td>
 						  <td align="center"><table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
-							  
-
-							  
 							  <tr>
                                 <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
 									
-									At participating U.S. Taco Bell® locations for a limited<br class="hide_in_mobile" />&nbsp;
-									time only. Contact local restaurant for prices, hours and <br class="hide_in_mobile" />&nbsp;
-									participation, which vary. Tax extra. All beverage-related <br class="hide_in_mobile" />&nbsp;
-									trademarks are owned by PepsiCo, Inc. and its Affiliates and <br class="hide_in_mobile" />&nbsp;
-									Subsidiaries. Visit <a href="https://www.tacobell.com/delivery" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">www.tacobell.com/delivery</a> for delivery <br class="hide_in_mobile" />&nbsp;
-									availability. Delivery, service and small order delivery <br class="hide_in_mobile" />&nbsp;
-									fees may apply. ©2020 Taco Bell IP Holder, LLC.
-
+                                    
+                                    
+                                    *Between 11/9/20-11/15/20, buy one Toasted Cheddar<br class="hide_in_mobile" />&nbsp;Chalupa Box and get a second Toasted Cheddar Chalupa<br class="hide_in_mobile" />&nbsp;Box for free at participating U.S. Taco Bell® locations for<br class="hide_in_mobile" />&nbsp;users who order on Uber Eats. For a limited time and while<br class="hide_in_mobile" />&nbsp;supplies last. Not valid in-store or with a pick-up order.<br class="hide_in_mobile" />&nbsp;Prices and items may vary. Limit one per order. Taxes,<br class="hide_in_mobile" />&nbsp;Delivery Fee and a Service Fee apply. Additional terms<br class="hide_in_mobile" />&nbsp;apply, visit www.tacobell.com/uber-eats to check delivery<br class="hide_in_mobile" />&nbsp;availability and terms and conditions. Must have or create<br class="hide_in_mobile" />&nbsp;valid Uber Eats account with a valid form of accepted<br class="hide_in_mobile" />&nbsp;payment on file. No cash value. Non-transferable. Uber<br class="hide_in_mobile" />&nbsp;Eats® is a registered trademark of Uber Technologies, Inc.<br class="hide_in_mobile" />&nbsp;©2020 Taco Bell IP Holder,&nbsp;LLC.
                                 
                                 </td>
 							  </tr>
-
-							  
 							  
 							  
 							  <tr>
@@ -1100,7 +1026,7 @@
 							  </tr>
 							  <tr>
 								<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"> You get emails from Taco Bell because you love tacos.<br class="hide_in_mobile" />
-								  <a href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_120320-Quesadillas&utm_content=privacy_policy" name="privacy_policy" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">View</a> our Privacy Policy.</td>
+								  <a href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111020-TCC-BOGO-Launch&utm_content=privacy_policy" name="privacy_policy" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">View</a> our Privacy Policy.</td>
 							  </tr>
 							  <tr>
 								<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
