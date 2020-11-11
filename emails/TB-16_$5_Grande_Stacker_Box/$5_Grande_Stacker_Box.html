@@ -140,8 +140,8 @@
 
 
       .tb_logo_wrapper {
-        padding-top: 24px !important;
-        padding-bottom: 24px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
       }
 
       .tb_logo_mobile {
@@ -174,7 +174,12 @@
         height: 0 !important;
         padding-bottom: 8%;
       }
-      
+      .tb_logo_top,
+			.tb_logo_bot {
+				font-size: 0 !important;
+				line-height: 0 !important;
+				height: 24px !important;
+			}
 
       .hero_spacer_mid {
 
@@ -268,10 +273,32 @@
        }
 
        /* HERO 1 : end */
-		/* HERO 2 Gift card: start*/
 
-		
-		/*HERO 2 Gift card: end*/
+       .sabsat_head_top {
+        font-size: 0 !important;
+				line-height: 0 !important;
+				height: 0 !important;
+        padding-bottom: 8%;
+      }
+
+      .sabsat_bottom_copy {
+        padding-top: 7px !important;
+      }
+
+      .sabsat_bottom_cta_wrapper {
+        padding-top: 12px !important;
+        padding-bottom: 20px !important;
+      }
+
+      .sabsat_bottom_legal {
+        padding-bottom: 30px;
+        font-size: 11px !important;
+        line-height: 17px !important;
+      }
+
+
+
+
 
        /*Drive thru : start */
        .drive_thru_top {
@@ -294,6 +321,10 @@
          width: 240px !important;
          height: 60px !important;
        }
+		
+		.drive_thru_cta_wrapper {
+				padding-bottom: 30px !important;
+			}
 
        .drive_thru_cta_link {
         font-size: 20px !important;
@@ -309,8 +340,12 @@
         font-size: 0 !important;
         line-height:0 !important;
         height:0vh !important;     
-        padding-bottom: 30%;
+        padding-bottom: 28%;
        }
+		
+		.download_app_wrapper {
+				padding-bottom: 10px;
+			}
 
        .download_app_link img {
          width: 76% !important;
@@ -364,6 +399,15 @@
       [class^="apple-mail"] .hero_spacer_mid {
 
       }
+		
+		[class^="apple-mail"] .download_app_wrapper {
+				padding-bottom: 8px;
+			}
+
+			[class^="apple-mail"] .hero_cta_wrapper {
+				padding-top: 10px !important;
+    			padding-bottom: 30px !important;
+			}
 
       /*outlook app ios/android*/
       body[data-outlook-cycle] .hero_spacer_mid {
@@ -375,13 +419,15 @@
       }
 
       /*Samsung email*/
-      #MessageViewBody .hero_spacer_mid { 
-
-      }
-
       #MessageViewBody .hero_fake_link {
+				position: relative;
+				height: 18vh !important;
 
-      }
+			}
+			#MessageViewBody .hero_fake_link_wrapper {
+				position: relative;
+				height: 18vh !important;
+			}
 
 
 
@@ -458,6 +504,10 @@
         padding-top: 20px !important;
         padding-bottom: 30px !important;
       }
+		
+		.download_app_wrapper {
+				padding-bottom: 4px;
+			}
 
 
 
@@ -488,6 +538,10 @@
          display: table-cell !important;
          visibility: visible !important;
        }
+		
+		.social_spacer {
+				width: 25px !important;
+			}
 
     }
 
@@ -505,8 +559,8 @@
       u ~ div .download_app_top {
         font-size: 0 !important;
         line-height: 0 !important;
-        height: 17vh !important;
-        padding-bottom: 0%;
+        height: 0vh !important;
+		padding-bottom: 27%;
       }
     }
     
@@ -520,10 +574,7 @@
       font-size: 30px !important;
       line-height: 30px !important;
       height: 30px !important;
-   }
-    
-
-	  
+   }  
 
 
 
@@ -531,7 +582,7 @@
         font-size: 0 !important;
         line-height:0 !important;
         height:0vh !important;     
-        padding-bottom: 36%;
+        padding-bottom: 32%;
       }
     
     
@@ -603,6 +654,10 @@
         display: none;
         visibility: hidden;
       }
+		
+		.& .drive_thru_cta_wrapper {
+				padding-bottom: 30px !important;
+			}
     
 		
       .& .hero_background.background_full_width {
@@ -610,7 +665,9 @@
         background-position: center top !important;
         height: auto !important;
       }
-		
+		.& .social_spacer {
+				width: 25px !important;
+			}
     
 
 
@@ -675,27 +732,47 @@
                 
                 
               <!-- Logo Header start -->
-              <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" bgcolor="#ffffff" role="presentation">
-                <tr>
-
-                  <td class="tb_logo_wrappe" align="center" style=" padding-top:48px; padding-bottom:48px; padding-left:25px; padding-right:25px;">
-                    
-                  	<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
-	
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td align="center">
-                          <a name="nav_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=nav_logo" target="_blank">
-                          	<img class="tb_logo_mobile" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/>
-                          </a>
+              <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" role="presentation">
+				  <tr>
+					<td class="tb_logo_wrapper" align="center" style="background-image: url('https://rauxa-email.s3.amazonaws.com/TB/bg_white_square.png'); background-repeat: repeat;">
+			
+					<div>
+					<!--[if gte mso 9]>
+					<v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 189px;" src="https://rauxa-email.s3.amazonaws.com/TB/bg_white_square.png" />
+					<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:189px">
+					<v:fill  type="pattern" opacity="1%" color="#ffffff"/>
+					<v:textbox inset="0,0,0,0">
+					<![endif]--> 
+						
+						
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                    <tr>
+                        <td class="tb_logo_top" colspan="3" height="48" width="100%" style="height: 48px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;mso-line-height-rule: exactly;line-height: 48px;">
+                        <!--[if gte mso 15]>&nbsp;<![endif]-->
                         </td>
+                    </tr>
+                        <tr>
                         <td>&nbsp;</td>
-                      </tr>
+                        <td align="center"><a name="nav_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102420-Delivery-DD-Offer-LC&utm_content=nav_logo" target="_blank"> <img class="tb_logo_mobile" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/> </a></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="tb_logo_bot" colspan="3" height="48" width="100%" style="height: 48px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;mso-line-height-rule: exactly;line-height: 48px;">
+                        <!--[if gte mso 15]>&nbsp;<![endif]-->
+                        </td>
+                    </tr>
                     </table>
- 	
-                  </td>
-                </tr>
-              </table>
+
+                    <!--[if gte mso 9]> 
+                    </v:textbox>
+                    </v:fill>
+                    </v:rect>
+                    </v:image>
+                    <![endif]--> 
+                    </div>					  
+					</td>
+				  </tr>
+				</table>
               <!-- Logo Header end -->
 
                 
@@ -740,6 +817,12 @@
               </table>
               <!-- HEADER END Alt -->
 
+
+
+
+
+
+
                 
                 
                 
@@ -772,7 +855,8 @@
                         <tr>
 
                           <td align="center" class="fontPoppins hero_bodycopy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:60px;">
-                             Last chance for delicious layers <br/>of melty cheese and double <br/>the seasoned beef,* two Crunchy <br/>Tacos, and a Medium drink.
+                             Last chance for delicious layers <br/>of melty cheese and double <br/>the seasoned beef*, two Crunchy <br/>Tacos, and a Medium drink.
+
                           </td>
 
                         </tr> 
@@ -821,8 +905,106 @@
               
               </table>
               <!-- Hero EMD -->
+
+
+
+
+
+        <!--  SABSAT -->
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+
+
+          <tr>
+            <td class="sabsat_mid">
+
+              <a name="img" class="sabsat_mid_anchor" href="https://www.tacobell.com/stealataco/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102320-Xbox-Last-Chance&utm_content=sabsat-img" target="_blank" style="width: 100%; height: 100%;">
+                <img class="hero_fake_link sabsat_mid_image" style="" src="https://rauxa-email.s3.amazonaws.com/TB/2020-sabsat-module_b.jpg" alt="" aria-hidden="true" />
+              </a>
+
+            </td>
+          </tr>
+        
+          <tr>
+            <td class="hero_background sabsat_bottom" align="center" valign="top" width="100%" style="height:439px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/2020-sabsat-module_c.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+              <div>
+                <!--[if gte mso 9]>
+                <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 439px;" src="https://rauxa-email.s3.amazonaws.com/TB/2020-sabsat-module_c.jpg" />
+                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:439px">
+                <v:fill opacity="0%" color="#ffffff"/>
+                <v:textbox inset="0,0,0,0">
+                <![endif]--> 
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
+
+
+                <tr>
+                  <td align="center" class="fontPoppins hero_bodycopy sabsat_bottom_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:16px;">
+                     And now you can steal a free <br/>
+                     Doritos® Locos Tacos on <br/>
+                     Wednesday, 10/28. <br/>
+                  </td>
+
+                </tr> 
+                
+                <tr>
+                  <td class="hero_cta_wrapper sabsat_bottom_cta_wrapper" align="center" style="padding-top: 25px; padding-bottom: 25px">
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
+
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td class="hero_cta" align="center" bgcolor="#ef2962" height="90" width="350">
+                          <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/stealataco/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102320-Xbox-Last-Chance&utm_content=sabsat-cta" target="_blank" style="width: 100%; color:#ffffff; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
+
+                            <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;">
+                              Learn More
+                            </span> 
+
+                          </a>
+                        </td>
+                        <td>&nbsp;</td>
+                      </tr>
+
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" class="fontPoppins sabsat_bottom_legal" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 13px; line-height: 19px; padding-top:0px;">
+
+                     NO PURCHASE NECESSARY. Limit (1)  per person, at <br/>
+                     participating locations, while supplies last. Terms: <br/>
+                     <a href="https://www.tacobell.com/stealataco/terms.html" style="color: #ffffff; text-decoration: none;" target="_blank">Tacobell.com/stealataco/terms</a>. ©2020 Taco Bell IP <br/>
+                     Holder, LLC.
+                  </td>
+
+                </tr> 
+                  
+  
+
+                </table>
+                <!--[if gte mso 9]> 
+                </v:textbox>
+                </v:fill>
+                </v:rect>
+                </v:image>
+                <![endif]--> 
+              </div>
+            </td>
+
+          </tr>
+
+        
+        </table>
+
+        <!--  SABSAT -->
+
+
+
+
+
 				   
+				  
 				  <!-- Certona -->
+				  <!--
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
                 <tr>
                     <td colspan="2" height="30" valign="top"><img height="30" name="Cont_11" src="https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_modular/spacer.gif" style="display: block; outline:none; text-decoration:none; border:none;" width="30" /></td>
@@ -839,22 +1021,24 @@
                 </tr>
                 <tr>
                     <td valign="top">
-                      <a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=certona-1" target="_blank" xt="SPNOTRACK">
+                      <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/taco-bell?campaignid=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=certona-1&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_source=silverpop&utm_medium=email" target="_blank" xt="SPNOTRACK">
                         <img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" />
                       </a>
                     </td>
                     <td valign="top">
-                      <a href="http://ris.res-x.com/?appid=TacoBell01&index=2&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=certona-2" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=2&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                      <a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/taco-bell?campaignid=mktg_101920-Comfort-Food&utm_content=certona-2&utm_campaign=mktg_101920-Comfort-Food&utm_source=silverpop&utm_medium=email" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=2&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
                 </tr>
                 <tr>
-                    <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=3&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=certona-3" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=3&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
-                    <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=4&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=certona-4" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=4&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                    <td valign="top"><a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/taco-bell?campaignid=mktg_101920-Comfort-Food&utm_content=certona-3&utm_campaign=mktg_101920-Comfort-Food&utm_source=silverpop&utm_medium=email" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=3&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                    <td valign="top"><a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/taco-bell?campaignid=mktg_101920-Comfort-Food&utm_content=certona-4&utm_campaign=mktg_101920-Comfort-Food&utm_source=silverpop&utm_medium=email" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=4&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
                 </tr>
                 <tr>
-                    <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=5&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=certona-5" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=5&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
-                    <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=6&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=certona-6" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=6&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                    <td valign="top"><a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/taco-bell?campaignid=mktg_101920-Comfort-Food&utm_content=certona-5&utm_campaign=mktg_101920-Comfort-Food&utm_source=silverpop&utm_medium=email" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=5&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                    <td valign="top"><a href="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/taco-bell?campaignid=mktg_101920-Comfort-Food&utm_content=certona-6&utm_campaign=mktg_101920-Comfort-Food&utm_source=silverpop&utm_medium=email" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=6&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="device-width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+
                 </tr>
               </table>
+-->
               <!-- Certona -->              
                 
 
@@ -931,12 +1115,7 @@
                                 </td>
                               </tr>
 
-                              <tr>
-                                <td align="center"  class="fontPoppins drive_thru_disclaimer" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 14px; line-height: 18px; padding-top: 0px; padding-bottom: 30px;">
-                                  For details on contactless service see <a href="https://www.tacobell.com/news/taco-bells-enhanced-restaurant-safty-steps?selectedTag=&selectYear=2020?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=contactless-url" style="text-decoration: underline; color: #ffffff;">www.tacobell.com/contactless_drive-thru</a>
-                                </td>
-                              
-                              </tr>    
+                                  
                              
 
                             </table>
@@ -1117,10 +1296,10 @@
 														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
 								  
-								  At limited participating U.S. Taco Bell locations <br class="hide_in_mobile" />
-								  for a limited time only. Contact local restaurant <br class="hide_in_mobile" />
-								  for prices, hours and participation, which vary. Taxes <br class="hide_in_mobile" />
-								  extra. Drinks exclude Freezes. *Double the seasoned <br class="hide_in_mobile" />
+								  At limited participating U.S. Taco Bell locations<br class="hide_in_mobile" />&nbsp;
+								  for a limited time only. Contact local restaurant<br class="hide_in_mobile" />&nbsp;
+								  for prices, hours and participation, which vary. Taxes<br class="hide_in_mobile" />&nbsp;
+								  extra. Drinks exclude Freezes. *Double the seasoned<br class="hide_in_mobile" />&nbsp;
 								  beef as compared to a Crunchy Taco.
                             
                             
@@ -1132,24 +1311,33 @@
 
 														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                All beverage related trademarks are owned by PepsiCo,<br class="hide_in_mobile" />
+                                All beverage related trademarks are owned by PepsiCo,<br class="hide_in_mobile" />&nbsp;
 															Inc. and its affiliates and Subsidiaries.</td>
 														</tr>
 														<tr>
 															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
 														</tr>
+							  <tr>
+                              <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
+                                ©2020 Taco Bell IP Holder, LLC</td>
+														</tr>
+							  
+							  							<tr>
+															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+														</tr>
+
 
 
 														<tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                You get emails from Taco Bell because you love tacos.<br class="hide_in_mobile" />
+                                You get emails from Taco Bell because you love tacos.<br class="hide_in_mobile" />&nbsp;
 															<a href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_102720-Grande-Stacker-Box-Last-Chance&utm_content=privacy_policy" name="privacy_policy" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">View</a> our Privacy Policy.</td>
 														</tr>
 														<tr>
 															<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
 														</tr>
 														<tr>
-															<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"><span style="color:#000000">This email was sent by Taco Bell located at<br class="hide_in_mobile" />
+															<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"><span style="color:#000000">This email was sent by Taco Bell located at<br class="hide_in_mobile" />&nbsp;
 															1&zwnj; Glen Bell Way, Irvine, California 92618</span></td>
 														</tr>
 														<tr>
