@@ -569,6 +569,21 @@
 <body style="padding:0px; margin:0 auto;">
 	<style>
 
+		@media (max-width:540px) {
+
+			.& .hide_in_mobile {
+				display: none !important;
+				overflow: hidden!important;
+				margin: 0!important;
+				font-size: 0!important;
+				max-height: 0!important;
+				visibility: hidden;
+				height: 0px !important;
+				width: 0px !important;
+			}
+
+		}
+
 		@media (max-width:480px){
 			.& .drive_thru_background.background_full_width {
 				background-size: 100% !important;
