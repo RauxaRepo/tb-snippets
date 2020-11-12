@@ -164,7 +164,14 @@
 				height: 24px !important;
 			}
 
-			
+			.hero_spacer_mid {
+				font-size: 400px !important;
+				line-height: 400px !important;
+				height: 400px !important;
+				padding-bottom: 60%;
+				position: relative;
+				overflow: hidden;
+			}
 			
 			.hero_fake_link_wrapper {
 				width: 100% !important;
@@ -183,11 +190,6 @@
 				line-height: 40px !important;
 			}
 			.hero_bodycopy {
-				font-size: 16px !important;
-				line-height: 24px !important;
-				padding-top: 5px !important;
-			}
-			.hero_bodycopy_two {
 				font-size: 16px !important;
 				line-height: 24px !important;
 				padding-top: 0px !important;
@@ -360,16 +362,17 @@
 			}
 
 			/*Samsung email*/
-			#MessageViewBody .download_app_top {
-				padding-bottom: 26%;
+			#MessageViewBody .hero_fake_link {
+				position: relative;
 			}
 
 			#MessageViewBody .hero_fake_link_wrapper {
 				position: relative;
-				height: auto !important;
 			
 			}
-			
+			#MessageViewBody .hero_cta_wrapper {
+    			padding-bottom: 20px !important;
+			}
 			
 		}
 
@@ -379,7 +382,9 @@
 
 		/* outlook android*/
 		@media (min-resolution: 1dpi) and (max-width:540px) {
-			
+			body[data-outlook-cycle] .hero_cta_wrapper {
+    			padding-bottom: 20px !important;
+			}
 			
 		}
 
@@ -389,17 +394,24 @@
 		/*pixel*/   
 
 		@media (device-width : 414px) and (device-height : 731px) and (-webkit-device-pixel-ratio : 2.6) {
-				
-			.hero_fake_link_wrapper {
-				position: relative;
-				height: 100% !important;
+				.hero_spacer_mid {
+				padding-bottom: 25%;
 			}
-			
+			.hero_cta_wrapper {
+				padding-bottom: 30px !important;
+			}
+			.download_app_top {
+				height: 500vh !important;
+				padding-bottom: 100% !important;
+			}
 			.hero_fake_link {
-				position: relative;
+				font-size: 0 !important;
+				line-height: 0 !important;
+				height: 500vh !important;
+				padding-bottom: 100% !important;
 			}
-			
 
+   
 					
 			
 			
@@ -409,15 +421,21 @@
 		/*iphone plus*/
 
 		@media (width:414px) {
-			
-			
+			.hero_spacer_mid {
+				padding-bottom: 64% !important;
+			}
+			.hero_space {
+				padding-bottom: 53% !important;
+			}
 		}
 
 		/* iphone 6/7/8/+ */
 
 		@media (width:375px) {
 			
-			
+			.hero_space {
+				padding-bottom: 53% !important;
+			}
 		}
 
 
@@ -434,35 +452,43 @@
 				line-height: 33px !important;
 			}
 			.hero_bodycopy {
-				padding-top: 5px !important;
-				font-size: 14px !important;
-				line-height: 18px !important;
-			}
-			.hero_bodycopy_two {
 				padding-top: 0px !important;
 				font-size: 14px !important;
 				line-height: 18px !important;
 			}
-			
+			.hero_steps_top {
+				padding-bottom: 15px !important;
+			}
 			.hero_cta_wrapper {
 				padding-top: 10px !important;
 				padding-bottom: 20px !important;
 			}
-			.cta_yellow_bg {
-				padding-top: 10px !important;
-				padding-bottom: 10px !important;
+
+
+			.hero_steps_copy {
+				font-size: 14px !important;
+				line-height: 18px !important;
 			}
-
-
-			
+			.hero_steps_num {
+				width: 32px !important;
+			}
 
 			.download_app_wrapper {
 				padding-bottom: 4px;
 			}
 
-			
-			
+			.hero_spacer_mid {
+				padding-bottom: 37%;
+			}
+			.hero_space {
+				font-size: 0 !important;
+				line-height: 0 !important;
+				height: 0vh !important;
+				padding-bottom: 50%;
+			}
 			/* HERO 1 : end */
+
+
 
 
 
@@ -498,14 +524,6 @@
 			height: 0vh !important;
 			padding-bottom: 27%;
 		  }
-		u ~ div .hero_fake_link {
-			position: relative;
-		}
-		
-		u ~ div .hero_fake_link_wrapper {
-			position: relative;
-			height: 100% !important;
-		}
 
 		}
 
@@ -521,6 +539,14 @@
 		  height: 30px !important;
 	   }
 
+		u ~ div .hero_spacer_mid {
+		  font-size: 930px !important;
+		  line-height: 930px !important;
+		  height: 930px !important;
+		}
+
+
+
 
 		u ~ div .download_app_top {
 			font-size: 0 !important;
@@ -529,15 +555,20 @@
 			padding-bottom: 32%;
 		}
 		
+		u ~ div .hero_space {
+			font-size: 0 !important;
+			line-height:0 !important;
+			height:0vh !important;     
+			padding-bottom: 50%;
+		}
+		
 		u ~ div .hero_fake_link {
 			position: relative;
 		}
 		
 		u ~ div .hero_fake_link_wrapper {
 			position: relative;
-			height: auto !important;
 		}
-	
 
 
 
@@ -608,15 +639,26 @@
 			}
 
 			 .& .hero_cta_wrapper {
-				padding-top: 20px !important;
-				padding-bottom: 30px !important;
+				padding-top: 15px !important;
+				 padding-bottom: 10px !important;
 			 }
-			
 			.& .hero_cta {
 				height: 60px !important;
 			}
 			
+			.& .hero_space {
+				font-size: 0 !important;
+				line-height: 0 !important;
+				height: 0vh !important;
+				padding-bottom: 0%;
+				display: none;
+				visibility: hidden;
+			}
 			
+			.& .hero_spacer_mid {
+				height: 50vh !important;
+				padding-bottom: 0% !important;
+			}
 			
 			.& .hero_wrapper_top {
 				height: 0px !important;
@@ -625,20 +667,12 @@
 				visibility: none;
 			}
 			
-			
 
 			.& .social_spacer {
 				width: 25px !important;
 			}
 			
 			.& .mb_yahoo {
-				font-size: 20px !important;
-				line-height: 22px !important;
-				padding-top: 15px !important;
-				margin: 0px !important;
-			}
-			
-			.& .mb_yahoo_hero{
 				font-size: 20px !important;
 				line-height: 22px !important;
 				padding-top: 0px !important;
@@ -657,7 +691,11 @@
 		}
 
 
-		
+		.& .hero_spacer_mid {
+		  height: 920px !important;
+			padding-bottom: 25% !important;
+
+		}
 
 		.& .download_app_wrapper {
 		  padding-bottom: 20px;
@@ -687,12 +725,10 @@
 				<table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" role="presentation">
 				  <tr>
 					<td class="fontPoppins" valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;"> 
-						A taco you'll love, no matter which one you&nbsp;choose
+						It’s juicy, sweet, and oh so sippable.
 					  <!--[if !mso]><!-->
 
-					  <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
-						&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
-					</div>
+					  <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"> &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj; </div>
 
 					  <!--<![endif]--></td>
 				  </tr>
@@ -721,7 +757,7 @@
                     </tr>
                         <tr>
                         <td>&nbsp;</td>
-                        <td align="center"><a name="nav_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=nav_logo" target="_blank"> <img class="tb_logo_mobile" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/> </a></td>
+                        <td align="center"><a name="nav_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=nav_logo" target="_blank"> <img class="tb_logo_mobile" alt="Taco Bell" src="https://rauxa-email.s3.amazonaws.com/TB/bell_lg_logo.png"/> </a></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
@@ -748,13 +784,13 @@
 				  <tr>
 					<td align="center" style="padding-top: 20px; padding-bottom: 20px;"><table cellpadding="0" align="center" cellspacing="0" border="0" role="presentation">
 						<tr>
-						  <td align="center" valign="middle"><a name="nav_menu" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=nav_menu" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif; font-weight: bold; color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Menu</span> </a></td>
+						  <td align="center" valign="middle"><a name="nav_menu" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=nav_menu" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif; font-weight: bold; color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Menu</span> </a></td>
 						  <td width="40" class="nav_spacer"></td>
-						  <td align="center" valign="middle"><a name="nav_locations" href="https://www.tacobell.com/locations?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=nav_locations" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Locations</span> </a></td>
+						  <td align="center" valign="middle"><a name="nav_locations" href="https://www.tacobell.com/locations?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=nav_locations" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Locations</span> </a></td>
 						  <td width="40" class="nav_spacer"></td>
-						  <td align="center" valign="middle"><a name="nav_delivery" href="https://www.tacobell.com/delivery?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=nav_delivery" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Delivery</span> </a></td>
+						  <td align="center" valign="middle"><a name="nav_delivery" href="https://www.tacobell.com/delivery?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=nav_delivery" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Delivery</span> </a></td>
 						  <td width="40" class="nav_spacer"></td>
-						  <td align="center" valign="middle"><a name="nav_taco_merch" href="https://www.tacobelltacoshop.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=nav_taco_merch" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Taco Merch</span> </a></td>
+						  <td align="center" valign="middle"><a name="nav_taco_merch" href="https://www.tacobelltacoshop.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=nav_taco_merch" target="_blank"  class="fontPoppins nav_link_mobile" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 16px; line-height: 22px;"> <span style="color:#ffffff">Taco Merch</span> </a></td>
 						</tr>
 					  </table></td>
 				  </tr>
@@ -769,26 +805,25 @@
 
 
                 <!--  HERO -->
-				  
-                <table border="0" width="100%" cellpadding="0" cellspacing="0"  bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+                <table border="0" width="100%" cellpadding="0" cellspacing="0"  style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
 
                 <tr>
-                    <td valign="top">
+                    <td>
 
-                    <a name="img" class="hero_fake_link_wrapper" href="https://www.tacobell.com/food/tacos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=img" target="_blank" style="width: 640px; height: 1105px">
-                        <img class="hero_fake_link" style="min-height: 0;" src="https://rauxa-email.s3.amazonaws.com/TB/E9_20_tacosevergreenrefresh_r2.1_a.gif" alt="" aria-hidden="true" />
+                    <a name="img" class="sabsat_mid_anchor" href="https://www.tacobell.com/food/drinks/dragon-fruit-freeze?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=img" target="_blank" style="width: 100%; height: 100%;">
+                        <img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/Dragon_Fruit_Bg_top.png" alt="" aria-hidden="true" />
                     </a>
 
                     </td>
                 </tr>
                 
                 <tr>
-                    <td class="hero_background background_full_width" align="center" valign="top"  width="100%" style="height:262px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/E9_20_tacosevergreenrefresh_r2.1_b.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                    <td class="hero_background background_full_width" align="center" valign="top" bgcolor="#ffffff" width="100%" style="height:326px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/Dragon_Fruit_Bg_bottom.png');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
                     <div>
                         <!--[if gte mso 9]>
-                        <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 340px;" src="https://rauxa-email.s3.amazonaws.com/TB/E9_20_tacosevergreenrefresh_r2.1_b.jpg" />
-                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:340px">
+                        <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 326px;" src="https://rauxa-email.s3.amazonaws.com/TB/Dragon_Fruit_Bg_bottom.png" />
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:326px">
                         <v:fill opacity="0%" color="#ffffff"/>
                         <v:textbox inset="0,0,0,0">
                         <![endif]--> 
@@ -797,8 +832,10 @@
                         
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding: 60px 20px 0px 20px;">
-                            No matter which one's your<br class="hide_in_mobile" />&nbsp;favorite, we can all agree &ndash; there's<br class="hide_in_mobile" />&nbsp;no better time for&nbsp;tacos.
+                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:60px;">
+                             Never tasted the flavor <br>
+							  of dragon fruit? It's an <br>
+							  experience you won't forget.	
                           </td>
 
                         </tr> 
@@ -810,8 +847,8 @@
 
                                 <tr>
                                   <td>&nbsp;</td>
-                                  <td class="hero_cta" align="center" bgcolor="#ffffff" height="90" width="350">
-                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/tacos?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=cta" target="_blank" style="width: 100%; color:#000000; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
+                                  <td class="hero_cta" align="center" bgcolor="#ff1a88" height="90" width="350">
+                                    <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/drinks/dragon-fruit-freeze?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=cta-order" target="_blank" style="width: 100%; color:#000000; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
 
                                       <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;">
                                         Order Now
@@ -844,9 +881,9 @@
                 </tr>
 
                 
-                </table> 
-	
+                </table>
 
+                <!--  HERO -->
 
 
 
@@ -870,18 +907,18 @@
 							<td width="30px" style="width: 30px;">&nbsp;</td>
 							<td><table  valing="top" border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
 								<tr>
-								  <td valing="top" align="left"><h3 class="fontPoppins drive_thru_headline" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 42px; line-height: 52px;"> <span style="font-family: Helvetica, Arial, sans-serif;"> Our Contactless <br/>
-									  Drive-Thru is&nbsp;Open </span></h3></td>
+								  <td valing="top" align="left"><h3  class="fontPoppins drive_thru_headline" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 42px; line-height: 52px;"> <span style="font-family: Helvetica, Arial, sans-serif;"> Our Contactless <br/>
+									  Drive-Thru is Open </span> </h3></td>
 								</tr>
 								<tr>
 								  <td valing="top"  class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 24px; line-height: 28px; padding-top: 12px;"> Order ahead and 
-									drive-thru for&nbsp;pickup </td>
+									drive-thru for pickup </td>
 								</tr>
 								<tr>
 								  <td class="drive_thru_cta_wrapper" align="center" style="padding-top: 30px; padding-bottom: 15px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 0px;" role="presentation">
 									  <tr>
 										<td>&nbsp;</td>
-										<td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;"> <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span> </a></td>
+										<td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=cta-DT-banner" target="_blank" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;"> <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span> </a></td>
 										<td>&nbsp;</td>
 									  </tr>
 									</table></td>
@@ -906,7 +943,7 @@
 
 				<!-- Download app -->
 
-				<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+				<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 				  <tr>
 					<td class="download_app_background background_full_width" align="center" valign="top" width="100%" style="height:300px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-bg-w.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;"><div> 
 						<!--[if gte mso 9]>
@@ -966,31 +1003,31 @@
 					<td align="center"><table border="0" align="center" valign="middle" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style=" font-size: 0px;" role="presentation">
 						<tr>
 						  <td>
-							  <a href="https://www.facebook.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=facebook" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_fb.jpg" alt="Facebook"> </a>
+							  <a href="https://www.facebook.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=facebook" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_fb.jpg" alt="Facebook"> </a>
 						  </td>
 
 						  <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
 						  <td>
-							  <a href="https://www.instagram.com/tacobell/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=instagram" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_instagram.jpg" alt="Instagram"> </a>
+							  <a href="https://www.instagram.com/tacobell/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=instagram" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_instagram.jpg" alt="Instagram"> </a>
 						  </td>
 
 						  <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
 						  <td>
-							  <a name="footer_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=footer_logo" target="_blank"> <img class="social_tb_logo" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_tb_logo.png" alt="Taco Bell"> </a>
+							  <a name="footer_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=footer_logo" target="_blank"> <img class="social_tb_logo" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_tb_logo.png" alt="Taco Bell"> </a>
 						  </td>
 
 						  <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
 						  <td>
-							  <a href="https://twitter.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=twitter" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_twitter.jpg" alt="Twitter"> </a>
+							  <a href="https://twitter.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=twitter" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_twitter.jpg" alt="Twitter"> </a>
 						  </td>
 
 						  <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
 						  <td>
-							  <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=youtube" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_youtube.jpg" alt="Youtube"> </a>
+							  <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=youtube" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_youtube.jpg" alt="Youtube"> </a>
 						  </td>
 						</tr>
 					  </table></td>
@@ -1011,21 +1048,34 @@
 							  <tr>
                                 <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
 									
-									At participating U.S. Taco Bell® locations. Contact local<br class="hide_in_mobile" />&nbsp;
-									restaurant for prices, hours and participation, which vary. Tax extra
-									
-                                    
+									Available at participating U.S. Taco Bell® locations. Contact store<br class="hide_in_mobile" />&nbsp;
+									for price, hours and participation which vary. Additional terms<br class="hide_in_mobile" />&nbsp;
+									apply. Tax extra. Visit <a href="https://www.tacobell.com/delivery" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">www.tacobell.com/delivery</a> for delivery<br class="hide_in_mobile" />&nbsp;
+									availability. Delivery, service and small order delivery fees may<br class="hide_in_mobile" />&nbsp;
+									apply. Freezes are made with artificial flavors and contain no fruit juice.
+
                                 
                                 </td>
 							  </tr>
-							  
-							  
+							  <tr>
+								<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+							  </tr>
+							  <tr>
+								<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">©2020 Taco Bell IP Holder, LLC</td>
+							  </tr>
+							  <tr>
+								<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+							  </tr>
+							  <tr>
+								<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">All beverage related trademarks are owned by PepsiCo, Inc.<br class="hide_in_mobile" />&nbsp;
+									and its affiliates and Subsidiaries.</td>
+							  </tr>
 							  <tr>
 								<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
 							  </tr>
 							  <tr>
 								<td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"> You get emails from Taco Bell because you love tacos.<br class="hide_in_mobile" />
-								  <a href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_111320-Tacos&utm_content=privacy_policy" name="privacy_policy" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">View</a> our Privacy Policy.</td>
+								  <a href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_110220-Dragon-Fruit-Freeze&utm_content=privacy_policy" name="privacy_policy" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">View</a> our Privacy Policy.</td>
 							  </tr>
 							  <tr>
 								<td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
