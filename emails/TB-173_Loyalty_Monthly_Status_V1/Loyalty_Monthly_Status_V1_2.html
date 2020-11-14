@@ -182,14 +182,21 @@
 				font-size: 32px !important;
 				line-height: 40px !important;
 			}
+
+			.hero_bodycopy_wrapper {
+				padding-top: 10px !important;
+				padding-bottom: 4% !important;
+			}
+
 			.hero_bodycopy {
 				font-size: 18px !important;
-				line-height: 28px !important;
-				padding-top: 5px !important;
+				line-height: 25px !important;
+				padding-top: 0px !important;
 			}
+	
 			.hero_cta_wrapper {
-				padding-top: 14px !important;
-				padding-bottom: 14px !important;
+				padding-top: 11.5% !important;
+				padding-bottom: 11.5% !important;
 			}
 			.hero_cta_link {
 				font-size: 20px !important;
@@ -244,21 +251,26 @@
 			*/
 
 			.level_wrapper {
-				height: 47vh !important;
+				height: 100% !important;
 			}
 
 			.level_content {
-				width: 50% !important;
+				width: 58% !important;
+			}
+
+			.level_content_top {
+				padding-top: 36% !important;
 			}
 
 			.level_label {
-				font-size: 16px !important;
-				line-height: 18px !important;
+				font-size: 5vw !important;
+				line-height: 1.125 !important;
 			}
 
 			.level_option {
-				font-size: 16px !important;
-				line-height: 18px !important;
+				font-size: 7vw !important;
+				line-height: 1.125 !important;
+				padding-bottom: 5% !important;
 			}
 
 
@@ -388,11 +400,13 @@
 
 		@media (max-width:375px) {
 
+			.level_content_top {
+				padding-top: 29% !important;
+			}
 		}
 
 		/* outlook android*/
 		@media (min-resolution: 1dpi) and (max-width:540px) {
-			
 			
 		}
 
@@ -402,100 +416,33 @@
 		/*pixel 2 and Pixel 2 XL*/   
 
 		@media only screen and (min-width: 411px) and (max-width: 767px) {
-				
-			.hero_fake_link_wrapper {
-				position: relative;
-				height: 100% !important;
-			}
-			
-			.hero_fake_link {
-				position: relative;
-			}
-            
-            .hero_headline {
-				font-size: 32px !important;
-				line-height: 40px !important;
-                padding-bottom:15px!important;
-			}
-			
-            .level_wrapper {
-				height: 47vh !important;
-			}
-					
-			
+
 			
 		}
 
-        /* 2436x1125px at 458ppi iPhone 11 Pro */
-        @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) {
-            .level_wrapper {
-				height: 52vh !important;
-			}
-        }
 
-        /* 1792x828px at 326ppi iPhone XR */
-        @media only screen 
-            and (device-width : 414px) 
-            and (device-height : 896px) 
-            and (-webkit-device-pixel-ratio : 2) {
-                .level_top {
-                    height: 32px !important;
-                    font-size:32px!important;
-                    line-height:32px!important;
-                }
-            }
+
+
 		
 		
 		/*iphone plus*/
 
 		@media (width:414px) {
 			
-            .hero_headline {
-				font-size: 32px !important;
-				line-height: 40px !important;
-                padding-bottom:15px!important;
-			}
+        
 
-            .level_top {
-				height: 110px !important;
-                font-size:110px!important;
-                line-height:110px!important;
-			}
+          
 			
 		}
-        /*iPhone 6/7/8 Plus */
-        @media screen and (device-aspect-ratio: 40/71) {
-            .level_top {
-				height: 32px !important;
-                font-size:32px!important;
-                line-height:32px!important;
-			}
-        }
+
 
 		/* iphone 6/7/8/+ */
 
 		@media (width:375px) {
 			
-            .hero_headline {
-				font-size: 32px !important;
-				line-height: 40px !important;
-                padding-bottom:15px!important;
-			}
-			
+          
 		}
 
-        /* iPhone X */
-        @media only screen 
-            and (device-width : 375px) 
-            and (device-height : 812px) 
-            and (-webkit-device-pixel-ratio : 3) {
-                
-                .level_top {
-				height: 32px !important;
-                font-size:32px!important;
-                line-height:32px!important;
-			}
-            }
 
 
 
@@ -507,26 +454,42 @@
 			}
 			/* HERO 1 : start */
 			.hero_headline {
-				font-size: 32px !important;
-				line-height: 40px !important;
-                padding-bottom:15px!important;
+				
+				font-size: 26px !important;
+				line-height: 34px !important;
+				
 			}
+
 			.hero_bodycopy {
-				padding-top: 5px !important;
-				font-size: 18px !important;
-				line-height: 28px !important;
+				
+				font-size: 16px !important;
+				line-height: 23px !important;
+				
 			}
+
+
+
+			.hero_bodycopy_wrapper {
+				padding-top: 10px !important;
+				padding-bottom: 4% !important;
+			}
+
+
 			
 			.hero_cta_wrapper {
-				padding-top: 9px !important;
-				padding-bottom: 15px !important;
+				padding-top: 11.5% !important;
+				padding-bottom: 11.5% !important;
 			}
+
 			.cta_yellow_bg {
 				padding-top: 10px !important;
 				padding-bottom: 10px !important;
 			}
 
 
+			.level_content_top {
+				padding-top: 25% !important;
+			}
 			
 
 			.download_app_wrapper {
@@ -885,9 +848,9 @@
       
                                 <td align="center" style="">
       
-                                  <h1 class="fontPoppinss hero_headline" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 45px; line-height: 51px;">
+                                  <h1 style="color:#ffffff; text-decoration:none;">
                                       <a style="color:ffffff; text-decoration:none;" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Account-Status-Hot%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Account-Status-Hot&utm_medium=email&utm_source=silverpop&utm_content=image">
-                                    <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif; color:#ffffff;">
+                                    <span class="fontPoppins hero_headline" style="font-weight: bold;font-family: Helvetica, Arial, sans-serif; color:#ffffff; font-size: 45px; line-height: 55px;">
                                       We'll Get Right<br/>
                                       to the Points
                                     </span>
@@ -900,8 +863,8 @@
       
                               <tr>
       
-                                  <td align="center" class="fontPoppinss hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding: 60px 20px 0px 20px;">
-                                      <a style="color:#ffffff; text-decoration:none;" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Account-Status-Hot%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Account-Status-Hot&utm_medium=email&utm_source=silverpop&utm_content=image">
+                                  <td align="center" class="fontPoppins hero_bodycopy_wrapper" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; padding: 28px 20px 40px 20px;">
+                                      <a class="hero_bodycopy" style="color:#ffffff; text-decoration:none; font-size: 29px; line-height: 35px;" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Account-Status-Hot%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Account-Status-Hot&utm_medium=email&utm_source=silverpop&utm_content=image">
                                     You're on a hot streak. View your<br/> monthly recap below and don't<br/> forget to check your account for<br/> new&nbsp;rewards. 
                                   </a>
                                   </td>
@@ -911,7 +874,7 @@
 
 								<tr>
 									<td>
-										<table class="level_wrapper" valign="middle" height="524px" border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
+										<table class="level_wrapper" valign="middle" height="500px" border="0" width="100%" cellpadding="0" cellspacing="0" style="height: 500px;width:100%; font-size: 0px;" role="presentation">
       
       
                          
@@ -923,41 +886,39 @@
 													 <table valign="middle" border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 					 
 					 
+														 
 														 <tr>
-															 <td class="level_top" height="90" style="font-size: 90px; line-height:90px; height:90px;">&nbsp;</td>
-														 </tr>
-														 <tr>
-															 <td class="level_label" align="center" class="fontPoppins" style="font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 24px; line-height: 30px;">
+															 <td class="level_label fontPoppins level_content_top" align="center" style="font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 26px; line-height: 32px; padding-top: 32px">
 																 Current Level:
 															 </td>
 														 </tr>
 														 <tr>
-															 <td class="level_option" align="center" class="fontPoppins" style="padding-bottom: 30px;font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 40px; line-height: 40px;">
+															 <td class="level_option fontPoppins" align="center" style="font-weight: bold; padding-bottom: 30px;font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 44px; line-height: 44px;">
 																 <!--{{{membership_level}}}-->
 																 HOT
 															 </td>
 														 </tr>
 					 
 														 <tr>
-															 <td class="level_label" align="center" class="fontPoppins" style="font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 24px; line-height: 30px;">
+															 <td class="level_label fontPoppins" align="center" style="font-weight: bold; font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 26px; line-height: 32px;">
 																 Current Balance
 															 </td>
 														 </tr>
 														 <tr>
-															 <td class="level_option" align="center" class="fontPoppins" style="padding-bottom: 30px;font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 40px; line-height: 40px;">
+															 <td class="level_option fontPoppins" align="center" style="font-weight: bold; padding-bottom: 30px;font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 44px; line-height: 44px;">
 																 <!--{{{current_points_balance}}}-->
 																 100
 															 </td>
 														 </tr>
 					 
 														 <tr>
-															 <td class="level_label" align="center" class="fontPoppins" style="font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 24px; line-height: 30px;">
+															 <td class="level_label fontPoppins" align="center" style="font-weight: bold; font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 26px; line-height: 32px;">
 																 Points until<br/>
 																 next reward
 															 </td>
 														 </tr>
 														 <tr>
-															 <td class="level_option" align="center" class="fontPoppins" style="font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 40px; line-height: 40px;">
+															 <td class="level_option fontPoppins" align="center" style="font-weight: bold; font-weight: bold; font-family: Helvetica, Arial, sans-serif;font-size: 44px; line-height: 44px;">
 																 <!--{{{points_to_next_bank}}}-->
 																 100
 															 </td>
