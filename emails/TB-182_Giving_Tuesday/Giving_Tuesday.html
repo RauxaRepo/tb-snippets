@@ -11,15 +11,22 @@
 	<style type="text/css">
 		/* FONT : START */
 
-        @font-face {
-            font-family: ‘GintoNordBlack’;
-            src: url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/FatFrank-Free.otf');
-        }
+        
 
-        .fontGintoNordBlack {
-            font-family: 'GintoNordBlack', Helvetica, Arial, sans-serif !important;
+        @font-face {
+      font-family: 'FatFrank-Free' !important;
+      src: url(https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/FatFrank-Free.otf) format("opentype"),
+        url(https://m.media-amazon.com/images/G/01/sinatra/cyir/fonts/bookerlydisplay-regular-webfont._CB493860041_.woff2) format("woff2"),
+        url(https://m.media-amazon.com/images/G/01/sinatra/cyir/fonts/bookerlydisplay-regular-webfont._CB493860041_.woff) format("woff"),
+        url(https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/FatFrank-Free.ttf) format("truetype");
+      font-weight: normal !important;
+      font-style: normal !important;
+      mso-font-alt: 'Arial' !important;
+    }
+    .fontFatFrank {
+			font-family: 'FatFrank-Free', Helvetica, Arial, sans-serif !important;
 			letter-spacing: 0 !important;
-        }
+		}
 
 		@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 		.fontPoppins {
@@ -379,9 +386,7 @@
 			
 		}
 
-		@media (max-width:375px) {
-
-		}
+		
 
 		/* outlook android*/
 		@media (min-resolution: 1dpi) and (max-width:540px) {
@@ -409,30 +414,108 @@
 				padding-bottom: 22%;
 			}
 			
-
+            .image_full_width, .device-width {
+				width: 100% !important;
+				height: auto !important;
+			}
 					
 			
 			
 		}
 		
-		
-		/*iphone plus*/
+		/* iphone 5/SE */
 
-		@media (width:414px) {
+		@media (max-width:320px) and (height:568px) {
 			
+            .image_full_width, .device-width {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+            .hero_headline {
+                padding: 0px 0px 0px 0px !important;
+            }
+
+            .hero_headline2 {
+                font-size: 25px !important;
+				line-height: 33px !important;
+                padding-bottom: 0px 0px 10px 0px !important;
+            }
 			
 		}
+		
 
-		/* iphone 6/7/8/+ */
+		/* iphone 6/7/8 */
 
 		@media (width:375px) {
 			
+            .image_full_width, .device-width {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+            .hero_headline {
+                padding-bottom: 12px !important;
+            }
+
+            .hero_headline2 {
+                font-size: 25px !important;
+				line-height: 33px !important;
+                padding: 24px 0px 24px 0px !important;
+            }
+            
+            .hero_cta_wrapper {
+                padding-bottom: 30px !important;
+            }
+			
+		}
+
+        /* iphone 6/7/8/+ */
+
+		@media (width:414px) {
+			
+            .image_full_width, .device-width {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+            .hero_headline {
+                padding-bottom: 32px !important;
+            }
+
+            .hero_headline2 {
+                font-size: 25px !important;
+				line-height: 33px !important;
+                padding: 30px 0px 29px 0px !important;
+            }
+			
+		}
+
+        /* Pixel 2 & Pixel 2 XL */
+
+		@media (width:411px) {
+			
+            .image_full_width, .device-width {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+            .hero_headline {
+                padding-bottom: 30px !important;
+            }
+
+            .hero_headline2 {
+                font-size: 25px !important;
+				line-height: 33px !important;
+                padding: 0px 0px 0px 0px !important;
+            }
 			
 		}
 
 
 
 		@media (max-width:360px) {
+
 			/* nav mobile  */
 			.nav_link_mobile {
 				font-size: 12px !important;
@@ -442,7 +525,13 @@
 			.hero_headline {
 				font-size: 25px !important;
 				line-height: 33px !important;
+                padding-bottom: 32px !important;
 			}
+            .hero_headline2 {
+                font-size: 25px !important;
+				line-height: 33px !important;
+                padding: 0px 0px 0px 0px !important;
+            }
 			.hero_bodycopy {
 				padding-top: 5px !important;
 				font-size: 14px !important;
@@ -454,7 +543,10 @@
 				padding-bottom: 20px !important;
 			}
 
-
+            .image_full_width, .device-width {
+				width: 100% !important;
+				height: auto !important;
+			}
 			
 
 			.download_app_wrapper {
@@ -584,6 +676,11 @@
 			.& .hero_background.background_full_width {
 				background-size: 100% !important;
 				background-position: center top !important;
+				height: auto !important;
+			}
+
+            .& .image_full_width, .device-width {
+				width: 100% !important;
 				height: auto !important;
 			}
 
@@ -786,7 +883,7 @@
 
                 
                 <tr>
-                    <td class="hero_background background_full_width" align="center" valign="top"  width="100%" style="height:327px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-182_Giving_Tuesday/E9_20_Email_TACOGIFTER_v3_03.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                    <td class="hero_background background_full_width image_full_width" align="center" valign="top"  width="100%" style="height:327px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-182_Giving_Tuesday/E9_20_Email_TACOGIFTER_v3_03.jpg');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
                     <div>
                     
                         <!--[if gte mso 9]>
@@ -799,14 +896,12 @@
 
                             <tr>
       
-                                <td align="center" style="">
+                                <td align="center">
       
-                                  <h1 class="fontGintoNordBlack hero_headline" style="font-family: GintoNordBlack, Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 45px; line-height: 51px; padding: 20px 0px 0px 0px;">
-                                      <a class="fontGintoNordBlack hero_headline" style="color:ffffff; text-decoration:none; font-size: 45px; line-height: 51px;" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Near-Fire-Tier%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Near-Fire-Tier&utm_medium=email&utm_source=silverpop&utm_content=image">
-                                    <span class="fontGintoNordBlack hero_headline" style="font-family: GintoNordBlack, Helvetica, Arial, sans-serif; color:#ffffff; font-size: 45px; line-height: 51px;">
-                                      Take Your<br/>
-                                      Rewards to New<br/>
-                                      Fahrenheits
+                                  <h1 class="hero_headline fontFatFrank" style="font-family: FatFrank-Free, Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 60px; line-height: 66px; padding: 20px 20px 20px 20px;">
+                                      <a class="hero_headline fontFatFrank" style="color:ffffff; text-decoration:none; font-size: 60px; line-height: 66px;" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Near-Fire-Tier%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Near-Fire-Tier&utm_medium=email&utm_source=silverpop&utm_content=image">
+                                    <span class="hero_headline fontFatFrank" style="font-family: FatFrank-Free, Helvetica, Arial, sans-serif; color:#ffffff; font-size: 60px; line-height: 66px;">
+                                        Begin this<br /> season of<br /> giving with<br /> Taco&nbsp;Gifter
                                     </span>
                                   </a>                              
                                   </h1>
@@ -843,8 +938,8 @@
                         
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding-top:0px;">
-                            A taco sent instantly to friends<br class="hide_in_mobile" />&nbsp;and family. Now that's the magic<br class="hide_in_mobile" />&nbsp;of the season.
+                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding: 0px 20px 0px 20px;">
+                            A taco sent instantly to friends<br /> and family. Now that's the magic<br /> of the&nbsp;season.
                           </td>
 
                         </tr> 
@@ -922,9 +1017,9 @@
       
                                 <td align="center">
       
-                                  <h1 class="fontPoppins hero_headline" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 45px; line-height: 51px; padding: 20px 0px 0px 0px;">
-                                      <a class="fontPoppins hero_headline" style="color:ffffff; text-decoration:none; font-size: 45px; line-height: 51px;" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Near-Fire-Tier%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Near-Fire-Tier&utm_medium=email&utm_source=silverpop&utm_content=image">
-                                    <span class="fontPoppins hero_headline" style="font-family: Helvetica, Arial, sans-serif; color:#ffffff; font-size: 45px; line-height: 51px;">
+                                  <h1 class="fontPoppins hero_headline2" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 45px; line-height: 51px; padding: 30px 0px 0px 0px;">
+                                      <a class="fontPoppins hero_headline2" style="color:ffffff; text-decoration:none; font-size: 45px; line-height: 51px;" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Near-Fire-Tier%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Near-Fire-Tier&utm_medium=email&utm_source=silverpop&utm_content=image">
+                                    <span class="fontPoppins hero_headline2" style="font-family: Helvetica, Arial, sans-serif; color:#ffffff; font-size: 55px; line-height: 61px;">
                                       Satisfy Those<br/>
                                       Cravings Too
                                     </span>
