@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-
-<head>
-</head>
+	<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+	  xmlns:o="urn:schemas-microsoft-com:office:office">
+	<head>
+	</head>
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -212,11 +212,11 @@
 
 
 
-      .hero_fake_link_wrapper {
-        width: 100% !important;
-        height: 100% !important;
-        display: inline-block;
-      }
+     .hero_fake_link_wrapper {
+			width: 100% !important;
+			height: auto !important;
+			display: block;
+		}
 
       .hero_fake_link {
         width: 100% !important;
@@ -232,7 +232,7 @@
       .hero_bodycopy {
         font-size: 18px !important;
         line-height: 28px !important;
-        padding-top: 30px !important;
+        padding-top: 0px !important;
       }
 
       .hero_cta_wrapper {
@@ -449,8 +449,6 @@
 
       #MessageViewBody .hero_fake_link_wrapper {
         position: relative;
-        height: auto !important;
-
       }
 
 
@@ -603,10 +601,6 @@
         position: relative;
       }
 
-      u~div .hero_fake_link_wrapper {
-        position: relative;
-        height: 100% !important;
-      }
 
     }
 
@@ -632,24 +626,14 @@
       padding-bottom: 32%;
     }
 
-    u~div .hero_fake_link {
+    u ~ div .hero_fake_link {
       position: relative;
     }
 
-    u~div .hero_fake_link_wrapper {
+    u ~ div .hero_fake_link_wrapper {
       position: relative;
-      height: auto !important;
     }
 
-    u~div .hero_bodycopy {
-      font-size: 18px !important;
-      line-height: 28px !important;
-      padding-top: 30px !important;
-    }
-
-    /* u~div .hero_headline {
-      padding-top: 60px !important;
-    } */
   </style>
 
   <!--<![endif]-->
@@ -702,11 +686,11 @@
         background-position: center top !important;
       }
 
-      .& .hero_background.background_full_width {
-        background-size: 100% 100% !important;
-        background-position: center top !important;
-        height: 100% !important;
-      }
+     .& .hero_background.background_full_width {
+					background-size: 100% !important;
+					background-position: center top !important;
+				}
+		
 
       .& .download_app.drive_thru_cta {
         padding-top: 38% !important;
@@ -752,6 +736,18 @@
         line-height: 160px !important;
         height: 160px !important;
       }
+		.& .hero_headline {
+					padding-top: 30px;
+					padding-bottom: 15px;
+					font-size: 32px !important;
+					line-height: 40px !important;
+				}
+		.& .hero_bodycopy {
+					padding-top: 0px !important;
+					padding-bottom: 10px !important;
+					font-size: 18px !important;
+					line-height: 24px !important;
+				  }
 
 
 
@@ -772,18 +768,14 @@
         padding-top: 0px !important;
         margin: 0px !important;
       }
-    }
-
-
-    .& .hero_wrapper_top {
+		 .& .hero_wrapper_top {
       display: none;
       visibility: none;
     }
-
-
-    .& .hero_headline {
-      padding-top: 70px !important;
     }
+
+
+   
 
 
 
@@ -801,6 +793,7 @@
     .& .drive_thru_cta_wrapper {
       padding-bottom: 40px !important;
     }
+	  
   </style>
   <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
     <tr>
@@ -915,7 +908,7 @@
 
 
                 <tr>
-                  <td class="hero_background image_full_width" align="center" valign="top" width="640" style="height:1025px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-188_Loyalty-Near_Fire_Tier/E820_Email_Loyalty_NearFireBG_1027.gif');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                  <td class="hero_background background_full_width" align="center" valign="top" width="640" style="height:1025px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-188_Loyalty-Near_Fire_Tier/E820_Email_Loyalty_NearFireBG_1027.gif');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
                     <div>
                       <!--[if gte mso 9]>
                             <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 1025px;" src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-188_Loyalty-Near_Fire_Tier/E820_Email_Loyalty_NearFireBG_1027.gif" />
@@ -947,11 +940,23 @@
                           </td>
 
                         </tr>
+						  <tr>
+							  <td valign="top">
+
+							  <a name="img" class="hero_fake_link_wrapper" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Near-Fire-Tier%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Near-Fire-Tier&utm_medium=email&utm_source=silverpop&utm_content=image" target="_blank">
+								<img class="hero_fake_link" style="" src="https://rauxa-email.s3.amazonaws.com/TB/Loyalty-Near-Fire-Tier_fake_link.png" alt="" aria-hidden="true" />
+							   </a>
+
+							  </td>
+							</tr>
+						  
+						  <!--
                         <tr>
                           <td class="hero_wrapper_top2" height="350px" style="font-size: 350px; line-height:350px;"><a
                               href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Near-Fire-Tier%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Near-Fire-Tier&utm_medium=email&utm_source=silverpop&utm_content=image"><img class="hero_wrapper_top2"
                                 height="350px" style="height: 350px; max-height:350px; width: 100%;" src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-189_Friendsgiving/blank_100x100.png" alt="" aria-hidden="true" /></a></td>
                         </tr>
+-->
                         <tr>
 
                           <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family: 'Poppins', Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 32px; line-height: 42px; padding-top: 60px; padding-left:20px; padding-right:20px;">
@@ -965,7 +970,7 @@
 
                         <tr>
 
-                          <td class="hero_cta_wrapper" align="center" style="padding-top: 25px; padding-bottom: 38px">
+                          <td class="hero_cta_wrapper" align="center" style="padding-top: 25px; padding-bottom: 50px">
                             <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
                               <tr>
