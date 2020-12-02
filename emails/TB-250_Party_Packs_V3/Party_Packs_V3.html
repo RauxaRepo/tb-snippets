@@ -149,6 +149,9 @@
         height: 0px !important;
         width: 0px !important;
       }
+		.no_widow_word{
+			white-space: nowrap !important;
+		}
 
       .image_full_width,
       .device-width {
@@ -434,7 +437,7 @@
 
       #MessageViewBody .hero_fake_link_wrapper {
         position: relative;
-        height: auto !important;
+        height: 100% !important;
 
       }
 
@@ -466,6 +469,7 @@
 
       .hero_fake_link_wrapper {
         position: relative;
+		  height: 100% !important;
       }
 
       .hero_fake_link {
@@ -475,6 +479,10 @@
       .hero_bodycopy {
         padding-top: 0px !important;
       }
+		
+		.no_widow_word{
+			white-space: nowrap !important;
+		}
 
 
 
@@ -577,6 +585,10 @@
       u~div .hero_fake_link_wrapper {
         position: relative;
       }
+		
+	  u~div .no_widow_word{
+			white-space: nowrap !important;
+		}
 
 
 
@@ -692,8 +704,8 @@
         padding-bottom: 20px !important;
       }
 		.& .hero_cta_wrapper_2 {
-        padding-top: 10px !important;
-        padding-bottom: 20px !important;
+        padding-top: 10px;
+        padding-bottom: 20px;
       }
 
       .& .hero_cta {
@@ -750,6 +762,8 @@
     .& .hero_headline {
       padding-top: 30px;
     }
+	  
+	 
 
 
     .& .download_app_wrapper {
@@ -876,7 +890,7 @@
 
               <!--  HERO 2 start-->
 
-              <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#361448" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+              <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#7004ae" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
 
                 <!--PRODUCT START-->
@@ -914,9 +928,18 @@
 
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding: 10px 30px 0px 30px;">
+                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding: 30px 30px 0px 30px;">
 
-                            <span style="font-weight: bold">Taco Party Pack</span><br />Nothing satisfies like tacos by the<br class="hide_in_mobile" />&nbsp;dozen
+                            <span style="font-weight: bold">Taco Party Pack</span>
+							  
+                          </td>
+
+                        </tr>
+						  <tr>
+
+                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding: 20px 30px 0px 30px;">
+
+                            Nothing satisfies like tacos by <span class="no_widow_word">the<br class="hide_in_mobile" />&nbsp;dozen</span>
 							  
                           </td>
 
@@ -924,7 +947,7 @@
 
                         <tr>
 
-                          <td class="hero_cta_wrapper_2" align="center" style="padding-top: 25px; padding-bottom: 50px">
+                          <td class="hero_cta_wrapper_2" align="center" style="padding-top: 25px; padding-bottom: 45px">
                             <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
                               <tr>
