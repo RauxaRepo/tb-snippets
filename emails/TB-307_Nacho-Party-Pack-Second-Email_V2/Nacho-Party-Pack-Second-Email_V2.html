@@ -136,6 +136,27 @@
 
     /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
 
+
+
+
+    @media (max-width:639px) {
+
+      .background_full_width {
+        background-size: 100% auto !important;
+        background-position: top center !important;
+        height: auto !important;
+      }
+
+      .image_full_width,
+      .device-width {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+    }
+
+    
+
     @media (max-width:540px) {
       .mobile_container {
         min-width: 100% !important;
@@ -154,17 +175,8 @@
         width: 0px !important;
       }
 
-      .image_full_width,
-      .device-width {
-        width: 100% !important;
-        height: auto !important;
-      }
 
-      .background_full_width {
-        background-size: 100% auto !important;
-        background-position: top center !important;
-        height: auto !important;
-      }
+
 
       .tb_logo_wrapper {
         padding-top: 0px !important;
@@ -591,12 +603,7 @@
     /*Gmail desktop tweaks*/
     @media screen and (max-width:480px) {
 
-      u~div .download_app_top {
-        font-size: 0 !important;
-        line-height: 0 !important;
-        height: 0vh !important;
-        padding-bottom: 27%;
-      }
+
 
       u~div .hero_fake_link {
         position: relative;
@@ -623,11 +630,29 @@
     }
 
 
+    u~div .download_app_background.background_full_width {
+        background-size: 100% !important;
+        background-position: center top !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+
     u~div .download_app_top {
       font-size: 0 !important;
       line-height: 0 !important;
       height: 0vh !important;
-      padding-bottom: 32%;
+      padding-bottom: 28%;
+      background-origin: padding-box;
+    }
+
+    u~div .download_app_wrapper {
+      padding-bottom: 6%;
+    }
+
+    u~div .download_app_link img {
+      width: 76% !important;
+      height: auto !important;
     }
 
     u~div .hero_fake_link {
@@ -675,8 +700,15 @@
 					height: 0px !important;
 					width: 0px !important;
 					position: absolute;
-                    line-height: 0px !important;
+          line-height: 0px !important;
 				}
+
+       .& .image_full_width.background_full_width {
+          background-size: 100% !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+
 			}
     @media (max-width:480px) {
       .& .drive_thru_background.background_full_width {
@@ -697,23 +729,34 @@
 
       .& .download_app.drive_thru_cta {
         padding-top: 38% !important;
+        position: relative;
+        display: inline-block;
+       
+      }
+
+      .& .download_app_wrapper {
+        padding-top: 38%;
+        padding-bottom: 20px;
+      }
+
+      .& .download_app_top {
+        font-size: 0 !important;
+        line-height: 0 !important;
+        height: 0 !important;
+        padding-bottom: 0% !important;
+        display: none;
+        visibility: hidden;
       }
 
       .& .drive_thru_cta img {
         width: 75% !important;
       }
 
-      .& .download_app_top {
-        font-size: 0 !important;
-        line-height: 0 !important;
-        height: 0vh !important;
-        padding-bottom: 0%;
-        display: none;
-        visibility: hidden;
-      }
+
 
       .& .drive_thru_cta_wrapper {
         padding-bottom: 30px !important;
+
       }
 
       .& .hero_cta_wrapper {
@@ -777,9 +820,7 @@
     }
 
 
-    .& .download_app_wrapper {
-      padding-bottom: 20px;
-    }
+
 
 
     .& .drive_thru_headline {
@@ -973,10 +1014,13 @@
                         <td valign="top" align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px; padding: 10px 20px 0px 20px;">
                             <a class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px;" href="https://www.tacobell.com/food/nachos/nachos-party-pack?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_121220-NPP-No-Purchase&utm_content=image&guid=%%HybrisGUID%%">
                               <span class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 33px;">
-                                Friends, family, and far too <br/>
-                                nachos for one. Get a Nachos<br/>
-                                Party Pack&nbsp;together.
+                                Friends, family, and far too many<br/>
+                                nachos for one. Get a Nachos <br/>
+                                Party Pack&nbsp;together
                                 </span>
+
+                            
+                                
 
                                 
                             </a>
@@ -1061,7 +1105,7 @@
 
                               <span class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 20px; line-height: 1.5;">
                                 On the web or on the app,<br/>
-                                it's never been easier to place an order online.
+                                it's never been easier to place an order&nbsp;online.
                               </span>
                             
                         </td>
@@ -1076,11 +1120,11 @@
                             <tr>
                               <td>&nbsp;</td>
                               <td class="hero_cta" align="center" bgcolor="#ffffff" height="90" width="350">
-                                <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/login?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_121220-NPP-No-Purchase&utm_content=cta-reorder&guid=%%HybrisGUID%%" target="_blank"
+                                <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_121220-NPP-No-Purchase&utm_content=cta-no-purchase" target="_blank"
                                   style="width: 100%; color:#501098; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
   
                                   <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;">
-                                    Re-Order
+                                    Order Now
                                   </span>
   
                                 </a>
@@ -1169,11 +1213,11 @@
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
                 <tr>
-                  <td class="drive_thru_background background_full_width" align="center" valign="top" width="100%" style="height:425px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;">
+                  <td class="drive_thru_background background_full_width" align="center" valign="top" width="100%" style="height:415px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;">
                     <div>
                       <!--[if gte mso 9]>
-                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 425px;" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg" />
-                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:425px">
+                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 415px;" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg" />
+                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:415px">
                       <v:fill opacity="0%" color="#ffffff"/>
                       <v:textbox inset="0,0,0,0">
                       <![endif]--> 
@@ -1261,7 +1305,7 @@
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
                 <tr>
-                  <td class="download_app_background background_full_width" align="center" valign="top" width="100%" style="height:300px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-bg-w.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;">
+                  <td class="image_full_width download_app_background background_full_width" align="center" valign="top" width="100%" style="height:300px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-bg-w.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;">
                     <div>
                       <!--[if gte mso 9]>
                       <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 300px;" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-bg-w.jpg" />
