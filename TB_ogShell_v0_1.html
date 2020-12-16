@@ -508,74 +508,102 @@
 		}
 	</style>
 	<style type="text/css">
-    
-    
-    u ~ div h1,
-		u ~ div h2,
-		u ~ div h3 {
-		  margin: 0 ;
-		}
+   /*Gmail desktop tweaks*/
 
-		/*Gmail desktop tweaks*/
-		@media screen and  (max-width:480px) {
-		  
-       u ~ div .hero_wrapper_top {
-        font-size: 0px !important;
-        line-height: 0px !important;
-        height: 0px !important;
-       }
-      
-      u ~ div .level_content_top {
-				padding-top: 20% !important;
-			}
-      
-      u ~ div .level_option {
-				font-size: 6vw !important;
-				line-height: 1.125 !important;
-				padding-bottom: 4% !important;
-			}
+   @media (max-width:540px) {
 
-		  u ~ div .download_app_top {
-        font-size: 0 !important;
-        line-height: 0 !important;
-        height: 0vh !important;
-        padding-bottom: 27%;
-		  }
-      u ~ div .hero_fake_link {
-        position: relative;
-      }
-		
-      u ~ div .hero_fake_link_wrapper {
-        position: relative;
-        height: 100% !important;
-      }
+	u~div .background_full_width {
+	background-size: 100% auto !important;
+	background-position: top center !important;
+	height: auto !important;
+	}
 
-		}
+	u~div .image_full_width,
+	u~div .device-width {
+	width: 100% !important;
+	height: auto !important;
+	}
+
+	u~div .hero_background {
+	background-size: 100% 100% !important;
+	background-position: top center !important;
+	height: 100% !important;
+	}
+
+	u~div .drive_thru_copy {
+	font-size: 20px !important;
+	line-height: 24px !important;
+	}
+
+	u~div .drive_thru_cta_wrapper {
+	padding-bottom: 30px !important;
+	}
+
+	}
+
+
+	@media screen and (max-width:480px) {
 
 
 
+	u~div .hero_fake_link {
+	position: relative;
+	}
 
-		u ~ div .download_app_top {
-			font-size: 0 !important;
-			line-height:0 !important;
-			height:0vh !important;     
-			padding-bottom: 32%;
-		}
-		
-		u ~ div .hero_fake_link {
-			position: relative;
-		}
-		
-		u ~ div .hero_fake_link_wrapper {
-			position: relative;
-			height: auto !important;
-		}
-	
+	u~div .hero_fake_link_wrapper {
+	position: relative;
+	}
 
 
 
+	}
+
+	u~div h1,
+	u~div h2,
+	u~div h3 {
+	margin: 0;
+	}
+
+	u~div .hero_wrapper_top {
+	font-size: 30px !important;
+	line-height: 30px !important;
+	height: 30px !important;
+	}
 
 
+	u~div .download_app_background.background_full_width {
+	background-size: 100% !important;
+	background-position: center top !important;
+	width: 100% !important;
+	height: auto !important;
+	}
+
+
+	u~div .download_app_top {
+	font-size: 0 !important;
+	line-height: 0 !important;
+	height: 0vh !important;
+	padding-bottom: 28%;
+	background-origin: padding-box;
+	}
+
+	u~div .download_app_wrapper {
+	padding-bottom: 6%;
+	}
+
+	u~div .download_app_link img {
+	width: 76% !important;
+	height: auto !important;
+	}
+
+	u~div .hero_fake_link {
+	position: relative;
+	}
+
+	u~div .hero_fake_link_wrapper {
+	position: relative;
+	height: auto !important;
+	}
 	  </style>
 
 	<!--<![endif]--> 
@@ -601,137 +629,143 @@
 
 <body style="padding:0px; margin:0 auto;">
 	<style>
+	  @media (max-width:540px) {
 
-		@media (max-width:540px) {
+		.& .hide_in_yh{
+			display: none !important;
+			overflow: hidden!important;
+			margin: 0!important;
+			font-size: 0!important;
+			max-height: 0!important;
+			visibility: hidden;
+			height: 0px !important;
+			width: 0px !important;
+			position: absolute;
+			line-height: 0px !important;
+		}
+		}
+		@media (max-width:480px) {
+		.& .drive_thru_background.background_full_width {
+		background-size: 100% !important;
+		background-position: top right !important;
+		}
 
-			.& .hide_in_mobile {
-				display: none !important;
-				overflow: hidden!important;
-				margin: 0!important;
-				font-size: 0!important;
-				max-height: 0!important;
-				visibility: hidden;
-				height: 0px !important;
-				width: 0px !important;
-				position: absolute;
-			}
+		.& .download_app_background.background_full_width {
+		background-size: 100% !important;
+		background-position: center top !important;
+		}
 
-			.& .hero_wrapper_top {
-				font-size: 0 !important;
-				line-height: 0 !important;
-				height: 0 !important;
-				padding-bottom: 8%;
-			}
+		.& .hero_background.background_full_width {
+		background-size: 100% 100% !important;
+		background-position: center top !important;
+		height: 100% !important;
+		}
 
-			.& .hero_headline {
-				font-size: 36px !important;
-				line-height: 44px !important;
-			}
+		.& .download_app.drive_thru_cta {
+		padding-top: 38% !important;
+		position: relative;
+		display: inline-block;
+		border: 1px solid yellow;
+		}
 
-			.& .hero_bodycopy_wrapper {
-				padding-top: 20px !important;
-				padding-bottom: 4% !important;
-			}
+		.& .download_app_wrapper {
+		padding-top: 38%;
+		padding-bottom: 20px;
+		}
 
-			.& .hero_bodycopy {
-				font-size: 22px !important;
-				line-height: 29px !important;
-				padding-top: 0px !important;
-			}
+		.& .download_app_top {
+		font-size: 0 !important;
+		line-height: 0 !important;
+		height: 0 !important;
+		padding-bottom: 0% !important;
+		display: none;
+		visibility: hidden;
+		}
 
+		.& .drive_thru_cta img {
+		width: 75% !important;
+		}
+
+
+
+		.& .drive_thru_cta_wrapper {
+		padding-bottom: 30px !important;
 
 		}
 
-		@media (max-width:480px){
-			.& .drive_thru_background.background_full_width {
-				background-size: 100% !important;
-				background-position: top right !important;
-			}
+		.& .hero_cta_wrapper {
+		padding-top: 10px !important;
+		padding-bottom: 20px !important;
+		}
 
-			.& .download_app_background.background_full_width {
-				background-size: 100% !important;
-				background-position: center top !important;
-			}
-			
-			.& .hero_background.background_full_width {
-				background-size: 100% !important;
-				background-position: center top !important;
-				height: auto !important;
-			}
-
-			.& .download_app.drive_thru_cta {
-				padding-top: 38% !important;
-			}
-
-			.& .drive_thru_cta img {
-				width: 75% !important;
-			}
-
-			.& .download_app_top {
-				font-size: 0 !important;
-				line-height: 0 !important;
-				height: 0vh !important;
-				padding-bottom: 0%;
-				display: none;
-				visibility: hidden;
-			}
-
-			.& .drive_thru_cta_wrapper {
-				padding-bottom: 30px !important;
-			}
+		.& .hero_cta {
+		height: 60px !important;
+		}
 
 
-			
-			.& .hero_cta {
-				height: 60px !important;
-			}
-			
-			
 
-			.& .social_spacer {
-				width: 25px !important;
-			}
-			
+		.& .hero_wrapper_top {
+		height: 0px !important;
+		padding-top: 0 !important;
+		display: none;
+		visibility: none;
+		}
 
-			
-	
+
+
+		.& .social_spacer {
+		width: 25px !important;
+		}
+
+		.& .mb_yahoo {
+		font-size: 20px !important;
+		line-height: 22px !important;
+		padding-top: 15px !important;
+		margin: 0px !important;
+		}
+
+		.& .mb_yahoo_hero {
+		font-size: 20px !important;
+		line-height: 22px !important;
+		padding-top: 0px !important;
+		margin: 0px !important;
+		}
+
+		.& .hide_in_yh {
+		display: none !important;
+		overflow: hidden !important;
+		margin: 0 !important;
+		font-size: 0 !important;
+		max-height: 0 !important;
+		visibility: hidden;
+		height: 0px !important;
+		width: 0px !important;
+		}
 		}
 
 
 		.& .hero_wrapper_top {
-
+		display: none;
+		visibility: none;
 		}
 
 		.& .hero_headline {
-		  padding-top: 30px!important;
-          padding-bottom: 15px!important;
-		}
-    
-		.& .level_content_top {
-			padding-top: 50px !important;
-		}
-    
-		.& .hero_cta_wrapper {
-		padding-bottom: 90px !important;
+		padding:10px 0px 0px 0px!important;
 		}
 
 
 
-		.& .download_app_wrapper {
-		  padding-bottom: 20px;
-		}
 
 
 		.& .drive_thru_headline {
-		  padding-bottom: 0px !important;
-		  margin-bottom: 0;
-		  margin-top: 0;
-		}
-		
-		.& .drive_thru_cta_wrapper {
-			padding-bottom: 40px !important;
+		padding-bottom: 0px !important;
+		margin-bottom: 0;
+		margin-top: 0;
 		}
 
+		.& .drive_thru_cta_wrapper {
+		padding-bottom: 50px !important;
+		}
 	</style>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
 	  <tr>
