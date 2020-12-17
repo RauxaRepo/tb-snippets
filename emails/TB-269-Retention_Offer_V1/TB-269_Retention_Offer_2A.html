@@ -1,7 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office">
+	xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
+	<!-- Stripped out by Yahoo App Android -->
 </head>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -32,15 +33,11 @@
             font-weight: 600;
               font-style: normal;
         }
+
         /* FONT : END */
 
-            /* RESET STYLES */
-
-
-
-
-
-            /* CSS-RESET : START */
+		/* CSS-RESET : START */
+        
         * {
             padding: 0px;
             margin: 0px;
@@ -57,42 +54,39 @@
             width: 100% !important;
             background-color: #ffffff !important;
             margin: 0 auto !important;/*to center in samsung, #MessageViewBody hack was not working*/
-        }
-
-    h1,
-    h2,
-    h3 {
-      margin: 0 ;
-    }
-    
-    strong{
-	    font-weight: bold;
-    }
-
+        }		
+		h1,
+		h2,
+		h3 {
+			margin: 0 ;
+		}    
+		strong {
+			font-weight: bold;
+		}
         table {
             border-collapse: collapse;
             border-spacing: 0;
             padding: 0px;
             mso-table-lspace: 0pt !important;
             mso-table-rspace: 0pt !important;
-        }
+        }       
         td {
             border-collapse: collapse;
             border-spacing: 0;
             padding: 0px;
             mso-table-lspace: 0pt !important;
             mso-table-rspace: 0pt !important;
-        }
+        }        
         br {
             mso-line-height-rule: exactly;
-        }
+        }        
         td {
             mso-line-height-rule: exactly;
-        }
+        }        
         a {
             outline: 0;
             text-decoration: none;
-        }
+        }        
         img {
             display: block;
             border: 0;
@@ -103,35 +97,44 @@
             outline: none;
             text-decoration: none;
         }
+        
         /* CSS-RESET : END */
 
-              /* CLIENT-SPECIFIC STYLES */
+       /* CLIENT-SPECIFIC STYLES */
+        
         img {
             -ms-interpolation-mode: bicubic;
-        } /* Force IE to smoothly render resized images. */
+        } /* Force IE to smoothly render resized images. */       
         #outlook a {
             padding: 0;
         } /* Force Outlook 2007 and up to provide a "view in browser" message. */
         table {
             mso-table-lspace: 0pt;
             mso-table-rspace: 0pt;
-        } /* Remove spacing between tables in Outlook 2007 and up. */
+        } /* Remove spacing between tables in Outlook 2007 and up. */    
         p, a, td {
             mso-line-height-rule: exactly;
-        } /* Force Outlook to render line heights as they're originally set. */
+        } /* Force Outlook to render line heights as they're originally set. */  
         p, a, td, body, table {
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
         } /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
 
         @media (max-width:540px) {
-            .mobile_container {
-                min-width: 100% !important;
-                max-width: 100% !important;
-                width: 100% !important;
-            }
+	        .mobile_container {
+	            min-width: 100% !important;
+	            max-width: 100% !important;
+	            width: 100% !important;
+	        }
             .hide_in_mobile {
                 display: none !important;
+                overflow: hidden!important;
+                margin: 0!important;
+                font-size: 0!important;
+                max-height: 0!important;
+            }
+            br.hide_in_mobile{
+	            display: none !important;
                 overflow: hidden!important;
                 margin: 0!important;
                 font-size: 0!important;
@@ -152,6 +155,7 @@
             }
             .tb_logo_mobile {
                 width: 75% !important;
+                max-width: 340px !important!
                 height: auto !important;
             }
             .taco_img_mobile {
@@ -191,14 +195,11 @@
                 height: 0 !important;
                 padding-bottom: 10%;
             }
-
-
             .hero_fake_link_wrapper {
                 width: 100% !important;
                 height: auto !important;
                 display: block;
             }
-
             .hero_fake_link {
                 width: 100% !important;
                 height: auto !important;
@@ -242,8 +243,8 @@
             .see_copy {
                 font-size: 16px !important;
                 line-height: 24px !important;
-                padding-top: 12% !important;
             }
+            
             .hero_cta_wrapper {
                 padding-top: 20px !important;
                 padding-bottom: 0px !important;
@@ -294,71 +295,54 @@
             }
             /* HERO 1 : end */
 
-
-
-
-
-                   /*Drive thru : start */
+			/*Drive thru : start */
             .drive_thru_top {
                 font-size: 35px !important;
                 line-height: 35px !important;
                 height: 35px !important;
             }
-
             .drive_thru_headline {
                 font-size: 32px !important;
                 line-height: 40px !important;
             }
-
             .drive_thru_copy {
                 font-size: 16px !important;
                 line-height: 24px !important;
             }
-
             .drive_thru_cta_wrapper {
                 padding-bottom: 50px !important;
             }
-
             .drive_thru_cta {
                 width: 240px !important;
                 height: 60px !important;
             }
-
             .drive_thru_cta_link {
                 font-size: 20px !important;
                 line-height: 20px !important;
                 padding-bottom: 16px !important;
                 padding-top: 16px !important;
             }
+
             /*Drive thru : end*/
 
-                   /**/
             .download_app_top {
                 font-size: 0 !important;
                 line-height: 0 !important;
                 height: 0vh !important;
                 padding-bottom: 28%;
             }
-
             .download_app_wrapper {
                 padding-bottom: 10px;
             }
-
             .download_app_link img {
                 width: 76% !important;
                 height: auto !important;
             }
-
-
-            /**/
-
-
-
             .see_in_browser_top, .see_in_browser_bot, .social_bot {
                 height: 40px !important;
                 font-size: 40px !important;
                 line-height: 40px !important;
-            }
+            } 
             .social_tb_logo {
                 width: 56px !important;
                 height: auto !important;
@@ -370,6 +354,7 @@
             .social_spacer {
                 width: 35px !important;
             }
+            
             /* legal : start */
 
             .legal_spacer_hori {
@@ -382,91 +367,64 @@
             }
             /* legal : end*/
 
-
-                  /* Apple Mail */
+            /* Apple Mail */
         
             [class^="apple-mail"] .download_app_wrapper {
                 padding-bottom: 8px;
             }
-
             [class^="apple-mail"] .hero_cta_wrapper {
                 padding-top: 10px !important;
                 padding-bottom: 0px !important;
             }
-            /*outlook app ios/android*/
 
+            /*outlook app ios/android*/
             body[data-outlook-cycle]  .hero_headline_wrapper {
                 padding-bottom: 10% !important;
-
-            }
-            
-                body[data-outlook-cycle]  .hero_wrapper_top {
+            }        
+            body[data-outlook-cycle]  .hero_wrapper_top {
                 padding-bottom: 40px;
-            }
-            
+            }            
             body[data-outlook-cycle]  .hero_cta_wrapper {
-                
-                padding-bottom: 0px !important;
-            }
-            
+				padding-bottom: 0px !important;
+            }        
             body[data-outlook-cycle]  .hero_bodycopy_2 {
                 padding-left: 0px !important;
                 padding-right: 0px !important;
-                font-size: 14px !important;
-                
+                font-size: 14px !important;    
             }
-
 
             /*Samsung email*/
             #MessageViewBody .hero_fake_link {
                 position: relative;
-            }
-            
+            }        
             #MessageViewBody .download_app_top {
                 padding-bottom: 26%;
-            }
-
-            
+            }      
             #MessageViewBody .hero_wrapper_top {
                 padding-bottom: 40px;
-            }
-            
+            }           
             #MessageViewBody .hero_bodycopy {					
-                margin-top: 0px !important;
-                
-            }
-            
+                margin-top: 0px !important;     
+            }          
             #MessageViewBody .hero_bodycopy_2 {
                 padding-left: 0px !important;
                 padding-right: 0px !important;
                 font-size: 14px !important;
-                margin-top: 0px !important;
-                
+                margin-top: 0px !important;               
             }
-
             #MessageViewBody .hero_cta_wrapper {
                 padding-top: 20px !important;
                 padding-bottom: 0px !important;
-            }
-            
+            }            
             #MessageViewBody .hero_fake_link_wrapper {
                 position: relative;
-
             }
-
         }
         /*iPhone Xs*/
-
         @media (max-width:375px) {
-
-        
-            .hero_wrapper_top {
-
+	        .hero_wrapper_top {
                 margin: 0px !important;
             }
-            
-
-
         }
 
         /* outlook android*/
@@ -476,54 +434,29 @@
             }
         }
 
-
-
-
-        /*pixel*/   
-
+        /*pixel*/  
         @media (width : 411px) {
-
-
-
             .hero_headline_wrapper {
                 padding-bottom: 0% !important;
             }
-            
-            
-
-
-
         }
 
-
         /*iphone plus*/
-
         @media (width:414px) {
-
             .hero_headline_wrapper {
                 padding-bottom: 17% !important;
             }
-
             .hero_wrapper_top {
                 padding-bottom: 45px;
             }
         }
 
         /* iphone 6/7/8/+ */
-
         @media (width:375px) {			
-
-            
-
-            .hero_wrapper_top {
+          .hero_wrapper_top {
                 padding-bottom: 50px;
             }
-            
-
-
         }
-
-
 
         @media (max-width:360px) {
             /* nav mobile  */
@@ -533,7 +466,6 @@
             }
             /* HERO 1 : start */
             .hero_wrapper_top {
-
                 padding-bottom: 45px;
             }
             .hero_headline_wrapper {
@@ -542,14 +474,11 @@
             .hero_headline {
                 font-size: 22px !important;
                 line-height: 28px !important;
-            }
-            
+            }           
             .hero_cta_wrapper {
                 padding-top: 20px !important;
                 padding-bottom: 0px !important;
-            }
-            
-            
+            }           
             .hero_bodycopy {
                 font-size: 16px !important;
                 line-height: 22px !important;
@@ -560,17 +489,14 @@
             }
             .hero_legal_one {
                 font-size: 12px !important;
-                line-height: 15px !important;
-                
+                line-height: 15px !important;              
             }
-
 
             /* HERO 1 : end */
 
             .download_app_wrapper {
                 padding-bottom: 4px;
-            }
-            
+            }           
             .download_app_top {
                 font-size: 0 !important;
                 line-height: 0 !important;
@@ -580,118 +506,94 @@
             .social_spacer {
                 width: 25px !important;
             }
-
-
             .hide_320 {
                 display: none;
                 visibility: hidden;
             }
             .show_320 {
                 display: table-cell !important;
-                visibility: visible !important;
-            }
-            
+				visibility: visible !important;
+            }           
             .sup_hero {
-                font-size: 14px !important;
-                line-height: 14px !important;
-            }
-            
+            	font-size: 14px !important;
+				line-height: 14px !important;
+            }       
         }
     </style>
     <style type="text/css">
-
         /*Gmail desktop tweaks*/
-        @media screen and  (max-width:480px) {
-
-          u ~ div .download_app_top {
-            font-size: 0 !important;
-            line-height: 0 !important;
-            height: 0vh !important;
-            padding-bottom: 27%;
-          }		
-         u ~ div .hide_in_mobile {
-                display: none !important;
-                overflow: hidden!important;
-                margin: 0!important;
-                font-size: 0!important;
-                max-height: 0!important;
-            }
-         u ~ div .hero_legal_two{
-                padding-right: 20px !important;
-             padding-left: 20px !important;
-            }
-            
-
+        @media screen and (max-width:480px) {
+			u ~ div .download_app_top {
+				font-size: 0 !important;
+				line-height: 0 !important;
+				height: 0vh !important;
+				padding-bottom: 27%;
+			}		
+			u ~ div .hero_legal_two{
+				padding-right: 10px !important;
+				padding-left: 10px !important;	
+			}
+			u ~ div .hide_in_mobile {
+				display: none !important;
+				overflow: hidden !important;
+				visibility: hidden !important;
+				margin: 0 !important;
+				font-size: 0!important;
+				max-height: 0!important;
+			}
         }
+		u ~ div h1,
+		u ~ div h2,
+		u ~ div h3 {
+			margin: 0 ;
+		}
+		u ~ div .hero_wrapper_top {
+			font-size: 90px !important;
+			line-height: 90px !important;
+			height: 90px !important;
+		}
+		u ~ div .download_app_top {
+			font-size: 0 !important;
+			line-height:0 !important;
+			height:0vh !important;     
+			padding-bottom: 32%;
+		}
+		u ~ div .hero_space {
+			font-size: 0 !important;
+			line-height:0 !important;
+			height:0vh !important;     
+			padding-bottom: 50%;
+		}
+		u ~ div .hero_fake_link {
+			position: relative;
+		}
+		u ~ div .hero_fake_link_wrapper {
+			position: relative;
+		}
+    </style>
 
-        u ~ div h1,
-        u ~ div h2,
-        u ~ div h3 {
-          margin: 0 ;
-        }
-
-       u ~ div .hero_wrapper_top {
-          font-size: 90px !important;
-          line-height: 90px !important;
-          height: 90px !important;
-       }
-
-
-
-        u ~ div .download_app_top {
-            font-size: 0 !important;
-            line-height:0 !important;
-            height:0vh !important;     
-            padding-bottom: 32%;
-        }
-
-        u ~ div .hero_space {
-            font-size: 0 !important;
-            line-height:0 !important;
-            height:0vh !important;     
-            padding-bottom: 50%;
-        }
-
-        u ~ div .hero_fake_link {
-            position: relative;
-        }
-
-        u ~ div .hero_fake_link_wrapper {
-            position: relative;
-        }
-
-
-
-
-
-      </style>
-
-    <!--<![endif]--> 
-
-    <!--[if mso]>
-          <style type="text/css">
-          body, table, span, td, span.fontPoppins, td.fontPoppins, a.fontPoppins, div.fontPoppins{font-family: Helvetica, Arial !important;}
-          </style>
-          <![endif]--> 
-    <!--[if gte mso 9]>
-          <style type="text/css">
-          div {mso-line-height-rule: 100%;}
-          </style>
-          <![endif]--> 
-    <!--[if gte mso 9]><xml>
-              <o:OfficeDocumentSettings>
-              <o:AllowPNG/>
-              <o:PixelsPerInch>96</o:PixelsPerInch>
-              </o:OfficeDocumentSettings>
-          </xml><![endif]-->
+	<!--[if mso]>
+		<style type="text/css">
+			body, table, span, td, span.fontPoppins, td.fontPoppins, a.fontPoppins, div.fontPoppins{font-family: Helvetica, Arial !important;}
+		</style>
+	<![endif]--> 
+		<!--[if gte mso 9]>
+		<style type="text/css">
+			div {mso-line-height-rule: 100%;}
+		</style>
+	<![endif]--> 
+	<!--[if gte mso 9]><xml>
+	  <o:OfficeDocumentSettings>
+	  <o:AllowPNG/>
+	  <o:PixelsPerInch>96</o:PixelsPerInch>
+	  </o:OfficeDocumentSettings>
+	</xml><![endif]-->
 
 </head>
 
 <body style="padding:0px; margin:0 auto;">
-    <style>
-        
+    <style>       
         @media (max-width:540px) {
-
             .& .hide_in_yh{
                 display: none !important;
                 overflow: hidden!important;
@@ -704,34 +606,25 @@
                 position: absolute;
             }
         }
-
         @media screen and (max-width:480px){
-
-
-
             .& .drive_thru_background.background_full_width {
                 background-size: 100% !important;
                 background-position: top right !important;
             }
-
             .& .download_app_background.background_full_width {
                 background-size: 100% !important;
                 background-position: center top !important;
             }			
-
             .& .download_app.drive_thru_cta {
                 padding-top: 38% !important;
             }
-
             .& .hero_background.background_full_width {
                 background-size: 100% !important;
                 background-position: center top !important;
             }
-
             .& .drive_thru_cta img {
                 width: 75% !important;
             }
-
             .& .download_app_top {
                 font-size: 0 !important;
                 line-height: 0 !important;
@@ -740,7 +633,6 @@
                 display: none;
                 visibility: hidden;
             }
-
             .& .drive_thru_cta_wrapper {
                 padding-bottom: 30px !important;
             }
@@ -754,82 +646,63 @@
                 padding-top: 40px !important;
                 padding-bottom: 15px !important;
             }
-
             .& .hero_cta_wrapper {
                 padding-top: 10px !important;
                 padding-bottom: 0px !important;
-             }
-
-             .& .hero_headline_wrapper {
-                padding-bottom: 0% !important;
-             }
-            
-                .& .hero_headline {
-                    font-size: 20px !important;
-                    line-height: 22px !important;
-                }
-
-             .& .hero_bodycopy {
-                 padding-top: 0px !important;
-                 padding-bottom: 0px !important;
-                 font-size: 18px !important;
-                 line-height: 24px !important;
-             }
-            .& .hero_bodycopy_2{
-                 padding-top: 5px !important;
-                 padding-bottom: 0px !important;
-                 font-size: 16px !important;
-                 line-height: 22px !important;
-             }
-            .& .sup_hero {
-                font-size: 16px !important;
-                line-height: 16px !important;
             }
-            .& .see_copy {
-                 padding-top: 15px !important;
-                 padding-bottom: 0px !important;
-                 font-size: 18px !important;
-                 line-height: 24px !important;
-             }
-
-
+            .& .hero_headline_wrapper {
+                padding-bottom: 0% !important;
+            }			
+			.& .hero_headline {
+				font-size: 20px !important;
+				line-height: 22px !important;
+			}
+			.& .hero_bodycopy {
+				padding-top: 0px !important;
+				padding-bottom: 0px !important;
+				font-size: 18px !important;
+				line-height: 24px !important;
+			}
+			.& .hero_bodycopy_2{
+				padding-top: 5px !important;
+				padding-bottom: 0px !important;
+				font-size: 16px !important;
+				line-height: 22px !important;
+			}
+			.& .sup_hero {
+				font-size: 16px !important;
+				line-height: 16px !important;
+			}
+			.& .see_copy {
+				padding-top: 15px !important;
+				padding-bottom: 0px !important;
+				font-size: 18px !important;
+				line-height: 24px !important;
+			}
             .& h1,
             .& h2,
             .& h3 {
-              margin: 0;
+				margin: 0;
             }
             .& .social_spacer {
                 width: 25px !important;
             }
-
-
         }
-
-
         .& .hero_wrapper_top {
             display: none;
             visibility: none;
         }
-
-
-        
-
-
-
         .& .download_app_wrapper {
-          padding-bottom: 40px;
+			padding-bottom: 40px;
         }
-
-
         .& .drive_thru_headline {
-          padding-bottom: 0px !important;
-          margin-bottom: 0;
-          margin-top: 0;
-        }
-        
+			padding-bottom: 0px !important;
+			margin-bottom: 0;
+			margin-top: 0;
+        }      
         .& .drive_thru_cta_wrapper {
-                padding-bottom: 50px !important;
-            }
+			padding-bottom: 50px !important;
+		}
 
     </style>
     <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
@@ -929,11 +802,11 @@
           
             <!--BODY COPY START-->
             <tr>
-              <td class="hero_background background_full_width" align="center" valign="top" width="100%" style="height:1010px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-267_Retention_Offer_V1/Retention_Offer_V1_bg.jpg');background-size: contain !important;background-position: top center; background-repeat: no-repeat;">
+              <td class="hero_background background_full_width" align="center" valign="top" width="100%" style="height:1040px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-267_Retention_Offer_V1/Retention_Offer_V1_bg.jpg');background-size: contain !important;  background-position: top center; background-repeat: no-repeat;">
                 <div>
                   <!--[if gte mso 9]>
                     <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 426px;" src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-267_Retention_Offer_V1/Retention_Offer_V1_bg.jpg" />
-                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:1010px;">
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:1040px;">
                     <v:fill opacity="0%" color="#ffffff"/>
                     <v:textbox inset="0,0,0,0">
                     <![endif]-->
@@ -962,7 +835,7 @@
                     <tr>
 
                           <td align="center" class="fontPoppins hero_bodycopy hero_yh" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 27px; line-height: 30px; padding: 5px 20px 2px 20px; font-weight: bold;">
-                              Just For You. Just Between Us 😉
+                              Just For You. Just Between&nbsp;Us&nbsp;😉
                           </td>
 
                         </tr>
@@ -983,7 +856,7 @@
                         
                     <tr>
                         <td>&nbsp;</td>
-                        <td align="center"><a name="nav_logo" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Retention-Offer-ActiveA%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Retention-Offer-ActiveA&utm_medium=email&utm_source=silverpop&utm_content=image" target="_blank"> <img class="taco_img_mobile" alt="Taco Bell" src="http://elenabarrio.com/rauxa/tb/EM2A.png"/> </a></td>
+                        <td align="center"><a name="nav_logo" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Retention-Offer-ActiveA%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Retention-Offer-ActiveA&utm_medium=email&utm_source=silverpop&utm_content=image" target="_blank"> <img class="taco_img_mobile" alt="Taco Bell" src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-267_Retention_Offer_Hero_Imgs/EM2A.png"/> </a></td>
                         <td>&nbsp;</td>
                         </tr>
                     
@@ -1026,9 +899,9 @@
 
                           <tr>
                             <td>&nbsp;</td>
-                            <td class="hero_cta" align="center" bgcolor="#df4661" height="70" width="350">
+                            <td class="hero_cta" align="center" bgcolor="#df4661" height="60" width="350">
                               <a name="cta" class="fontPoppins hero_cta_link" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dloyalty_Retention-Offer-ActiveA%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dcta&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=loyalty_Retention-Offer-ActiveA&utm_medium=email&utm_source=silverpop&utm_content=cta" target="_blank"
-                                style="width: 100%; color:#ffffff; text-decoration:none; padding-top:20px; padding-bottom:20px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
+                                style="width: 100%; color:#ffffff; text-decoration:none; font-size: 20px;line-height: 60px; font-weight: bold; display: inline-block;">
 
                                 <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif; text-transform: uppercase;">
                                   Redeem Now!
@@ -1082,20 +955,14 @@
                     
                     
                     <!--LINE START-->
-                    <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
-                                
-                                <tr>
-                                 
-                                  <td class="outlook_line" colspan="3" width="100%" height="3" bgcolor="#f1f1f1" style="font-size: 3px; line-height: 3px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly;"><!--[if gte mso 15]>&nbsp;<![endif]--></td>
-                        </tr>
-                            
-                              </table>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">                             
+                        <tr>                            
+                          <td class="outlook_line" colspan="3" width="100%" height="3" bgcolor="#f1f1f1" style="mso-line-height-rule: exactly;  mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 3px; font-size: 3px; "><!--[if mso]>&nbsp;<![endif]--></td>
+						  </tr>                  
+                      </table>
                     <!--LINE END-->
                     
-                    
-                    
-                        
-                        
+                   
                     
                   <!--[if gte mso 9]> 
                     </v:textbox>
