@@ -257,6 +257,10 @@
         height: 60px !important;
       }
 
+      .super {
+        font-size: 90% !important;
+        vertical-align: -4px !important;
+      }
 
       .mb_pod2_bg {
         background-image: url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-256_Nacho_Fries/mb_pod_2_cta_bg.png');
@@ -324,11 +328,11 @@
         font-size: 0 !important;
         line-height: 0 !important;
         height: 0vh !important;
-        padding-bottom: 30%;
+        padding-bottom: 28%;
       }
 
       .download_app_wrapper {
-        padding-bottom: 10px;
+        padding-bottom: 0px;
       }
 
       .download_app_link img {
@@ -387,6 +391,11 @@
       [class^="apple-mail"] .hero_cta_wrapper {
         padding-top: 10px !important;
         padding-bottom: 0px !important;
+      }
+
+      [class^="apple-mail"] .super {
+        font-size: 90% !important;
+        vertical-align: -4px !important;
       }
 
       /*outlook app ios/android*/
@@ -598,6 +607,10 @@
   <style type="text/css">
     /*Gmail desktop tweaks*/
     @media screen and (max-width:480px) {
+      u~div .super {
+        font-size: 80% !important;
+        vertical-align: middle !important;
+      }
 
       u~div .hero_headline {
         font-size: 32px !important;
@@ -808,6 +821,11 @@
         padding: 10px 15px 10px 15px !important;
       }
 
+      .& .super {
+        font-size: 80% !important;
+        vertical-align: middle !important;
+      }
+
       .& .mobile_nav_font {
         font-size: 11px !important;
         line-height: 19px !important;
@@ -945,13 +963,13 @@
 
         <table lang="en" border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;" class="mobile_container" role="presentation">
           <tr>
-            <td width="100%" style="width:100%; vertical-align:top; background-color: #000000;">
+            <td width="100%" style="width:100%; vertical-align:top;">
 
               <!-- PREHEADER START -->
               <table cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0" style="width: 100%; max-width: 640px;" role="presentation">
                 <tr>
                   <td class="fontPoppins" valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;">
-                    Nacho Fries are back. Celebrate with a $5 Nacho Fries Box.
+                    Nacho Fries are back. Celebrate with a $5 Nacho Fries&nbsp;Box.
                   </td>
                 </tr>
                 <tr>
@@ -1016,7 +1034,7 @@
               </table>
 
               <!-- HEADER START Alt -->
-              <table cellpadding="0" bgcolor="#000000" width="100%" align="center" cellspacing="0" border="0" style="width:100%;" role="presentation">
+              <table cellpadding="0" bgcolor="#000000" width="100%" align="center" cellspacing="0" border="0" style="width:100%; max-width: 640px;" role="presentation">
                 <tr>
                   <td align="center" style="padding-top: 20px; padding-bottom: 20px;">
                     <table cellpadding="0" align="center" cellspacing="0" border="0" role="presentation">
@@ -1048,34 +1066,41 @@
                     <a href="https://www.tacobell.com/food/deals-and-combos/nacho-fries-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=headline-box&guid=%%HybrisGUID%%" target="_blank">
                       <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-256_Nacho_Fries/desktop_pod_1a.png" width="100%" height="auto" style="width:100%; height: auto" alt="$5 Nachos Fries Box"></a>
                   </td>
-                  <!--[if !mso]><!-->
-                  <div class="show_in_mobile" style="display: none;">
-                    <a href="https://www.tacobell.com/food/deals-and-combos/nacho-fries-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=headline-box&guid=%%HybrisGUID%%" target="_blank">
-                      <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-256_Nacho_Fries/mb_pod_1a.png" width="100%" height="auto" style="width:100%; height: auto" alt="$5 Nachos Fries Box"></a>
-                  </div>
-                  <!--<![endif]-->
                 </tr>
+                <!--[if !mso]><!-->
+                <tr>
+                  <td class="show_in_mobile" style="display: none;">
+                    <div class="show_in_mobile" style="display: none;">
+                      <a href="https://www.tacobell.com/food/deals-and-combos/nacho-fries-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=headline-box&guid=%%HybrisGUID%%" target="_blank">
+                        <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-256_Nacho_Fries/mb_pod_1a.png" width="100%" height="auto" style="width:100%; height: auto" alt="$5 Nachos Fries Box"></a>
+                    </div>
+                  </td>
+                </tr>
+                <!--<![endif]-->
                 <tr>
                   <td align="center" class="hide_in_mobile">
                     <a href="https://www.tacobell.com/food/deals-and-combos/nacho-fries-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=img-box&guid=%%HybrisGUID%%" target="_blank">
                       <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-256_Nacho_Fries/desktop_pod_1b.png" width="100%" height="auto" style="width:100%; height: auto"></a>
                   </td>
-
-                  <!--[if !mso]><!-->
-                  <div class="show_in_mobile" style="display: none;">
-                    <a href="https://www.tacobell.com/food/deals-and-combos/nacho-fries-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=img-box&guid=%%HybrisGUID%%" target="_blank">
-                      <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-256_Nacho_Fries/mb_pod_1b.png" width="100%" height="auto" style="width:100%; height: auto"></a>
-                  </div>
-                  <!--<![endif]-->
                 </tr>
+                <!--[if !mso]><!-->
+                <tr>
+                  <td class="show_in_mobile" style="display: none;">
+                    <div class="show_in_mobile" style="display: none;">
+                      <a href="https://www.tacobell.com/food/deals-and-combos/nacho-fries-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=img-box&guid=%%HybrisGUID%%" target="_blank">
+                        <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-256_Nacho_Fries/mb_pod_1b.png" width="100%" height="auto" style="width:100%; height: auto"></a>
+                    </div>
+                  </td>
+                </tr>
+                <!--<![endif]-->
                 <tr>
                   <td align="center" class="mb_pod1_bg">
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
                       <tr>
-                        <td align="center" class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 24px; line-height: 28px; padding-top: 12px;" valing="top">
+                        <td align="center" class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 24px; line-height: 28px; padding-top: 12px;padding-right:7%;padding-left:7%" valing="top">
                           <a href="https://www.tacobell.com/food/deals-and-combos/nacho-fries-box?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=img-box&guid=%%HybrisGUID%%" target="_blank" style="color: #ffffff; text-decoration:none">
-                            Nacho Fries are back at THE BELL<span style="line-height:1.5; font-size: 80%; vertical-align: top;">&reg;</span><br>and back where they<br class="hide_in_mobile">
-                            belong&mdash;with you.</a>
+                            Nacho Fries back at THE BELL<span class="super" style="font-size:80%; line-height:.5; vertical-align: bottom;">&reg;</span><br>and back where they<br class="hide_in_mobile">
+                            belong&mdash;with&nbsp;you.</a>
                         </td>
                       </tr>
                       <tr>
@@ -1105,8 +1130,7 @@
               <!-- POD 2 START-->
               <table cellpadding="0" cellspacing="0" bgcolor="#000000" border="0" width="100%" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
                 <tr>
-
-                  <td align="center" style="background-color: #000000; padding-left:5px; padding-right:5px;">
+                  <td align="center" style="background-color: #000000; padding-left:3%; padding-right:3%;">
                     <a href="https://www.tacobell.com/food/deals-and-combos/nacho-fries?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=headline-alc&guid=%%HybrisGUID%%" target="_blank" style="color: #ffffff; text-decoration:none">
                       <h1 class="fontPoppins hero_headline" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 54px; line-height: 62px;">
                         <span class="fontPoppins hero_headline" style="font-family: Helvetica, Arial, sans-serif; font-size: 54px; line-height: 62px;">
@@ -1116,8 +1140,6 @@
                     </a>
                   </td>
                 </tr>
-              </table>
-              <table cellpadding="0" cellspacing="0" bgcolor="#000000" border="0" width="100%" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
                 <tr>
                   <td align="center" class="hide_in_mobile">
                     <a href="https://www.tacobell.com/uber-eats?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=img-alc&guid=%%HybrisGUID%%" target="_blank">
@@ -1139,7 +1161,7 @@
                       <tr>
                         <td align="center" class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 24px; line-height: 28px; padding-top: 12px;" valign="top">
                           <a href="https://www.tacobell.com/uber-eats?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=img-alc&guid=%%HybrisGUID%%" target="_blank" style="color: #ffffff; text-decoration: none;">
-                            It&rsquo;s like Nacho Fries never left.</a>
+                            It&rsquo;s like Nacho Fries never left</a>
                         </td>
                       </tr>
                       <tr>
@@ -1161,78 +1183,73 @@
                     </table>
                   </td>
                 </tr>
-
+                <!-- Drive Thru -->
+                <tr>
+                  <td align="center" class="drive_thru_background background_full_width" style="height:380px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;" valign="top" width="640">
+                    <div>
+                      <!--[if gte mso 9]>
+                              <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 380px;" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg" />
+                              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:380px">
+                              <v:fill opacity="0%" color="#ffffff"/>
+                              <v:textbox inset="0,0,0,0">
+                              <![endif]-->
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 640px; font-size: 0px;" width="100%">
+                        <tbody>
+                          <tr>
+                            <td class="drive_thru_top" colspan="3" height="60" style="font-size: 60px; line-height:60px; height:60px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="width: 30px;" width="30px">&nbsp;</td>
+                            <td>
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 100%; font-size: 0px;" valing="top" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td align="left" valing="top">
+                                      <h3 class="fontPoppins drive_thru_headline" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 42px; line-height: 52px;"><span style="font-family: Helvetica, Arial, sans-serif;"> Our Contactless<br />
+                                          Drive-Thru is&nbsp;Open </span></h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 24px; line-height: 28px; padding-top: 12px;" valing="top">Order ahead and drive-thru for&nbsp;pickup</td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" class="drive_thru_cta_wrapper" style="padding-top: 30px; padding-bottom: 15px;">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="font-size: 0px;">
+                                        <tbody>
+                                          <tr>
+                                            <td>&nbsp;</td>
+                                            <td align="center" bgcolor="#ffffff" class="drive_thru_cta" height="60px" style="background-color:#ffffff; width: 320px; height: 90px;" width="320px"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=cta-DT-banner"
+                                                name="www_tacobell_com_food_utm_medium_em" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;" target="_blank" xt="SPCLICK"><span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span>
+                                              </a></td>
+                                            <td>&nbsp;</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td style="width: 30px;" width="30px">&nbsp;</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if gte mso 9]> 
+                              </v:textbox>
+                              </v:fill>
+                              </v:rect>
+                              </v:image>
+                              <![endif]-->
+                    </div>
+                  </td>
+                </tr>
+                <!-- Drive Thru -->
               </table>
 
 
               <!-- POD 2 END-->
 
-              <!-- Drive Thru -->
 
-              <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 640px; font-size: 0px;" width="640">
-                <tbody>
-                  <tr>
-                    <td align="center" class="drive_thru_background background_full_width" style="height:380px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat;" valign="top" width="640">
-                      <div>
-                        <!--[if gte mso 9]>
-						  <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 380px;" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/DT-banner.jpg" />
-						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:380px">
-						  <v:fill opacity="0%" color="#ffffff"/>
-						  <v:textbox inset="0,0,0,0">
-						  <![endif]-->
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 640px; font-size: 0px;" width="100%">
-                          <tbody>
-                            <tr>
-                              <td class="drive_thru_top" colspan="3" height="60" style="font-size: 60px; line-height:60px; height:60px;">&nbsp;</td>
-                            </tr>
-                            <tr>
-                              <td style="width: 30px;" width="30px">&nbsp;</td>
-                              <td>
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 100%; font-size: 0px;" valing="top" width="100%">
-                                  <tbody>
-                                    <tr>
-                                      <td align="left" valing="top">
-                                        <h3 class="fontPoppins drive_thru_headline" style="font-family:Helvetica, Arial, sans-serif;font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 42px; line-height: 52px;"><span style="font-family: Helvetica, Arial, sans-serif;"> Our Contactless<br />
-                                            Drive-Thru is&nbsp;Open </span></h3>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif;  color:#ffffff; text-decoration:none; font-size: 24px; line-height: 28px; padding-top: 12px;" valing="top">Order ahead and drive-thru for&nbsp;pickup</td>
-                                    </tr>
-                                    <tr>
-                                      <td align="center" class="drive_thru_cta_wrapper" style="padding-top: 30px; padding-bottom: 15px;">
-                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="font-size: 0px;">
-                                          <tbody>
-                                            <tr>
-                                              <td>&nbsp;</td>
-                                              <td align="center" bgcolor="#ffffff" class="drive_thru_cta" height="60px" style="background-color:#ffffff; width: 320px; height: 90px;" width="320px"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122620-Nacho-Fries-Launch&utm_content=cta-DT-banner"
-                                                  name="www_tacobell_com_food_utm_medium_em" style="color:#000000; text-decoration: none; font-size: 30px; line-height: 30px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;" target="_blank" xt="SPCLICK"><span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span>
-                                                </a></td>
-                                              <td>&nbsp;</td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                              <td style="width: 30px;" width="30px">&nbsp;</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <!--[if gte mso 9]> 
-						  </v:textbox>
-						  </v:fill>
-						  </v:rect>
-						  </v:image>
-						  <![endif]-->
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- Drive Thru -->
               <!-- Download app -->
 
               <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 640px; font-size: 0px;" width="640">
@@ -1303,7 +1320,7 @@
               <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width: 640px; font-size: 0px;" width="100%">
                 <tbody>
                   <tr>
-                    <td class="see_in_browser_top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
+                    <td class="see_in_browser_top" bgcolor="#ffffff" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
                   </tr>
                   <tr>
                     <td align="center"><a class="fontPoppins hero_bodycopy" href="#SPCLICKTOVIEW" name="See in your browser" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration: underline; font-size: 14px; line-height: 14px;" target="_blank" xt="SPCLICKTOVIEW">See in your browser</a></td>
@@ -1352,11 +1369,8 @@
                                 <tbody>
                                   <tr>
                                     <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
-                                      At limited participating U.S. Taco Bell<sup style="font-size: 14px; line-height: 14px; vertical-align: top; padding: 0; margin: 0;">&reg;</sup> locations for a <br class="hide_in_mobile" />
-                                      &nbsp;limited time only. Contact local restaurant for prices, <br class="hide_in_mobile" />
-                                      &nbsp;hours and participation, which vary. Tax extra. All beverage related<br class="hide_in_mobile" />
-                                      &nbsp;trademarks are owned by PepsiCo, Inc. and its Affiliates and<br class="hide_in_mobile" />
-                                      &nbsp;Subsidiaries. Drinks exclude Freezes. &copy;2020 Taco Bell IP Holder,&nbsp;LLC.</td>
+                                      At limited participating U.S. Taco Bell<sup style="font-size: 14px; line-height: 14px; vertical-align: top; padding: 0; margin: 0;">&reg;</sup> locations for a<br class="hide_in_mobile" />&nbsp;limited time only. Contact local restaurant for prices,<br class="hide_in_mobile" />&nbsp;hours and participation, which vary. Tax extra. All beverage related<br
+                                        class="hide_in_mobile" />&nbsp;trademarks are owned by PepsiCo, Inc. and its Affiliates and<br class="hide_in_mobile" />&nbsp;Subsidiaries. Drinks exclude Freezes. &copy;2020 Taco Bell IP Holder,&nbsp;LLC.</td>
                                   </tr>
                                   <tr>
                                     <td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
