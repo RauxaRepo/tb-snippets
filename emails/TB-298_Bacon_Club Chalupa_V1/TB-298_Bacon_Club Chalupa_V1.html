@@ -151,14 +151,14 @@
         width: 0px !important;
       }
 
-	.show_in_mobile {
-		display: block !important;
-		width: 100% !important;
-		height: auto !important;
-		overflow: visible !important;
-		float: none !important;
-		max-height: inherit !important;
-	}
+      .show_in_mobile {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important;
+        float: none !important;
+        max-height: inherit !important;
+      }
 
       .image_full_width,
       .device-width {
@@ -167,9 +167,9 @@
       }
 
       .background_full_width {
-        background-size: 100% auto !important;
+        background-size: 100% 100% !important;
         background-position: top center !important;
-        height: auto !important;
+        height: 100% !important;
       }
 
       .tb_logo_wrapper {
@@ -228,19 +228,19 @@
       }
 
       .hero_headline {
-        font-size: 42px !important;
-        line-height: 50px !important;
-        padding: 40px 0px 10px 0px!important;
+        font-size: 32px !important;
+        line-height: 36px !important;
+        padding: 25px 0px 10px 0px !important;
       }
 
       .hero_bodycopy {
-        font-size: 18px !important;
-        line-height: 24px !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
       }
 
       .hero_cta_wrapper {
         padding-top: 0px !important;
-        padding-bottom: 40px !important;
+        padding-bottom: 30px !important;
       }
 
       .hero_cta_wrapper_2 {
@@ -248,12 +248,6 @@
         padding-bottom: 25px !important;
       }
 
-      .hero_cta_link {
-        font-size: 20px !important;
-        line-height: 20px !important;
-        padding-bottom: 16px !important;
-        padding-top: 16px !important;
-      }
 
       .hero_button {
         padding-bottom: 20px !important;
@@ -323,17 +317,17 @@
       }
 
       .drive_thru_headline {
-        font-size: 22px !important;
-        line-height: 30px !important;
+        font-size: 30px !important;
+        line-height: 40px !important;
       }
 
       .drive_thru_copy {
-        font-size: 12px !important;
-        line-height: 16px !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
       }
 
       .drive_thru_cta_wrapper {
-		  padding-bottom: 45px !important;
+        padding-bottom: 45px !important;
       }
 
       .drive_thru_cta {
@@ -426,19 +420,19 @@
 
       /*outlook app ios/android*/
 
-	  body[data-outlook-cycle] .hero_bodycopy {
-        font-size: 14px !important;
-        line-height: 20px !important;      
+      body[data-outlook-cycle] .hero_bodycopy {
+        font-size: 16px !important;
+        line-height: 20px !important;
       }
-		
-/*
+
+      /*
       body[data-outlook-cycle] .hero_cta_wrapper {
         padding-top: 15px !important;
         padding-bottom: 30px !important;
       }
 */
 
-/*
+      /*
       body[data-outlook-cycle] .hero_cta_wrapper_2 {
         padding-top: 30px !important;
         padding-bottom: 40px !important;
@@ -456,7 +450,25 @@
 
       }
 
-/*
+      #MessageViewBody .hero_headline {
+        font-size: 30px !important;
+        line-height: 32px !important;
+        padding: 15px 0px 10px 0px !important;
+      }
+
+      #MessageViewBody .background_full_width {
+        background-size: 100% auto !important;
+        background-position: top center !important;
+        height: auto !important;
+      }
+
+      #MessageViewBody .background_full_width_1 {
+        background-size: 100% 100% !important;
+        background-position: top center !important;
+        height: 100% !important;
+      }
+
+      /*
       #MessageViewBody .hero_cta_wrapper {
         padding-top: 10px !important;
         padding-bottom: 30px !important;
@@ -517,7 +529,7 @@
       }
 
       /* HERO 1 : start */
-/*
+      /*
       .hero_headline {
         font-size: 25px !important;
         line-height: 33px !important;
@@ -527,10 +539,10 @@
 
       .hero_bodycopy {
         font-size: 16px !important;
-        line-height: 23px !important;
+        line-height: 20px !important;
       }
 
-/*
+      /*
       .hero_cta_wrapper {
         padding-top: 10px !important;
         padding-bottom: 40px !important;
@@ -587,18 +599,54 @@
         font-size: 0 !important;
         line-height: 0 !important;
         height: 0vh !important;
-        padding-bottom: 27%;
+        padding-bottom: 25%;
+      }
+
+      u~div .legal_spacer_hori {
+        width: 15px !important;
+      }
+
+      /* u~div .drive_thru_cta {
+        width: 240px !important;
+        height: 60px !important;
+      } */
+
+      u~div .drive_thru_headline {
+        font-size: 32px !important;
+        line-height: 40px !important;
+      }
+
+      u~div .drive_thru_copy {
+        font-size: 20px !important;
+        line-height: 24px !important;
+      }
+
+      u~div .download_app_link img {
+        width: 76% !important;
+        height: auto !important;
+      }
+
+      u~div .hero_headline {
+        font-size: 32px !important;
+        line-height: 36px !important;
+        padding: 25px 0px 10px 0px !important;
       }
 
       u~div .hero_fake_link {
         position: relative;
       }
 
+      u~div .background_full_width {
+        background-size: 100% 100% !important;
+        background-position: top center !important;
+        height: 100% !important;
+      }
+
       u~div .hero_fake_link_wrapper {
         position: relative;
       }
-		
-	u~div	.hide_in_mobile {
+
+      u~div .hide_in_mobile {
         display: none !important;
         overflow: hidden !important;
         margin: 0 !important;
@@ -666,21 +714,32 @@
 
 <body style="padding:0px; margin:0 auto;">
   <style>
-	  @media (max-width:540px) {
+    @media (max-width:540px) {
 
-				.& .hide_in_yh{
-					display: none !important;
-					overflow: hidden!important;
-					margin: 0!important;
-					font-size: 0!important;
-					max-height: 0!important;
-					visibility: hidden;
-					height: 0px !important;
-					width: 0px !important;
-					position: absolute;
-                    line-height: 0px !important;
-				}
-			}
+      .& .hide_in_yh {
+        display: none !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        font-size: 0 !important;
+        max-height: 0 !important;
+        visibility: hidden;
+        height: 0px !important;
+        width: 0px !important;
+        position: absolute;
+        line-height: 0px !important;
+      }
+
+      .& .hero_bodycopy {
+        font-size: 16px !important;
+        line-height: 20px !important;
+      }
+
+      .& .legal_spacer_hori {
+        width: 15px !important;
+      }
+
+    }
+
     @media (max-width:480px) {
       .& .drive_thru_background.background_full_width {
         background-size: 100% !important;
@@ -692,7 +751,7 @@
         background-position: center top !important;
       }
 
-      .& .hero_background.background_full_width {
+      .& .background_full_width {
         background-size: 100% 100% !important;
         background-position: center top !important;
         height: 100% !important;
@@ -704,6 +763,11 @@
 
       .& .drive_thru_cta img {
         width: 75% !important;
+      }
+
+      .& .drive_thru_cta {
+        width: 240px !important;
+        height: 60px !important;
       }
 
       .& .download_app_top {
@@ -719,16 +783,27 @@
         padding-bottom: 30px !important;
       }
 
+      .& .drive_thru_copy {
+        font-size: 16px !important;
+        line-height: 24px !important;
+      }
+
       .& .hero_cta_wrapper {
         padding-top: 0px !important;
         padding-bottom: 30px !important;
       }
 
       .& .hero_cta {
+        width: 240px !important;
         height: 60px !important;
       }
 
-
+      .& .drive_thru_cta_link {
+        font-size: 20px !important;
+        line-height: 20px !important;
+        padding-bottom: 16px !important;
+        padding-top: 16px !important;
+      }
 
       .& .hero_wrapper_top {
         height: 0px !important;
@@ -754,15 +829,15 @@
         font-size: 20px !important;
         line-height: 22px !important;
         padding-top: 0px !important;
-		  padding-bottom: 0px !important;
+        padding-bottom: 0px !important;
         margin: 0px !important;
       }
 
-      .& .mobile_nav{
-      padding:10px 15px 10px 15px!important;
-    }
+      .& .mobile_nav {
+        padding: 10px 15px 10px 15px !important;
+      }
 
-    .& .mobile_nav_font{
+      .& .mobile_nav_font {
         font-size: 11px !important;
         line-height: 19px !important;
       }
@@ -783,13 +858,18 @@
       }
 
       .& .download_app_wrapper {
-      padding-bottom: 20px!important;
-      padding-top: 120px!important;
-    }
+        padding-bottom: 20px !important;
+        padding-top: 120px !important;
+      }
 
-    .hero_headline {
+      .& .hero_headline {
         font-size: 27px !important;
         line-height: 35px !important;
+      }
+
+      .& .drive_thru_headline {
+        font-size: 30px !important;
+        line-height: 40px !important;
       }
     }
 
@@ -800,12 +880,12 @@
     }
 
     .& .hero_headline {
-        padding:40px 0px 0px 0px!important;
+      padding: 25px 0px 0px 0px !important;
     }
 
 
     .& .download_app_wrapper {
-      padding-bottom: 20px!important;
+      padding-bottom: 20px !important;
     }
 
 
@@ -815,7 +895,7 @@
       margin-top: 0;
     }
 
-/*
+    /*
     .& .drive_thru_cta_wrapper {
       padding-bottom: 50px !important;
     }
@@ -839,7 +919,7 @@
               <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px;" role="presentation">
                 <tr>
                   <td class="fontPoppins" valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#000000; line-height:18px; padding-right: 15px; padding-left: 15px;">
-                   With the new Bacon Club Chalupa, that is
+                    With the new Bacon Club Chalupa, that is
                   </td>
                 </tr>
                 <tr>
@@ -927,34 +1007,15 @@
 
               <!-- HEADER END Alt -->
 
-              <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#78b59a" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
-		        <!-- Hero -->
-		        <tr>
-		          <td style="font-size: 0px;" bgcolor="#ffffff">
-			          <table width="100%" valign="top" bgcolor="#ffffff" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; font-size: 0; max-width: 640px;">
-		              <tr>
-		                <td valign="top" align="center" width="100%">
-			                <!-- MOB VERSION --> 
-		                  <!--[if !mso 9]><!-->
-		                  
-		                  <div class="show_in_mobile" style="font-size: 0;max-height: 0;overflow: hidden;display: none;"> <a href="https://www.tacobell.com/food/specialties/bacon-club-chalupa?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=img-alc&guid=%%HybrisGUID%%" target="_blank"> <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_01.jpg" width="360" height="397" border="0" style="display: block;width: 100%; height:auto;max-height:397px;color: #000000;font-family: Helvetica, Arial, sans-serif;font-size: 14px;" alt="Bacon Club Chalupa" /> </a> </div>
-		                  
-		                  <!--<![endif]--> 
-		                  <!-- Desktop -->
-		                  
-		                  <div class="hide_in_mobile" style="width: 100%; overflow: hidden;"> <a href="https://www.tacobell.com/food/specialties/bacon-club-chalupa?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=img-alc&guid=%%HybrisGUID%%" target="_blank" style="font-size: 0;"> <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_01.jpg" width="640" height="705" border="0" style="display: block;color: #000000;font-family: Helvetica, Arial, sans-serif;font-size: 14px;max-height: 705px;width: 100%; height: auto;" alt="Bacon Club Chalupa" /> </a> </div>
-		                  
-		                  <!-- DESKTOP VERSION END --></td>
-		              </tr>
-		            </table>
-		            </td>
-		        </tr>
-		        <!-- Hero end --> 
-              </table>
 
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#78b59a" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
-	              
+                <tr>
+                  <td align="center">
+                    <a href="https://www.tacobell.com/food/specialties/bacon-club-chalupa?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=headline-alc&guid=%%HybrisGUID%%" target="_blank" name="www_tacobell_com_food_specialties_b"> <img
+                        src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_01.jpg" width="640" height="700px" border="0" style="display: block;width: 100%; height:auto;color: #000000;font-family: Helvetica, Arial, sans-serif;font-size: 14px;" alt="Bacon Club Chalupa" />
+                    </a></td>
+                </tr>
                 <!--BODY COPY and CTA-->
                 <tr>
                   <td class="background_full_width" align="center" valign="top" width="100%" style="height:320px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_05.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat">
@@ -968,17 +1029,18 @@
                       <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
 
-                        
+
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px; padding: 0px 10px 12px 10px;">
-                            <a class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px;" href="https://www.tacobell.com/food/specialties/bacon-club-chalupa?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=headline-alc&guid=%%HybrisGUID%%">
-                              <span class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px;">
-								Nothing beats a freshly <br/>
-								fried Chalupa. Except <br/>
-								maybe adding&nbsp;bacon.
+                          <td align="center" class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px; padding: 0px 10px 12px 10px;">
+                            <a class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px;" href="https://www.tacobell.com/food/specialties/bacon-club-chalupa?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=img-alc&guid=%%HybrisGUID%%"
+                              name="www_tacobell_com_food_specialties_b_2">
+                              <span class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px;">
+                                Nothing beats a freshly <br />
+                                fried Chalupa. Except <br />
+                                maybe adding&nbsp;bacon.
                               </span>
-                              </a>
+                            </a>
                           </td>
 
                         </tr>
@@ -989,8 +1051,8 @@
 
                               <tr>
                                 <td>&nbsp;</td>
-                                <td class="hero_cta" align="center" bgcolor="#ffffff" height="90" width="350">
-                                  <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/food/specialties/bacon-club-chalupa?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=cta-alc&guid=%%HybrisGUID%%" target="_blank"
+                                <td class="hero_cta" align="center" bgcolor="#ffffff" style="width: 320px; height: 90px;">
+                                  <a name="cta" class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food/specialties/bacon-club-chalupa?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=cta-alc&guid=%%HybrisGUID%%" target="_blank"
                                     style="width: 100%; color:#000000; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
 
                                     <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;">
@@ -1027,12 +1089,13 @@
 
               </table>
 
-                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#78b59a" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+              <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#78b59a" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
 
                 <!--POD 1 COPY AND CTA -->
                 <tr>
-                  <td class="background_full_width" align="center" valign="top" width="100%" style="height:199px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_06.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat">
+                  <td class="background_full_width background_full_width_1" align="center" valign="top" width="100%"
+                    style="height:199px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_06.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat">
                     <div>
                       <!--[if gte mso 9]>
                         <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 199px;" src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_06.jpg" />
@@ -1043,22 +1106,21 @@
                       <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
 
-                          <tr>
-  
-                            <td valign="top" align="center" class="fontPoppins hero_headline" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 50px; line-height: 58px; padding-top: 70px;">
-                              
-                                <h1 class="fontPoppins" style="font-family: 'Poppins', Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 54px; line-height: 62px;">
-                                    <a class="fontPoppins hero_headline" style="color:#ffffff; text-decoration:none; line-height: 62px;"
-                                      href="https://www.tacobell.com/food/deals-and-combos/bacon-club-chalupa-combo?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=img-combo&guid=%%HybrisGUID%%">
-                                         Add a Little Crunch <br/>
-                                        with Your Chalupa
-                                     
-                                    </a>
-                                  </h1>
-                                
-                            </td>
-  
-                          </tr>
+                        <tr>
+
+                          <td valign="top" align="center" class="fontPoppins hero_headline" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 50px; line-height: 58px; padding-top: 70px;">
+
+                            <h1 class="fontPoppins hero_headline" style="font-family: 'Poppins', Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 54px; line-height: 62px;">
+                              <a class="fontPoppins hero_headline" style="color:#ffffff; text-decoration:none;" href="https://www.tacobell.com/food/deals-and-combos/bacon-club-chalupa-combo?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=img-combo&guid=%%HybrisGUID%%" name="www_tacobell_com_food_deals_and_com">
+                                Add a Little Crunch <br />
+                                with Your Chalupa
+
+                              </a>
+                            </h1>
+
+                          </td>
+
+                        </tr>
 
                       </table>
                       <!--[if gte mso 9]> 
@@ -1071,45 +1133,20 @@
                   </td>
 
                 </tr>
-                <!--BODY COPY END-->
-
 
               </table>
-              
-              
-               <!-- HEADER END Alt -->
+
+
+
 
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#78b59a" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
-		        <!-- Hero -->
-		        <tr>
-		          <td style="font-size: 0px;" bgcolor="#ffffff">
-			          <table width="100%" valign="top" bgcolor="#ffffff" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; font-size: 0; max-width: 640px;">
-		              <tr>
-		                <td valign="top" align="center" width="100%">
-			                <!-- MOB VERSION --> 
-		                  <!--[if !mso 9]><!-->
-		                  
-		                  <div class="show_in_mobile" style="font-size: 0;max-height: 0;overflow: hidden;display: none;"> <a href="https://www.tacobell.com/food/deals-and-combos/bacon-club-chalupa-combo?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=img-combo&guid=%%HybrisGUID%%" target="_blank"> <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_07.jpg" width="360" height="397" border="0" style="display: block;width: 100%; height:auto;max-height:397px;color: #000000;font-family: Helvetica, Arial, sans-serif;font-size: 14px;" alt="Two Crunchy Tacos plus a large drink make this the perfect combo." /> </a> </div>
-		                  
-		                  <!--<![endif]--> 
-		                  <!-- Desktop -->
-		                  
-		                  <div class="hide_in_mobile" style="width: 100%; overflow: hidden;"> <a href="https://www.tacobell.com/food/deals-and-combos/bacon-club-chalupa-combo?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=img-combo&guid=%%HybrisGUID%%" target="_blank" style="font-size: 0;"> <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_07.jpg" width="640" height="552" border="0" style="display: block;color: #000000;font-family: Helvetica, Arial, sans-serif;font-size: 14px;max-height: 705px;width: 100%; height: auto;" alt="Two Crunchy Tacos plus a large drink make this the perfect combo." /> </a> </div>
-		                  
-		                  <!-- DESKTOP VERSION END --></td>
-		              </tr>
-		            </table>
-		            </td>
-		        </tr>
-		        <!-- Hero end --> 
-              </table>           
-              
-              
-
-                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#78b59a" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
-
-
+                <tr>
+                  <td align="center">
+                    <a href="https://www.tacobell.com/food/deals-and-combos/bacon-club-chalupa-combo?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=img-combo&guid=%%HybrisGUID%%" target="_blank" name="www_tacobell_com_food_deals_and_com_2"> <img
+                        src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_07.jpg" width="640" height="397px" border="0" style="display: block;width: 100%; height:auto;max-height:397px;color: #000000;font-family: Helvetica, Arial, sans-serif;font-size: 14px;"
+                        alt="Two Crunchy Tacos plus a large drink make this the perfect combo." /> </a></td>
+                </tr>
                 <!--POD 1 COPY AND CTA -->
                 <tr>
                   <td class="background_full_width" align="center" valign="top" width="100%" style="height:199px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_08.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat">
@@ -1120,15 +1157,16 @@
                         <v:fill opacity="0%" color="#78b59a"/>
                         <v:textbox inset="0,0,0,0">
                         <![endif]-->
-                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">             
+                      <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px; padding: 0px 10px 12px 10px;">
-                            <a class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px;" href="https://www.tacobell.com/food/deals-and-combos/bacon-club-chalupa-combo?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=cta-combo&guid=%%HybrisGUID%%">
-                              <span class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px;">
-								Two Crunchy Tacos plus a large <br class="hide_in_mobile"/>drink make this the perfect&nbsp;combo.
+                          <td align="center" class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px; padding: 0px 10px 12px 10px;">
+                            <a class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px;"
+                              href="https://www.tacobell.com/food/deals-and-combos/bacon-club-chalupa-combo?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=img-combo&guid=%%HybrisGUID%%" name="www_tacobell_com_food_deals_and_com_3">
+                              <span class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration:none; font-size: 30px; line-height: 38px;">
+                                Two Crunchy Tacos plus a large <br class="hide_in_mobile" />drink make this the perfect&nbsp;combo
                               </span>
-                              </a>
+                            </a>
                           </td>
 
                         </tr>
@@ -1139,8 +1177,8 @@
 
                               <tr>
                                 <td>&nbsp;</td>
-                                <td class="hero_cta" align="center" bgcolor="#ffffff" height="90" width="350">
-                                  <a name="cta" class="fontPoppins hero_cta_link" href="https://www.tacobell.com/gift-cards?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=cta-gc&guid=%%HybrisGUID%%" target="_blank"
+                                <td class="hero_cta" align="center" bgcolor="#ffffff" style="width: 320px; height: 90px;">
+                                  <a name="cta_1" class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food/deals-and-combos/bacon-club-chalupa-combo?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=cta-combo&guid=%%HybrisGUID%%" target="_blank"
                                     style="width: 100%; color:#000000; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
 
                                     <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;">
@@ -1156,10 +1194,6 @@
                           </td>
 
                         </tr>
-
-
-
-
 
                       </table>
                       <!--[if gte mso 9]> 
@@ -1181,37 +1215,16 @@
 
               <!-- HEADER END Alt -->
 
-              <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#78b59a" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
 
-		        <!-- Hero -->
-		        <tr>
-		          <td style="font-size: 0px;" bgcolor="#ffffff">
-			          <table width="100%" valign="top" bgcolor="#ffffff" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; font-size: 0; max-width: 640px;">
-		              <tr>
-		                <td valign="top" align="center" width="100%">
-			                <!-- MOB VERSION --> 
-		                  <!--[if !mso 9]><!-->
-		                  
-		                  <div class="show_in_mobile" style="font-size: 0;max-height: 0;overflow: hidden;display: none;"> <a href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dmktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty&utm_medium=email&utm_source=silverpop&utm_content=image&guid=%%HybrisGUID%%" target="_blank"> <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_09.jpg" width="360" height="303" border="0" style="display: block;width: 100%; height:auto;max-height:397px;color: #000000;font-family: Helvetica, Arial, sans-serif;font-size: 14px;" alt="Get a Free Doritos Locos Tacos" /> </a> </div>
-		                  
-		                  <!--<![endif]--> 
-		                  <!-- Desktop -->
-		                  
-		                  <div class="hide_in_mobile" style="width: 100%; overflow: hidden;"> <a href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dmktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty&utm_medium=email&utm_source=silverpop&utm_content=image&guid=%%HybrisGUID%%" target="_blank" style="font-size: 0;"> <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_09.jpg" width="640" height="538" border="0" style="display: block;color: #000000;font-family: Helvetica, Arial, sans-serif;font-size: 14px;max-height: 705px;width: 100%; height: auto;" alt="Get a Free Doritos Locos Tacos" /> </a> </div>
-		                  
-		                  <!-- DESKTOP VERSION END --></td>
-		              </tr>
-		            </table>
-		            </td>
-		        </tr>
-		        <!-- Hero end --> 
-              </table>
+              <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
+                <tr>
+                  <td>
+                    <a href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dmktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty&utm_medium=email&utm_source=silverpop&utm_content=image&guid=%%HybrisGUID%%"
+                      target="_blank" name="tblinks_tacobell_com__link_http___w"> <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_09.jpg" width="640" height="539px" border="0"
+                        style="display: block;width: 100%; height:auto;color: #000000;font-family: Helvetica, Arial, sans-serif;font-size: 14px;" alt="Get a Free Doritos Locos Tacos" /> </a>
+                  </td>
+                </tr>
 
- 
-                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
-
-
-	              
                 <!--POD 2 and CTA-->
                 <tr>
                   <td class="background_full_width" align="center" valign="top" width="100%" style="height:261px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/TB-298_Bacon_Club_Chalupa/E121_Email_BaconClubChalupa-Launch_1209_FINAL_10.jpg');background-size: 640px auto;background-position: top center; background-repeat: no-repeat">
@@ -1223,15 +1236,17 @@
                         <v:textbox inset="0,0,0,0">
                         <![endif]-->
                       <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
-                        
+
                         <tr>
 
-                          <td align="center" class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 30px; line-height: 38px; padding: 0px 10px 12px 10px;">
-                            <a class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 30px; line-height: 38px;" href="https://www.tacobell.com/food/specialties/bacon-club-chalupa?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=headline-alc&guid=%%HybrisGUID%%">
-                              <span class="fontPoppins hero_bodycopy mb_yahoo_hero" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 30px; line-height: 38px;">
-								Only for new Taco Bell Rewards (Beta) members in the Taco Bell App.*
+                          <td align="center" class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 30px; line-height: 38px; padding: 0px 10px 12px 10px;">
+                            <a class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 30px; line-height: 38px;"
+                              href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dmktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dimage&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty&utm_medium=email&utm_source=silverpop&utm_content=image&guid=%%HybrisGUID%%"
+                              name="www_tacobell_com_food_specialties_b_3">
+                              <span class="fontPoppins drive_thru_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; text-decoration:none; font-size: 30px; line-height: 38px;">
+                                Only for new Taco Bell Rewards (Beta) members in the Taco&nbsp;Bell&nbsp;app*
                               </span>
-                              </a>
+                            </a>
                           </td>
 
                         </tr>
@@ -1242,12 +1257,13 @@
 
                               <tr>
                                 <td>&nbsp;</td>
-                                <td class="hero_cta" align="center" bgcolor="#d3502d" height="90" width="350">
-                                  <a name="cta" class="fontPoppins hero_cta_link" href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dmktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dcta&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty&utm_medium=email&utm_source=silverpop&utm_content=cta&guid=%%HybrisGUID%%" target="_blank"
-                                    style="width: 100%; color:#ffffff; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
+                                <td class="hero_cta" align="center" bgcolor="#d3502d" style="width: 320px; height: 90px;">
+                                  <a name="cta_2" class="fontPoppins drive_thru_cta_link"
+                                    href="https://tblinks.tacobell.com/?link=http://www.tacobell.com/rewards%3Futm_campaign%3Dmktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty%26utm_medium%3Demail%26utm_source%3Dsilverpop%26utm_content%3Dcta&apn=com.tacobell.ordering&isi=497387361&ibi=com.tacobell.ARgame&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty-Non-Loyalty&utm_medium=email&utm_source=silverpop&utm_content=cta&guid=%%HybrisGUID%%"
+                                    target="_blank" style="width: 100%; color:#ffffff; text-decoration:none; padding-top:30px; padding-bottom:30px; font-size: 27px;line-height: 27px; font-weight: bold; display: inline-block;">
 
                                     <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;">
-                                     Get Started
+                                      Get Started
                                     </span>
 
                                   </a>
@@ -1259,10 +1275,6 @@
                           </td>
 
                         </tr>
-
-
-
-
 
                       </table>
                       <!--[if gte mso 9]> 
@@ -1278,7 +1290,7 @@
                 <!--POD 2 END-->
 
 
-                </table>
+              </table>
               <!-- Drive Thru -->
 
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
@@ -1315,8 +1327,8 @@
                                   <table border="0" cellpadding="0" cellspacing="0" style="font-size: 0px;" role="presentation">
                                     <tr>
                                       <td>&nbsp;</td>
-                                      <td class="drive_thru_cta" align="center" width="320px" height="90px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=cta-DT-banner&guid=%%HybrisGUID%%"
-                                          target="_blank" style="color:#000000; text-decoration: none; font-size: 27px; line-height: 27px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;"> <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span> </a></td>
+                                      <td class="drive_thru_cta" align="center" width="320px" bgcolor="#ffffff" style="background-color:#ffffff; width: 320px; height: 90px;"><a class="fontPoppins drive_thru_cta_link" href="https://www.tacobell.com/food?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=cta-DT-banner" target="_blank"
+                                          style="color:#000000; text-decoration: none; font-size: 27px; line-height: 27px; font-weight: bold; padding-top:30px; padding-bottom:30px; display: inline-block; width: 100%;"> <span class="fontPoppins" style="font-family: Helvetica, Arial, sans-serif;"> Order Now </span> </a></td>
                                       <td>&nbsp;</td>
                                     </tr>
                                   </table>
@@ -1353,7 +1365,7 @@
                       <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:300px">
                       <v:fill opacity="0%" color="#ffffff"/>
                       <v:textbox inset="0,0,0,0">
-                      <![endif]--> 
+                      <![endif]-->
 
                       <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
 
@@ -1366,39 +1378,37 @@
                           <td width="30px" style="width: 30px;">&nbsp;</td>
                           <td>
                             <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; max-width: 100%; font-size: 0px;" role="presentation">
-                            
-                     
+
+
 
                               <tr>
                                 <td class="download_app_wrapper" align="center" style="">
                                   <table border="0" cellpadding="0" cellspacing="0" style="font-size: 0px;" role="presentation">
                                     <tr>
-                                      
+
                                       <td class="drive_thru_cta" align="right">
                                         <a class="fontPoppins download_app_link" href="https://apps.apple.com/us/app/taco-bell/id497387361" target="_blank">
-                                          <img alt="Android app store" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-ios.png"/>
+                                          <img alt="Android app store" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-ios.png" />
                                         </a>
                                       </td>
                                       <td width="30px" style="width: 30px;">&nbsp;</td>
                                       <td class="drive_thru_cta" align="left">
                                         <a class="fontPoppins download_app_link" href="https://play.google.com/store/apps/details?id=com.tacobell.ordering" target="_blank">
-                                          <img alt="Apple app store" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-android.png"/>
+                                          <img alt="Apple app store" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/dl-app-android.png" />
                                         </a>
                                       </td>
                                     </tr>
                                   </table>
                                 </td>
                               </tr>
- 
-                             
+
+
 
                             </table>
                           </td>
                           <td width="30px" style="width: 30px;">&nbsp;</td>
                         </tr>
 
-        
-        
 
                       </table>
                       <!--[if gte mso 9]> 
@@ -1406,14 +1416,12 @@
                       </v:fill>
                       </v:rect>
                       </v:image>
-                      <![endif]--> 
+                      <![endif]-->
                     </div>
                   </td>
 
                 </tr>
-              
 
-              
               </table>
               <!-- Download app -->
 
@@ -1425,43 +1433,43 @@
                   <td class="see_in_browser_top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
                 </tr>
                 <tr>
-                  <td align="center"><a class="fontPoppins hero_bodycopy" href="http://www.example.com" target="_blank" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration: underline; font-size: 14px; line-height: 14px;">See in your browser</a></td>
+                  <td align="center"><a class="fontPoppins hero_bodycopy" href="http://links.tacobell.mkt7706.com/servlet/MailView?ms=NDQxNDc2ODQS1&r=MTE3OTg0OTg1NTk1NgS2&j=MTkwMTg5MDk0MgS2&mt=1&rt=0" target="_blank" style="font-family:Helvetica, Arial, sans-serif; color:#000000; text-decoration: underline; font-size: 14px; line-height: 14px;" xt="SPCLICKTOVIEW" name="See in your browser">See in
+                      your browser</a></td>
                 </tr>
                 <tr>
                   <td class="see_in_browser_bot" height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
                 </tr>
-
                 <!-- social -->
                 <tr>
                   <td align="center">
                     <table border="0" align="center" valign="middle" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style=" font-size: 0px;" role="presentation">
                       <tr>
                         <td>
-                          <a href="https://www.facebook.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=facebook&guid=%%HybrisGUID%%" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_fb.jpg" alt="Facebook"> </a>
+                          <a href="https://www.facebook.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=facebook" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_fb.jpg" alt="Facebook"> </a>
                         </td>
 
                         <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
                         <td>
-                          <a href="https://www.instagram.com/tacobell/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=instagram&guid=%%HybrisGUID%%" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_instagram.jpg" alt="Instagram"> </a>
+                          <a href="https://www.instagram.com/tacobell/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=instagram" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_instagram.jpg" alt="Instagram"> </a>
                         </td>
 
                         <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
                         <td>
-                          <a name="footer_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=footer_logo&guid=%%HybrisGUID%%" target="_blank"> <img class="social_tb_logo" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_tb_logo.png" alt="Taco Bell"> </a>
+                          <a name="footer_logo" href="https://www.tacobell.com/?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=footer_logo" target="_blank"> <img class="social_tb_logo" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_tb_logo.png" alt="Taco Bell"> </a>
                         </td>
 
                         <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
                         <td>
-                          <a href="https://twitter.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=twitter&guid=%%HybrisGUID%%" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_twitter.jpg" alt="Twitter"> </a>
+                          <a href="https://twitter.com/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=twitter" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_twitter.jpg" alt="Twitter"> </a>
                         </td>
 
                         <td class="social_spacer" width="70px" style="width: 70px;">&nbsp;</td>
 
                         <td>
-                          <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=youtube&guid=%%HybrisGUID%%" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_youtube.jpg" alt="Youtube"> </a>
+                          <a href="https://www.youtube.com/user/tacobell?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=youtube" target="_blank"> <img class="social_icon" src="https://rauxa-email.s3.amazonaws.com/TB/OG_layout/social_youtube.jpg" alt="Youtube"> </a>
                         </td>
                       </tr>
                     </table>
@@ -1478,24 +1486,27 @@
                   <td align="center">
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%;">
                       <tr>
-	                    <td class="legal_spacer_hori" width="90px" style="width: 90px;">&nbsp;</td>
+                        <td class="legal_spacer_hori" width="90px" style="width: 90px;">&nbsp;</td>
                         <td align="center">
                           <table cellpadding="0" cellspacing="0" border="0" align="center" width="90%" role="presentation">
 
                             <tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">
 
-At participating U.S. Taco Bell&reg; locations for a limited time only. Contact local restaurant for prices, hours and participation, which vary. Tax extra. All beverage-related trademarks are owned by PepsiCo, Inc. and its Affiliates and Subsidiaries. Drinks exclude Freezes. 
-<br /><br />
-*Reward valid for 14 days from issuance and redeemable only via the Taco Bell mobile app for in-store/drive-thru pickup orders, at participating U.S. Taco Bell locations, while supplies last. Not available with a web pay-ahead pickup order or delivery order. Must register as a user in Taco Bell app in order to redeem. Check your local Taco Bell store for availability. Purchase not required. Offer valid for one (1) Seasoned&nbsp;Beef&nbsp;Doritos&reg; Locos&nbsp;Tacos. For
-each offer period, limit one (1) redeemed offer/Reward per person. Offer excludes Doritos&reg; Locos Tacos Supreme. No product or ingredient substitutions, upgrades or add-ons; except may swap seasoned beef for beans. Reward is <span style="white-space: nowrap;">non-transferable</span> and cannot be combined with any other offer. No cash value. Terms and conditions apply. Taco Bell Rewards (Beta) program is available for a limited time only and is subject to termination at Taco&nbsp;Bell&rsquo;s discretion. ©2020&nbsp;Taco&nbsp;Bell IP&nbsp;Holder,&nbsp;LLC.
+                                At participating U.S. Taco Bell&reg; locations for a limited time only. Contact local restaurant for prices, hours and participation, which vary. Tax extra. All beverage-related trademarks are owned by PepsiCo, Inc. and its Affiliates and Subsidiaries. Drinks exclude&nbsp;Freezes.
+                                <br /><br />
+                                *Reward valid for 14 days from issuance and redeemable only via the Taco Bell mobile app for in-store/drive-thru pickup orders, at participating U.S. Taco Bell locations, while supplies last. Not available with a web pay-ahead pickup order or delivery order. Must register as a user in Taco Bell app in order to redeem. Check your local Taco Bell store for
+                                availability. Purchase not required. Offer valid for one (1) Seasoned&nbsp;Beef&nbsp;Doritos&reg; Locos&nbsp;Tacos. For
+                                each offer period, limit one (1) redeemed offer/ Reward per person. Offer excludes Doritos&reg; Locos Tacos Supreme. No product or ingredient substitutions, upgrades or add-ons; except may swap seasoned beef for beans. Reward is <span style="white-space: nowrap;">nontransferable</span> and cannot be combined with any other offer. No cash value. Terms and conditions
+                                apply. Taco Bell Rewards (Beta) program is available for a limited time only and is subject to termination at Taco&nbsp;Bell&rsquo;s discretion. ©2020&nbsp;Taco&nbsp;Bell IP&nbsp;Holder,&nbsp;LLC.
                               </td>
                             </tr>
                             <tr>
                               <td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
                             </tr>
                             <tr>
-                              <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"> You get emails from Taco Bell because you love tacos.<br class="hide_in_mobile" />&nbsp;<a href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=privacy_policy&guid=%%HybrisGUID%%" name="privacy_policy" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">View</a> our Privacy&nbsp;Policy.</td>
+                              <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;"> You get emails from Taco Bell because you love&nbsp;tacos.<br class="hide_in_mobile" />&nbsp;<a
+                                  href="https://www.tacobell.com/legal-notices/privacy-policy?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_122920-Bacon-Club-Chalupa-Non-Loyalty&utm_content=privacy_policy" name="privacy_policy" style="text-decoration: underline; color: #000000;" target="_blank">View</a> our Privacy&nbsp;Policy.</td>
                             </tr>
                             <tr>
                               <td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
@@ -1507,19 +1518,21 @@ each offer period, limit one (1) redeemed offer/Reward per person. Offer exclude
                               <td class="legal_spacer_vertical" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
                             </tr>
                             <tr>
-                              <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">If you <a href="http://tacobellunsubscribe.com/marketing.php?email=%%Email%%" style="text-decoration: underline; color: #000000;" target="_blank" xt="SPCLICK">Unsubscribe</a>, your inbox will have a serious lack of&nbsp;tacos.</td>
+                              <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 14px; line-height: 18px;">If you <a href="http://tacobellunsubscribe.com/marketing.php?email=%%Email%%" style="text-decoration: underline; color: #000000;" target="_blank" name="tacobellunsubscribe_com_marketing_p">Unsubscribe</a>, your inbox will have a
+                                serious lack of&nbsp;tacos.
+                              </td>
                             </tr>
                             <tr>
                               <td height="70" style="font-size: 70px; line-height:70px; height:70px;">&nbsp;</td>
                             </tr>
                           </table>
                         </td>
-                         <td class="legal_spacer_hori" width="90px" style="width: 90px;">&nbsp;</td>
+                        <td class="legal_spacer_hori" width="90px" style="width: 90px;">&nbsp;</td>
 
                       </tr>
                     </table>
                   </td>
-                  
+
                 </tr>
                 <!--  disclaimer -->
 
@@ -1537,6 +1550,7 @@ each offer period, limit one (1) redeemed offer/Reward per person. Offer exclude
 </tr>
 </table>
 					<![endif]-->
+
 </body>
 
 </html>
