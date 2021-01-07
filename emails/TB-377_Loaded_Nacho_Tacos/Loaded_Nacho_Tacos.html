@@ -255,8 +255,9 @@
 					line-height: 25px !important;
 				}
 				.mobile_space_2 {
-					height: 40px !important;
-					line-height: 40px !important;
+					height: 30px !important;
+					line-height: 30px !important;
+          font-size: 30px !important;
 				}
 
       .hero_cta_wrapper {
@@ -319,19 +320,39 @@
       .hero_steps_num_wrapper-3~.hero_steps_copy {
         padding-top: 12px !important;
       }
-		
-			
-
 
 
 
       /* HERO 1 : end */
 
 
-      /*
 
 
-      */
+
+
+
+     .apply-now-top {
+      font-size: 0 !important;
+      line-height: 0 !important;
+      height: 15vh !important;
+     }
+
+     .apply-now-head {
+       padding-bottom: 10% !important;
+     }
+
+     .apply-now-bottom {
+      font-size: 0 !important;
+      line-height: 0 !important;
+      height: 0 !important;
+     }
+
+
+     .apply-now-body-top {
+      font-size: 0 !important;
+      line-height: 0 !important;
+      height: 4vh !important;
+     }
 
 
 
@@ -530,8 +551,20 @@
     }
 
 
-    /*iphone plus*/
+    @media only screen 
+    and (device-width : 375px) 
+    and (-webkit-device-pixel-ratio : 3) {
 
+      .apply-now-top {
+        font-size: 0 !important;
+        line-height: 0 !important;
+        height: 12vh !important;
+      }
+
+    }
+
+
+    /*iphone plus*/
     @media (width:414px) {}
 
     /* iphone 6/7/8/+ */
@@ -580,6 +613,14 @@
         padding-top: 10px !important;
         padding-bottom: 10px !important;
       }
+
+
+      .apply-now-body-top {
+        font-size: 0 !important;
+        line-height: 0 !important;
+        height: 12vh !important;
+     }
+
 
       .download_app_wrapper {
         padding-bottom: 4px;
@@ -1089,7 +1130,7 @@
                     <!-- Spacer : BEGIN -->
                     <table border="0" cellpadding="0" cellspacing="0"> 
                       <tr>
-                        <td height="190" width="100%" style="font-size: 190px; line-height: 190px;">
+                        <td class="apply-now-top" height="190" width="100%" style="font-size: 190px; line-height: 190px;">
                         &nbsp;
                         </td>
                       </tr>
@@ -1099,7 +1140,7 @@
                 </tr>
 						   <tr>
 
-							  <td class="hero_headline_wrapper" align="center" >
+							  <td class="hero_headline_wrapper apply-now-head" align="center" >
 
 								<h1 class="font_OswaldBold hero_headline" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold;  color:#ffffff; text-decoration:none; font-size: 60px; line-height: 62px; margin: 0px;">
 								  <a class="font_OswaldBold hero_headline" href="https://www.tacobellfoundation.org?utm_medium=email&utm_source=silverpop&utm_campaign=mktg_010821-Loaded-Nacho-Taco&utm_content=cta-Foundation&guid=%%HybrisGUID%%" target="_blank" style="color:#ffffff; text-decoration: none; font-size: 60px; line-height: 62px; margin: 0px"> 
@@ -1121,7 +1162,7 @@
                   <!-- Spacer : BEGIN -->
                   <table border="0" cellpadding="0" cellspacing="0"> 
                     <tr>
-                      <td height="70" width="100%" style="font-size: 70px; line-height: 70px;">
+                      <td class="apply-now-bottom" height="70" width="100%" style="font-size: 70px; line-height: 70px;">
                       &nbsp;
                       </td>
                     </tr>
@@ -1143,7 +1184,7 @@
                   <!-- Spacer : BEGIN -->
                   <table border="0" cellpadding="0" cellspacing="0"> 
                     <tr>
-                      <td height="100" width="100%" style="font-size: 100px; line-height: 100px;">
+                      <td class="apply-now-body-top" height="100" width="100%" style="font-size: 100px; line-height: 100px;">
                       &nbsp;
                       </td>
                     </tr>
@@ -1169,7 +1210,7 @@
                           <!-- Spacer : BEGIN -->
                           <table border="0" cellpadding="0" cellspacing="0"> 
                             <tr>
-                              <td height="65" width="100%" style="font-size: 65px; line-height: 65px;">
+                              <td class="mobile_space_2" height="65" width="100%" style="font-size: 65px; line-height: 65px;">
                               &nbsp;
                               </td>
                             </tr>
