@@ -186,6 +186,15 @@
         max-height: 0 !important;
       }
 
+      .show_in_mobile {
+        display: block !important;
+        width: auto !important;
+        overflow: visible !important;
+        float: none !important;
+        max-height: inherit !important;
+        line-height: inherit !important;
+      }
+
       .image_full_width {
         width: 100% !important;
         height: auto !important;
@@ -281,25 +290,18 @@
         height: auto !important;
       }
 
-      .hero_background_mob_img {
-        background-image: url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero2_bgv2_mb.png') !important;
-        background-size: 100% auto !important;
-        background-position: top center !important;
-        height: auto !important;
-      }
-
       .hero_background_mob_img_top {
-        background-image: url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/hero_bg_top_mb.png') !important;
+        background-image: url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero2_bg_top_mb.png') !important;
         background-size: 100% 100% !important;
         background-position: top center !important;
         height: 100% !important;
       }
 
       .hero_background_mob_img_bottom {
-        background-image: url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/hero_bg_bottom_mb.png') !important;
-        background-size: 100% 100% !important;
+        background-image: url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero2_bg_bottom_mb.png') !important;
+        background-size: 100% auto !important;
         background-position: top center !important;
-        height: 100% !important;
+        height: auto !important;
       }
 
       .hero-background-top {
@@ -512,6 +514,7 @@
         line-height: 205px !important;
         height: 205px !important
       }
+
     }
 
 
@@ -695,7 +698,7 @@
       body, table, span, td, span.fontPoppins, td.fontPoppins, a.fontPoppins {font-family: Helvetica, Arial, san-serif !important;}
       body, table, span, td, span.fontAktivRegular, td.fontAktivRegular, a.fontAktivRegular {font-family: Helvetica, Arial, san-serif !important;}
       body, table, span, td, span.fontAktivBold, td.fontAktivBold, strong.fontAktivBold { font-family: Helvetica, Arial, san-serif !important;}
-      body, table, span, td, span.fontAktivExBold, td.fontAktivExBold, strong.fontAktivExBold, a.fontAktivExBold, h1.fontAktivExBold p.fontAktivExBold {font-family: Helvetica, Arial, san-serif !important;}
+      body, table, span, td, span.fontAktivExBold, td.fontAktivExBold, strong.fontAktivExBold, a.fontAktivExBold, h1.fontAktivExBold, p.fontAktivExBold {font-family: Helvetica, Arial, san-serif !important;}
       body, table, span, td, span.fontAktivExRegular, td.fontAktivExRegular, a.fontAktivExRegular {font-family: Helvetica, Arial, san-serif !important;}
       </style>
       <![endif]-->
@@ -722,6 +725,18 @@
         line-height: 205px !important;
         height: 205px !important
       }
+
+      .& .hero_background_mob_img_bottom {
+        background-image: url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero2_bg_bottom_mb.png') !important;
+        background-size: 100% auto !important;
+        background-position: top center !important;
+        height: auto !important;
+      }
+
+      .& .image_full_width {
+        width: 100% !important;
+        height: auto !important;
+      }
     }
 
     .& .container {
@@ -738,7 +753,7 @@
     }
   </style>
 
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgColor="#ebebeb" role="presentation" style="width: 100%;">
+  <table width="100%" border="0" cellspacing="0" align="center" cellpadding="0" bgcolor="#ebebeb" role="presentation" style="width: 100%;">
     <tr>
       <td valign="top" align="center" style="padding-bottom: 24px;">
         <!-- CONTAINER START -->
@@ -746,7 +761,7 @@
 
 
 
-        <table class="container mobile_container" lang="en" border="0" cellspacing="0" cellpadding="0" align="center" bgColor="#ffffff" role="presentation">
+        <table class="container mobile_container" lang="en" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" role="presentation" style="margin:0 auto;">
           <tr>
             <td width="100%" align="center" style="width:100%; vertical-align:top;">
               <!-- Content | Start -->
@@ -842,14 +857,14 @@
 
 
 
-              <!-- HERO START No.2 CTA Text Single -->
+              <!-- HERO START No.1 CTA Text Single -->
               <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#FFF0CC">
 
                 <tr>
                   <td align="left" valign="top" width="100%">
 
                     <a href="http://www.example.com" target="_blank">
-                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/Hero_image_1.png" style="display: inline-block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
+                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/Hero_image_1.png" style="display: block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
                     </a>
 
                   </td>
@@ -881,42 +896,10 @@
                       </tr>
 
 
-                      <!--  CTA text variation -->
-                      <tr>
-                        <td align="center" class="fontPoppins hero_button" style="padding-bottom:30px">
-
-
-
-
-                          <table border="0" class="hero_button_wrapper" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px;" role="presentation">
-                            <tr>
-                              <td align="center">
-                                <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta" target="_blank" style="font-family:Helvetica, Arial, sans-serif;font-size: 16px; line-height: 24px; color: #000000; display: block; text-decoration: underline; text-align: right;">
-                                  Order&nbsp;Now
-                                </a>
-                              </td>
-                              <td width="20" style="width: 20px; height:10px; line-height: 10px;font-size: 10px;" class="width_15">&nbsp;</td>
-                              <td align="center">
-                                <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta" target="_blank" style="font-family:Helvetica, Arial, sans-serif;font-size: 16px; line-height: 24px; color: #000000; display: block; text-decoration: underline; text-align: left;">
-                                  Order&nbsp;Now
-                                </a>
-                              </td>
-                            </tr>
-                          </table>
-
-
-
-                        </td>
-
-                      </tr>
 
                       <!-- One CTA text variation -->
                       <tr>
                         <td align="center" class="fontPoppins hero_button" style="padding-bottom:30px">
-
-
-
-
                           <table border="0" class="hero_button_wrapper" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px;" role="presentation">
                             <tr>
                               <td align="center">
@@ -924,99 +907,12 @@
                                   Order&nbsp;Now
                                 </a>
                               </td>
-
                             </tr>
                           </table>
-
-
-
-                        </td>
-
-                      </tr>
-
-                      <!-- Two CTA Btns variation-->
-                      <tr>
-                        <td align="center" class="fontPoppins hero_button" style="padding-bottom: 30px; padding-left: 5.3%; padding-right: 5.3%;">
-
-                          <table border="0" class="hero_button_wrapper display_block" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px; display: inline-block;" role="presentation">
-                            <tr>
-                              <td align="center" class="width_160" style="width:180px">
-                                <div>
-                                  <!--[if mso]>
-                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.EXAMPLE.com/" style="height:50px;v-text-anchor:middle;width:180px;"  arcsize="0" stroke="f" fillcolor="#9D7FB9">
-                                    <w:anchorlock/>
-                                    <center>
-                                    <![endif]-->
-                                  <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta paddingtb14" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #9D7FB9;color:#ffffff; font-size: 16px; line-height: 24px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
-                                    Abcdefg Hijklm
-                                  </a>
-
-                                  <!--[if mso]>
-                                  </center>
-                                </v:roundrect>
-                                <![endif]-->
-                                </div>
-                              </td>
-
-                              <td width="20" style="width: 20px; height:10px; line-height: 10px;font-size: 10px;" class="width_15">&nbsp;</td>
-
-                              <td align="center" class="width_160" style="width:180px">
-                                <div>
-                                  <!--[if mso]>
-                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.EXAMPLE.com/" style="height:50px;v-text-anchor:middle;width:180px;"  arcsize="0" stroke="f" fillcolor="#9D7FB9">
-                                    <w:anchorlock/>
-                                    <center>
-                                    <![endif]-->
-                                  <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta paddingtb14" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #9D7FB9;color:#ffffff; font-size: 16px; line-height: 24px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
-                                    Abcdefg Hijklm
-                                  </a>
-
-                                  <!--[if mso]>
-                                  </center>
-                                </v:roundrect>
-                                <![endif]-->
-                                </div>
-                              </td>
-                            </tr>
-                          </table>
-
                         </td>
                       </tr>
 
 
-                      <!-- One CTA Btn variation-->
-                      <tr>
-                        <td align="center" class="fontPoppins hero_button" style="padding-bottom: 30px">
-
-                          <table border="0" class="hero_button_wrapper" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px;" role="presentation">
-                            <tr>
-                              <td align="center" class="width_160" style="width:180px">
-                                <div>
-                                  <!--[if mso]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.EXAMPLE.com/" style="height:50px;v-text-anchor:middle;width:180px;"  arcsize="0" stroke="f" fillcolor="#E7A458">
-                                  <w:anchorlock/>
-                                  <center>
-                                <![endif]-->
-
-
-                                  <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta paddingtb14" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #E7A458;color:#ffffff; font-size: 16px; line-height: 24px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
-                                    Abcdefg Hijklm
-                                  </a>
-
-
-                                  <!--[if mso]>
-                                    </center>
-                                  </v:roundrect>
-                                <![endif]-->
-                                </div>
-                              </td>
-
-                            </tr>
-                          </table>
-
-                        </td>
-
-                      </tr>
 
                       <tr>
                         <td align="center" class="fontAktivRegular header_legal" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 0px">
@@ -1039,24 +935,102 @@
 
 
               </table>
+              <!-- HERO START No.1 CTA Text Single -->
+
+
+
+              <!-- HERO START No.1 CTA Button Double -->
+              <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#501098">
+
+                <tr>
+                  <td align="left" valign="top" width="100%">
+                    <a href="http://www.example.com" target="_blank">
+                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/Hero_image_2.png" style="display: block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" valign="top" width="100%">
+                    <table class="image_full_width" border="0" width="80%" cellpadding="0" cellspacing="0" align="center" style="width: 80%; font-size: 0px;" role="presentation">
+                      <tr>
+                        <td class="hero_content_top" height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
+                      </tr>
+
+                      <tr>
+                        <td align="center" style="padding-bottom: 10px;">
+                          <h1 class="fontAktivExBold hero_headline" style="margin:0;font-family:Helvetica, Arial, sans-serif; color:#ffffff; font-size: 30px; line-height: 38px;padding-left: 20px; padding-right: 20px">
+                            Get what your crew&#8217;s craving.
+                          </h1>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="fontAktivRegular hero_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff;padding-bottom: 30px">
+                          <p style=" font-size: 16px; line-height: 24px;">
+                            The new $10 Cravings Pack gives your <br aria-hidden="true" class="hide_in_mobile" />group more of what they love.
+                          </p>
+
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center" class="fontPoppins hero_button" style="padding-bottom: 30px; padding-left: 5.3%; padding-right: 5.3%;">
+
+                          <table border="0" class="hero_button_wrapper display_block" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px; display: inline-block;" role="presentation">
+                            <tr>
+                              <!--[if gte mso 9]>
+                                            <style type="text/css">
+                                              .cta_outlook { text-align:center !important; background-color:#9D7FB9 !important; border: none !important; height:50px !important; width:180px !important; border-collapse: collapse !important; }
+                                            </style>
+                                            <![endif]-->
+                              <td align="center" class="cta_outlook width_160" style="width: 180px;">
+                                <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta paddingtb14" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #9D7FB9;color:#ffffff; font-size: 16px; line-height: 24px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
+                                  Abcdefg Hijklm
+                                </a>
+                              </td>
+
+                              <td width="20" style="width: 20px; height:10px; line-height: 10px;font-size: 10px;" class="width_15">&nbsp;</td>
+
+                              <!--[if gte mso 9]>
+                                            <style type="text/css">
+                                              .cta_outlook { text-align:center !important; background-color:#9D7FB9 !important; border: none !important; height:50px !important; width:180px !important; border-collapse: collapse !important; }
+                                            </style>
+                                            <![endif]-->
+                              <td align="center" class="cta_outlook width_160" style="width: 180px;">
+                                <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta paddingtb14" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #9D7FB9;color:#ffffff; font-size: 16px; line-height: 24px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
+                                  Abcdefg Hijklm
+                                </a>
+
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td class="hero_content_bottom" height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+
+
+              </table>
               <!-- HERO START No.1 CTA Button Single -->
 
 
 
-
-
-
-
-              <!-- HERO START No.1 CTA Button Single -->
+              <!-- HERO START No.2 CTA Text Single -->
               <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#ca5c03">
 
                 <tr>
                   <td align="left" valign="top" width="100%">
-
                     <a href="http://www.example.com" target="_blank">
-                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/full-bleed-image_01.png" style="display: inline-block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
+                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/full-bleed-image_01.png" style="display: block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
                     </a>
-
                   </td>
                 </tr>
 
@@ -1086,16 +1060,11 @@
                             <p style=" font-size: 16px; line-height: 24px;">
                               The new $10 Cravings Pack gives your
                             </p>
-
                           </td>
                         </tr>
 
                         <tr>
                           <td align="center" class="fontPoppins hero_button" style="padding-bottom:0px">
-
-
-
-
                             <table border="0" class="hero_button_wrapper" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px;" role="presentation">
                               <tr>
                                 <td align="center">
@@ -1103,14 +1072,9 @@
                                     Order&nbsp;Now
                                   </a>
                                 </td>
-
                               </tr>
                             </table>
-
-
-
                           </td>
-
                         </tr>
 
                         <tr>
@@ -1125,33 +1089,31 @@
                         </v:image>
                         <![endif]-->
                     </div>
-
                   </td>
                 </tr>
 
 
               </table>
-              <!-- HERO START No.1 CTA Button Single -->
+              <!-- HERO START No.2 CTA Text Single -->
               <!-- HERO START No.2 CTA Btn Single -->
-              <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#333333">
-
+              <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#23182b">
 
                 <tr>
-                  <td class="hero_background background_full_width hero_background_mob_img_top" align="center" valign="top" width="100%" style="height:677px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/hero_bg_top_dt.png');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                  <td class="hero_background_mob_img_top" align="center" valign="top" width="100%" style="height:677px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero_bg_top_dt.png');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
                     <div>
                       <!--[if gte mso 9]>
-        <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 677px;" src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/hero_bg_top_dt.png" />
-        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:677px">
-        <v:fill opacity="0%" color="#ffffff"/>
-        <v:textbox inset="0,0,0,0">
-        <![endif]-->
+                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 677px;" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/hero_bg_top_dt.png" />
+                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:677px">
+                      <v:fill opacity="0%" color="#ffffff"/>
+                      <v:textbox inset="0,0,0,0">
+                      <![endif]-->
                       <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width: 100%; font-size: 0px;" role="presentation">
                         <tr>
                           <td class="hero-background-top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
                         </tr>
-
                         <tr>
-                          <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
+                          <!-- design inconsistent with wireframes - should be 70px per wireframes but headline will not fit in one line if so -->
+                          <td width="50px" style="width: 50px;" class="hide_in_mobile">&nbsp;</td>
                           <td align="center">
                             <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width: 100%; font-size: 0px;" role="presentation">
                               <tr>
@@ -1169,49 +1131,46 @@
 
                                 </td>
                               </tr>
-
-
-
                             </table>
-
                           </td>
-
-                          <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
+                          <!-- design inconsistent with wireframes - should be 70px per wireframes but headline will not fit in one line if so -->
+                          <td width="50px" style="width: 50px;" class="hide_in_mobile">&nbsp;</td>
                         </tr>
+                        <!-- this size will need to be updated per design as the spacing will be different -->
                         <tr>
-                          <td align="center"><img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/transparent_375x325.png" style="width: 100%;height: auto;"></td>
+                          <td align="center" colspan="3" style="display: none;" class="show_in_mobile">
+                            <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/transparent_375x343.png" style="width: 100%;height: auto;"></td>
                         </tr>
 
                       </table>
                       <!-- HERO START No.1 CTA Button Single -->
 
 
-
-
-
                       <!--[if gte mso 9]> 
-        </v:textbox>
-        </v:fill>
-        </v:rect>
-        </v:image>
-        <![endif]-->
+                      </v:textbox>
+                      </v:fill>
+                      </v:rect>
+                      </v:image>
+                      <![endif]-->
                     </div>
 
                   </td>
                 </tr>
 
                 <tr>
-                  <td class="hero_background background_full_width hero_background_mob_img_bottom" align="center" valign="top" width="100%" style="height:191px; background-image:url('https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/hero_bg_bottom_dt.png');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                  <td class="hero_background background_full_width hero_background_mob_img_bottom" align="center" valign="top" width="100%" style="height:191px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero_bg_bottom_dt.png');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
                     <div>
                       <!--[if gte mso 9]>
-        <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 191px;" src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/hero_bg_bottom_dt.png" />
-        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:191px">
-        <v:fill opacity="0%" color="#ffffff"/>
-        <v:textbox inset="0,0,0,0">
-        <![endif]-->
+                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 191px;" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/hero_bg_bottom_dt.png" />
+                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:191px">
+                      <v:fill opacity="0%" color="#ffffff"/>
+                      <v:textbox inset="0,0,0,0">
+                      <![endif]-->
                       <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width: 100%; font-size: 0px;" role="presentation">
-
-
+                        <!-- design inconsistent with wireframe- should be 30px of spacing for desktop but then total height will not match background image size -->
+                        <tr>
+                          <td class="hero_content_top_1" height="0" style="font-size: 0px; line-height:0px; height:0px;">&nbsp;</td>
+                        </tr>
                         <!-- One CTA Btn variation-->
                         <tr>
                           <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
@@ -1220,20 +1179,17 @@
                             <table border="0" class="hero_button_wrapper" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px;" role="presentation">
                               <tr>
                                 <!--[if gte mso 9]>
-                    <style type="text/css">
-                      .cta_outlook { text-align:center !important; background-color:#ffffff !important; border: none !important; height:50px !important; width:180px !important; border-collapse: collapse !important; }
-                    </style>
-                    <![endif]-->
+                                <style type="text/css">
+                                  .cta_outlook { text-align:center !important; background-color:#ffffff !important; border: none !important; height:50px !important; width:180px !important; border-collapse: collapse !important; }
+                                </style>
+                                <![endif]-->
                                 <td align="center" class="cta_outlook width_160" style="width: 180px">
                                   <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta paddingtb14" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #ffffff;color:#000000; font-size: 16px; line-height: 24px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
                                     Abcdefg Hijklm
                                   </a>
-
                                 </td>
-
                               </tr>
                             </table>
-
                           </td>
                           <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
                         </tr>
@@ -1241,18 +1197,15 @@
                         <tr>
                           <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
                           <td align="center" class="fontAktivRegular header_legal" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; padding-bottom: 0px">
-
                             <p style="font-size: 12px; line-height: 20px;">
                               Purchase required. Offer expires 5/6/2020. Available to account holders through Taco Bell web and app pay ahead, drive-thru pickup orders at all participating U.S. Taco Bell locations only, while supplies last. Not available with a delivery order. See below for&nbsp;details.
                             </p>
-
-
                           </td>
                           <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
                         </tr>
 
                         <tr>
-                          <td class="hero_content_bottom" height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
+                          <td height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
                         </tr>
                       </table>
                       <!--[if gte mso 9]> 
@@ -1267,8 +1220,6 @@
                 </tr>
 
               </table>
-              <!-- HERO START No.2 CTA Btn Single -->
-
 
 
 
