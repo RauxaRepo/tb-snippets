@@ -12,8 +12,9 @@
 
   <style type="text/css">
     /* FONT : START */
-    @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
     @import url('https://use.typekit.net/wtp3vko.css');
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
 
     .fontPoppins {
       font-family: 'Poppins', Helvetica, Arial, sans-serif !important;
@@ -185,6 +186,15 @@
         max-height: 0 !important;
       }
 
+      .show_in_mobile {
+        display: block !important;
+        width: auto !important;
+        overflow: visible !important;
+        float: none !important;
+        max-height: inherit !important;
+        line-height: inherit !important;
+      }
+
       .image_full_width {
         width: 100% !important;
         height: auto !important;
@@ -200,7 +210,7 @@
 
       /* nav mobile  */
       .nav_link_mobile {
-        font-size: 10px !important;
+        font-size: 9px !important;
         line-height: 18px !important;
 
       }
@@ -222,9 +232,15 @@
       }
 
       .hero_content_top {
-        font-size: 35px !important;
-        line-height: 35px !important;
-        height: 35px !important;
+        font-size: 40px !important;
+        line-height: 40px !important;
+        height: 40px !important;
+      }
+
+      .hero_content_top_1 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+        height: 20px !important;
       }
 
       .hero_content_bottom {
@@ -234,15 +250,15 @@
       }
 
       .hero_headline {
-        font-size: 24px !important;
-        line-height: 32px !important;
+        font-size: 18px !important;
+        line-height: 26px !important;
         padding-left: 4.7% !important;
         padding-right: 4.7% !important;
       }
 
       .hero_copy {
-        padding-left: 9.4% !important;
-        padding-right: 9.4% !important;
+        padding-left: 6.4% !important;
+        padding-right: 6.4% !important;
         padding-bottom: 20px !important;
       }
 
@@ -274,15 +290,52 @@
         height: auto !important;
       }
 
+      .hero_background_mob_img_top {
+        background-image: url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero2_bg_top_mb.png') !important;
+        background-size: 100% 100% !important;
+        background-position: top center !important;
+        height: 100% !important;
+      }
+
+      .hero_background_mob_img_bottom {
+        background-image: url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero2_bg_bottom_mb.png') !important;
+        background-size: 100% auto !important;
+        background-position: top center !important;
+        height: auto !important;
+      }
+
       .hero-background-top {
         height: 50px !important;
         font-size: 50px !important;
         line-height: 50px !important;
       }
 
-
+      .hero_spacer_mb {
+        font-size: 300px !important;
+        line-height: 300px !important;
+        height: 300px !important
+      }
 
       /* HERO 2 : end */
+
+
+      /* hero cta buttons : start */
+
+      .width_160 {
+        width: 160px !important;
+        height: 50px !important;
+      }
+
+      .paddingtb14 {
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+      }
+
+      .width_15 {
+        width: 15px !important;
+      }
+
+      /* hero cta buttons : ends */
 
 
       /* Feature item : start*/
@@ -314,7 +367,7 @@
 
       .feature_item_eyebrow {
         font-size: 8px !important;
-        line-height: 8px !important;
+        line-height: 16px !important;
         padding-bottom: 5px !important;
       }
 
@@ -327,6 +380,9 @@
       .feature_item_copy {
         font-size: 12px !important;
         line-height: 20px !important;
+      }
+
+      .feature_item_padding_bottom {
         padding-bottom: 10px !important;
       }
 
@@ -335,11 +391,15 @@
         line-height: 22px !important;
       }
 
+      .feature_item_content {
+        padding-bottom: 0px !important;
+      }
+
       /* Feature item : end */
       /*Letter item: start*/
       .letter_item_head {
-        font-size: 24px !important;
-        line-height: 32px !important;
+        font-size: 18px !important;
+        line-height: 26px !important;
         padding-bottom: 30px !important;
       }
 
@@ -394,8 +454,8 @@
       .get_app_head {
         text-align: center !important;
         padding-top: 0px !important;
-        font-size: 24px !important;
-        line-height: 24px !important;
+        font-size: 18px !important;
+        line-height: 26px !important;
       }
 
       .get_app_copy {
@@ -447,11 +507,18 @@
 
     }
 
+    /*Gmail desktop tweaks*/
+    @media screen and (max-width:480px) {
+      u~div .hero_spacer_mb {
+        font-size: 205px !important;
+        line-height: 205px !important;
+        height: 205px !important
+      }
+
+    }
 
 
-
-
-    @media (max-width:360px) {
+    @media (max-width:361px) {
 
       /* HERO 1 : start */
 
@@ -462,18 +529,31 @@
 
       }
 
+      .hero-cta {
+        text-align: center !important;
+      }
+
       .hero_button .hero_button_wrapper td {
         float: left;
         width: 100%;
 
       }
 
-      .hero_button .hero_button_wrapper td:first-child {
+      /* .hero_button .hero_button_wrapper td:first-child {
         padding-bottom: 10px;
-      }
+      } */
 
 
       /* HERO 1 : end */
+
+
+
+      /* hero cta buttons : start */
+      .display_block {
+        display: block !important;
+      }
+
+      /* hero cta buttons : end */
 
 
 
@@ -490,6 +570,12 @@
         height: 30px !important;
         font-size: 30px !important;
         line-height: 30px !important;
+      }
+
+      .hero_spacer_mb {
+        font-size: 210px !important;
+        line-height: 210px !important;
+        height: 210px !important
       }
 
       /* Feature item : start*/
@@ -604,15 +690,16 @@
 
 
 
-
-
-
   <!--<![endif]-->
 
 
   <!--[if mso]>
       <style type="text/css">
-      body, table, span, td, span.fontPoppins, td.fontPoppins {font-family: Helvetica, Arial !important;}
+      body, table, span, td, span.fontPoppins, td.fontPoppins, a.fontPoppins {font-family: Helvetica, Arial, san-serif !important;}
+      body, table, span, td, span.fontAktivRegular, td.fontAktivRegular, a.fontAktivRegular {font-family: Helvetica, Arial, san-serif !important;}
+      body, table, span, td, span.fontAktivBold, td.fontAktivBold, strong.fontAktivBold { font-family: Helvetica, Arial, san-serif !important;}
+      body, table, span, td, span.fontAktivExBold, td.fontAktivExBold, strong.fontAktivExBold, a.fontAktivExBold, h1.fontAktivExBold, p.fontAktivExBold {font-family: Helvetica, Arial, san-serif !important;}
+      body, table, span, td, span.fontAktivExRegular, td.fontAktivExRegular, a.fontAktivExRegular {font-family: Helvetica, Arial, san-serif !important;}
       </style>
       <![endif]-->
   <!--[if gte mso 9]>
@@ -632,14 +719,41 @@
 
 <body style="padding:0px; margin:0 auto;">
   <style>
+    @media (max-width:540px) {
+      .& .hero_spacer_mb {
+        font-size: 205px !important;
+        line-height: 205px !important;
+        height: 205px !important
+      }
+
+      .& .hero_background_mob_img_bottom {
+        background-image: url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero2_bg_bottom_mb.png') !important;
+        background-size: 100% auto !important;
+        background-position: top center !important;
+        height: auto !important;
+      }
+
+      .& .image_full_width {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+
     .& .container {
       width: 100% !important;
       max-width: 640px !important;
     }
 
+    .& .width_160 {
+      width: 160px !important;
+    }
+
+    .& .width_15 {
+      width: 15px !important;
+    }
   </style>
 
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgColor="#ebebeb" role="presentation" style="width: 100%;">
+  <table width="100%" border="0" cellspacing="0" align="center" cellpadding="0" bgcolor="#ebebeb" role="presentation" style="width: 100%;">
     <tr>
       <td valign="top" align="center" style="padding-bottom: 24px;">
         <!-- CONTAINER START -->
@@ -647,7 +761,7 @@
 
 
 
-        <table class="container mobile_container" lang="en" border="0" cellspacing="0" cellpadding="0" align="center" bgColor="#ffffff" role="presentation">
+        <table class="container mobile_container" lang="en" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" role="presentation" style="margin:0 auto;">
           <tr>
             <td width="100%" align="center" style="width:100%; vertical-align:top;">
               <!-- Content | Start -->
@@ -659,7 +773,7 @@
               <!-- PREHEADER START -->
               <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#6002E6">
                 <tr>
-                  <td class="fontAktivRegular preheader_mobile" valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#ffffff; line-height:24px; padding-top:18px; padding-bottom:18px; padding-left:20px; padding-right:20px;">
+                  <td class="fontAktivRegular preheader_mobile" valign="top" align="center" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#ffffff; line-height:24px; padding-top:20px; padding-bottom:20px; padding-left:30px; padding-right:30px;">
                     <strong class="fontAktivBold">Free Delivery</strong> on orders of $15+*. Only on Grubhub.
                   </td>
                 </tr>
@@ -686,7 +800,7 @@
               <!-- HEADER START Alt-->
               <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation">
                 <tr>
-                  <td align="center" style="padding-top: 20px; padding-bottom: 20px;">
+                  <td align="center" style="padding-top: 20px; padding-bottom: 20px; padding-left:20px; padding-right:20px">
 
                     <table cellpadding="0" align="center" cellspacing="0" border="0" role="presentation">
                       <tr>
@@ -743,14 +857,14 @@
 
 
 
-              <!-- HERO START No.2 CTA Text Single -->
+              <!-- HERO START No.1 CTA Text Single -->
               <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#FFF0CC">
 
                 <tr>
                   <td align="left" valign="top" width="100%">
 
                     <a href="http://www.example.com" target="_blank">
-                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/Hero_image_1.png" style="display: inline-block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
+                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/Hero_image_1.png" style="display: block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
                     </a>
 
                   </td>
@@ -762,11 +876,11 @@
 
                     <table class="image_full_width" border="0" width="80%" cellpadding="0" cellspacing="0" align="center" style="width: 80%; font-size: 0px;" role="presentation">
                       <tr>
-                        <td class="hero_content_top" height="55" style="font-size: 55px; line-height:55px; height:55px;">&nbsp;</td>
+                        <td class="hero_content_top" height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
                       </tr>
 
                       <tr>
-                        <td align="center" style="padding-bottom: 13px;">
+                        <td align="center" style="padding-bottom: 10px;">
                           <h1 class="fontAktivExBold hero_headline" style="margin:0;font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 30px; line-height: 38px;padding-left: 20px; padding-right: 20px">
                             It&#8217;s not your imagination.
                           </h1>
@@ -781,43 +895,24 @@
                         </td>
                       </tr>
 
+
+
+                      <!-- One CTA text variation -->
                       <tr>
-                        <td align="center" class="fontPoppins hero_button" style="padding-bottom: 30px">
-
-
-
-
+                        <td align="center" class="fontPoppins hero_button" style="padding-bottom:30px">
                           <table border="0" class="hero_button_wrapper" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px;" role="presentation">
                             <tr>
                               <td align="center">
-                                <div>
-                                  <!--[if mso]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.EXAMPLE.com/" style="height:50px;v-text-anchor:middle;width:180px;"  arcsize="0" stroke="f" fillcolor="#E7A458">
-                                  <w:anchorlock/>
-                                  <center>
-                                <![endif]-->
-
-
-                                  <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #E7A458;color:#ffffff; font-size: 16px; line-height: 24px; width: 154px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
-                                    Abcdefg Hijklm
-                                  </a>
-
-
-                                  <!--[if mso]>
-                                    </center>
-                                  </v:roundrect>
-                                <![endif]-->
-                                </div>
+                                <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta" target="_blank" style="font-family:Helvetica, Arial, sans-serif;font-size: 16px; line-height: 24px;  color: #000000; display: block; text-decoration: underline;">
+                                  Order&nbsp;Now
+                                </a>
                               </td>
-
                             </tr>
                           </table>
-
-
-
                         </td>
-
                       </tr>
+
+
 
                       <tr>
                         <td align="center" class="fontAktivRegular header_legal" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 0px">
@@ -840,24 +935,102 @@
 
 
               </table>
+              <!-- HERO START No.1 CTA Text Single -->
+
+
+
+              <!-- HERO START No.1 CTA Button Double -->
+              <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#501098">
+
+                <tr>
+                  <td align="left" valign="top" width="100%">
+                    <a href="http://www.example.com" target="_blank">
+                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/Hero_image_2.png" style="display: block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" valign="top" width="100%">
+                    <table class="image_full_width" border="0" width="80%" cellpadding="0" cellspacing="0" align="center" style="width: 80%; font-size: 0px;" role="presentation">
+                      <tr>
+                        <td class="hero_content_top" height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
+                      </tr>
+
+                      <tr>
+                        <td align="center" style="padding-bottom: 10px;">
+                          <h1 class="fontAktivExBold hero_headline" style="margin:0;font-family:Helvetica, Arial, sans-serif; color:#ffffff; font-size: 30px; line-height: 38px;padding-left: 20px; padding-right: 20px">
+                            Get what your crew&#8217;s craving.
+                          </h1>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="fontAktivRegular hero_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff;padding-bottom: 30px">
+                          <p style=" font-size: 16px; line-height: 24px;">
+                            The new $10 Cravings Pack gives your <br aria-hidden="true" class="hide_in_mobile" />group more of what they love.
+                          </p>
+
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center" class="fontPoppins hero_button" style="padding-bottom: 30px; padding-left: 5.3%; padding-right: 5.3%;">
+
+                          <table border="0" class="hero_button_wrapper display_block" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px; display: inline-block;" role="presentation">
+                            <tr>
+                              <!--[if gte mso 9]>
+                                            <style type="text/css">
+                                              .cta_outlook { text-align:center !important; background-color:#9D7FB9 !important; border: none !important; height:50px !important; width:180px !important; border-collapse: collapse !important; }
+                                            </style>
+                                            <![endif]-->
+                              <td align="center" class="cta_outlook width_160" style="width: 180px;">
+                                <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta paddingtb14" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #9D7FB9;color:#ffffff; font-size: 16px; line-height: 24px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
+                                  Abcdefg Hijklm
+                                </a>
+                              </td>
+
+                              <td width="20" style="width: 20px; height:10px; line-height: 10px;font-size: 10px;" class="width_15">&nbsp;</td>
+
+                              <!--[if gte mso 9]>
+                                            <style type="text/css">
+                                              .cta_outlook { text-align:center !important; background-color:#9D7FB9 !important; border: none !important; height:50px !important; width:180px !important; border-collapse: collapse !important; }
+                                            </style>
+                                            <![endif]-->
+                              <td align="center" class="cta_outlook width_160" style="width: 180px;">
+                                <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta paddingtb14" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #9D7FB9;color:#ffffff; font-size: 16px; line-height: 24px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
+                                  Abcdefg Hijklm
+                                </a>
+
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td class="hero_content_bottom" height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+
+
+              </table>
               <!-- HERO START No.1 CTA Button Single -->
 
 
 
-
-
-
-
-              <!-- HERO START No.1 CTA Button Single -->
+              <!-- HERO START No.2 CTA Text Single -->
               <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#ca5c03">
 
                 <tr>
                   <td align="left" valign="top" width="100%">
-
                     <a href="http://www.example.com" target="_blank">
-                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/full-bleed-image_01.png" style="display: inline-block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
+                      <img class="hero_mobile" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/full-bleed-image_01.png" style="display: block; color:#000000; font-family:Helvetica, Arial, sans-serif; font-size:20px; " alt="" />
                     </a>
-
                   </td>
                 </tr>
 
@@ -870,72 +1043,183 @@
                         <v:fill opacity="0%" color="#ffffff"/>
                         <v:textbox inset="0,0,0,0">
                         <![endif]-->
-                    <table class="image_full_width" border="0" width="80%" cellpadding="0" cellspacing="0" align="center" style="width: 90%; font-size: 0px;" role="presentation">
-                      <tr>
-                        <td class="hero_content_top" height="20" style="font-size: 20px; line-height:20px; height:20px;">&nbsp;</td>
-                      </tr>
+                      <table class="image_full_width" border="0" width="80%" cellpadding="0" cellspacing="0" align="center" style="width: 90%; font-size: 0px;" role="presentation">
+                        <tr>
+                          <td class="hero_content_top_1" height="30" style="font-size: 30px; line-height:30px; height:30px;">&nbsp;</td>
+                        </tr>
 
-                      <tr>
-                        <td align="center" style="padding-bottom: 13px;">
-                          <h1 class="fontAktivExBold hero_headline" style="margin:0;font-family:Helvetica, Arial, sans-serif; color:#ffffff; font-size: 30px; line-height: 38px;padding-left: 20px; padding-right: 20px">
-                            Drive-thru or drive-to-you, your go-tos are closer than ever.
-                          </h1>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" class="fontAktivRegular hero_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff;padding-bottom: 30px">
-                          <p style=" font-size: 16px; line-height: 24px;">
-                            The new $10 Cravings Pack gives your
-                          </p>
+                        <tr>
+                          <td align="center" style="padding-bottom: 10px;">
+                            <h1 class="fontAktivExBold hero_headline" style="margin:0;font-family:Helvetica, Arial, sans-serif; color:#ffffff; font-size: 30px; line-height: 38px;padding-left: 20px; padding-right: 20px">
+                              Drive-thru or drive-to-you, your go-tos are closer than&nbsp;ever.
+                            </h1>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="fontAktivRegular hero_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff;padding-bottom: 30px">
+                            <p style=" font-size: 16px; line-height: 24px;">
+                              The new $10 Cravings Pack gives your
+                            </p>
+                          </td>
+                        </tr>
 
-                        </td>
-                      </tr>
+                        <tr>
+                          <td align="center" class="fontPoppins hero_button" style="padding-bottom:0px">
+                            <table border="0" class="hero_button_wrapper" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px;" role="presentation">
+                              <tr>
+                                <td align="center">
+                                  <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta" target="_blank" style="font-family:Helvetica, Arial, sans-serif;font-size: 16px; line-height: 24px; width: 166px; color: #ffffff; display: block; text-decoration: underline;">
+                                    Order&nbsp;Now
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
 
-                      <tr>
-                        <td align="center" class="fontPoppins hero_button" style="padding-bottom:0px">
+                        <tr>
+                          <td class="hero_content_bottom" height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
+                        </tr>
+                      </table>
 
-
-
-
-                          <table border="0" class="hero_button_wrapper" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px;" role="presentation">
-                            <tr>
-                              <td align="center">
-                                <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta" target="_blank" style="font-family:Helvetica, Arial, sans-serif;font-size: 16px; line-height: 24px; width: 166px; color: #ffffff; display: block; text-decoration: underline;">
-                                  Order&nbsp;Now
-                                </a>
-                              </td>
-
-                            </tr>
-                          </table>
-
-
-
-                        </td>
-
-                      </tr>
-
-                      <tr>
-                        <td class="hero_content_bottom" height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
-                      </tr>
-                    </table>
-
-                        <!--[if gte mso 9]> 
+                      <!--[if gte mso 9]> 
                         </v:textbox>
                         </v:fill>
                         </v:rect>
                         </v:image>
                         <![endif]-->
-                      </div>
-
+                    </div>
                   </td>
                 </tr>
 
 
               </table>
-              <!-- HERO START No.1 CTA Button Single -->
+              <!-- HERO START No.2 CTA Text Single -->
+              <!-- HERO START No.2 CTA Btn Single -->
+              <table class="container mobile_container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 640px" role="presentation" bgcolor="#23182b">
+
+                <tr>
+                  <td class="hero_background_mob_img_top" align="center" valign="top" width="100%" style="height:677px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero_bg_top_dt.png');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                    <div>
+                      <!--[if gte mso 9]>
+                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 677px;" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/hero_bg_top_dt.png" />
+                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:677px">
+                      <v:fill opacity="0%" color="#ffffff"/>
+                      <v:textbox inset="0,0,0,0">
+                      <![endif]-->
+                      <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width: 100%; font-size: 0px;" role="presentation">
+                        <tr>
+                          <td class="hero-background-top" height="80" style="font-size: 80px; line-height:80px; height:80px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <!-- design inconsistent with wireframes - should be 70px per wireframes but headline will not fit in one line if so -->
+                          <td width="50px" style="width: 50px;" class="hide_in_mobile">&nbsp;</td>
+                          <td align="center">
+                            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width: 100%; font-size: 0px;" role="presentation">
+                              <tr>
+                                <td align="center" class="fontAktivRegular" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff;padding-bottom:10px;">
+                                  <h1 class="fontAktivExBold hero_headline" style="margin:0;font-family:Helvetica, Arial, sans-serif; color:#ffffff; font-size: 30px; line-height: 38px;">
+                                    Two Doritos Locos Tacos on&nbsp;us.
+                                  </h1>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="fontAktivRegular hero_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff;padding-bottom: 30px">
+                                  <p style=" font-size: 16px; line-height: 24px;">
+                                    With any online or app purchase over $1. Even better, you can <br class="hide_in_mobile">redeem this offer up to three times&nbsp;daily.
+                                  </p>
+
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- design inconsistent with wireframes - should be 70px per wireframes but headline will not fit in one line if so -->
+                          <td width="50px" style="width: 50px;" class="hide_in_mobile">&nbsp;</td>
+                        </tr>
+                        <!-- this size will need to be updated per design as the spacing will be different -->
+                        <tr>
+                          <td align="center" colspan="3" style="display: none;" class="show_in_mobile">
+                            <img src="https://s3-us-west-1.amazonaws.com/rauxa.email.campaign.assets/2020/taco-bell/fonts/transparent_375x343.png" style="width: 100%;height: auto;"></td>
+                        </tr>
+
+                      </table>
+                      <!-- HERO START No.1 CTA Button Single -->
 
 
+                      <!--[if gte mso 9]> 
+                      </v:textbox>
+                      </v:fill>
+                      </v:rect>
+                      </v:image>
+                      <![endif]-->
+                    </div>
 
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="hero_background background_full_width hero_background_mob_img_bottom" align="center" valign="top" width="100%" style="height:191px; background-image:url('https://rauxa-email.s3.amazonaws.com/TB/TEST/hero_bg_bottom_dt.png');background-size: 640px;background-position: top center; background-repeat: no-repeat;">
+                    <div>
+                      <!--[if gte mso 9]>
+                      <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 191px;" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/hero_bg_bottom_dt.png" />
+                      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; top: 0px; width: 640px; height:191px">
+                      <v:fill opacity="0%" color="#ffffff"/>
+                      <v:textbox inset="0,0,0,0">
+                      <![endif]-->
+                      <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width: 100%; font-size: 0px;" role="presentation">
+                        <!-- design inconsistent with wireframe- should be 30px of spacing for desktop but then total height will not match background image size -->
+                        <tr>
+                          <td class="hero_content_top_1" height="0" style="font-size: 0px; line-height:0px; height:0px;">&nbsp;</td>
+                        </tr>
+                        <!-- One CTA Btn variation-->
+                        <tr>
+                          <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
+                          <td align="center" class="fontPoppins hero_button" style="padding-bottom: 30px">
+
+                            <table border="0" class="hero_button_wrapper" cellpadding="0" cellspacing="0" align="center" style="font-size: 0px;" role="presentation">
+                              <tr>
+                                <!--[if gte mso 9]>
+                                <style type="text/css">
+                                  .cta_outlook { text-align:center !important; background-color:#ffffff !important; border: none !important; height:50px !important; width:180px !important; border-collapse: collapse !important; }
+                                </style>
+                                <![endif]-->
+                                <td align="center" class="cta_outlook width_160" style="width: 180px">
+                                  <a href="http://www.EXAMPLE.com/" class="fontAktivExBold hero-cta paddingtb14" target="_blank" style="font-family:Helvetica, Arial, sans-serif; background-color: #ffffff;color:#000000; font-size: 16px; line-height: 24px; display: block; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-left: 13px; padding-right: 13px;">
+                                    Abcdefg Hijklm
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                          <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
+                          <td align="center" class="fontAktivRegular header_legal" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; padding-bottom: 0px">
+                            <p style="font-size: 12px; line-height: 20px;">
+                              Purchase required. Offer expires 5/6/2020. Available to account holders through Taco Bell web and app pay ahead, drive-thru pickup orders at all participating U.S. Taco Bell locations only, while supplies last. Not available with a delivery order. See below for&nbsp;details.
+                            </p>
+                          </td>
+                          <td width="70px" style="width: 70px;" class="hide_in_mobile">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                          <td height="50" style="font-size: 50px; line-height:50px; height:50px;">&nbsp;</td>
+                        </tr>
+                      </table>
+                      <!--[if gte mso 9]> 
+        </v:textbox>
+        </v:fill>
+        </v:rect>
+        </v:image>
+        <![endif]-->
+                    </div>
+
+                  </td>
+                </tr>
+
+              </table>
 
 
 
@@ -954,21 +1238,21 @@
 
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
                       <tr>
-                        <td width="48%" align="left" class="fontPoppins feature_item_image rtl" style="width: 48%;">
+                        <td width="48%" align="left" valign="top" class="fontPoppins feature_item_image rtl" style="width: 48%;">
 
                           <img src="https://rauxa-email.s3.amazonaws.com/TB/TEST/square-280x280.jpg" alt="" />
 
                         </td>
 
                         <td class="feature_item_spacer" width="40px" style="width: 40px;">&nbsp;</td>
-                        <td class="fontPoppins feature_item_content rtl" valign="middle" align="left" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 16px; line-height: 24px; padding-bottom: 30px">
+                        <td class="fontPoppins feature_item_content rtl" valign="top" align="left" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 16px; line-height: 24px; padding-bottom: 30px">
 
                           <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
                             <tr>
                               <td align="left" class="fontAktivExRegular feature_item_eyebrow" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 10px">
 
-                                <p style="font-size: 10px; line-height: 10px; letter-spacing: 2px !important; text-transform:uppercase;">
+                                <p class="feature_item_eyebrow" style="font-size: 10px; line-height: 18px; letter-spacing: 2px !important; text-transform:uppercase;">
                                   eyebrow
                                 </p>
 
@@ -979,7 +1263,7 @@
                             <tr>
                               <td align="left" class="fontAktivExBold feature_item_head" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 10px">
 
-                                <p style="font-size: 24px; line-height: 32px;">
+                                <p class="feature_item_head" style="font-size: 24px; line-height: 32px;">
                                   Headline lorem ipsum.
                                 </p>
 
@@ -988,8 +1272,8 @@
                             </tr>
 
                             <tr>
-                              <td align="left" class="fontAktivRegular feature_item_copy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 20px">
-                                <p style="font-size: 14px; line-height: 22px;">
+                              <td align="left" class="fontAktivRegular feature_item_copy feature_item_padding_bottom" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 20px">
+                                <p style="font-size: 14px; line-height: 22px;" class="feature_item_copy">
                                   Sub-copy lorem ipsum dolor sit amet, purus.
                                 </p>
 
@@ -1034,20 +1318,20 @@
 
 
 
-                        <td width="48%" align="left" class="fontPoppins feature_item_image rtl" style="width:48%; direction: ltr;">
+                        <td width="48%" align="left" valign="top" class="fontPoppins feature_item_image rtl" style="width:48%; direction: ltr;">
 
                           <img src="https://rauxa-email.s3.amazonaws.com/TB/TEST/square-280x280.jpg" alt="" />
 
                         </td>
                         <td class="feature_item_spacer" width="40px" style="width: 40px;">&nbsp;</td>
-                        <td class="fontPoppins feature_item_content rtl" valign="middle" align="left" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 16px; line-height: 24px; padding-bottom: 30px; direction: ltr;">
+                        <td class="fontPoppins feature_item_content rtl" valign="top" align="left" style="font-family:Helvetica, Arial, sans-serif; color:#000000; font-size: 16px; line-height: 24px; padding-bottom: 30px; direction: ltr;">
 
                           <table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%; font-size: 0px;" role="presentation">
 
                             <tr>
                               <td align="left" class="fontAktivExRegular feature_item_eyebrow" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 10px">
 
-                                <p style="font-size: 10px; line-height: 10px; letter-spacing: 2px !important; text-transform:uppercase;">
+                                <p class="feature_item_eyebrow" style="font-size: 10px; line-height: 18px; letter-spacing: 2px !important; text-transform:uppercase;">
                                   eyebrow
                                 </p>
 
@@ -1058,7 +1342,7 @@
                             <tr>
                               <td align="left" class="fontAktivExBold feature_item_head" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 10px">
 
-                                <p style="font-size: 24px; line-height: 32px;">
+                                <p class="feature_item_head" style="font-size: 24px; line-height: 32px;">
                                   Headline lorem ipsum.
                                 </p>
 
@@ -1067,8 +1351,8 @@
                             </tr>
 
                             <tr>
-                              <td align="left" class="fontAktivRegular feature_item_copy" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 20px">
-                                <p style="font-size: 14px; line-height: 22px;">
+                              <td align="left" class="fontAktivRegular feature_item_copy feature_item_padding_bottom" style="font-family:Helvetica, Arial, sans-serif; color:#000000; padding-bottom: 20px">
+                                <p style="font-size: 14px; line-height: 22px;" class="feature_item_copy">
                                   Sub-copy lorem ipsum dolor sit amet, purus.
                                 </p>
 
@@ -1077,7 +1361,7 @@
 
                             <tr>
                               <td align="left" class="fontAktivBold feature_item_cta" style="font-family:Helvetica, Arial, sans-serif; color:#FF1988; font-size: 14px; line-height: 22px;padding-bottom: 0px">
-							  	<a href="http://www.example.com" target="_blank" style="color:#FF1988; text-decoration: underline;">
+                                <a href="http://www.example.com" target="_blank" style="color:#FF1988; text-decoration: underline;">
                                   Call to Action
                                 </a>
                               </td>
@@ -1113,33 +1397,44 @@
               <!-- Certona -->
               <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%; max-width: 640px; font-size: 0px;" role="presentation">
                 <tr>
-                    <td colspan="2" height="30" valign="top"><img height="30" name="Cont_11" src="https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_modular/spacer.gif" style="display: block; outline:none; text-decoration:none; border:none;" width="30" /></td>
+                  <td colspan="2" height="30" valign="top"><img height="30" name="Cont_11" src="https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_modular/spacer.gif" style="display: block; outline:none; text-decoration:none; border:none;" width="30" /></td>
                 </tr>
                 <tr>
                   <td colspan="2" align="center" valign="top" style="padding:0 30px;">
-                      <div style="cursor:auto;color:#000000;font-family: Helvetica, Arial, sans-serif;font-size:30px;line-height:38px;text-align:center;font-weight:bold;">
-                        <p class="fontAktivExBold " style="font-size: 30px; line-height: 38px; margin: 0;font-family:Helvetica, Arial, sans-serif;color:#000000;">Recommended Just for You</p>
-                      </div>
-                    </td>
+                    <div style="cursor:auto;color:#000000;font-family: Helvetica, Arial, sans-serif;font-size:30px;line-height:38px;text-align:center;font-weight:bold;">
+                      <p class="fontAktivExBold hero_headline" style="font-size: 30px; line-height: 38px; margin: 0;font-family:Helvetica, Arial, sans-serif;color:#000000;">Recommended Just for You</p>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                    <td colspan="2" height="30" valign="top"><img height="30" name="Cont_11" src="https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_modular/spacer.gif" style="display: block; outline:none; text-decoration:none; border:none;" width="30" /></td>
+                  <td colspan="2" height="30" valign="top"><img height="30" name="Cont_11" src="https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_modular/spacer.gif" style="display: block; outline:none; text-decoration:none; border:none;" width="30" /></td>
                 </tr>
                 <tr>
-                    <td valign="top">
-                      <a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-1" target="_blank" xt="SPNOTRACK">
-                        <img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" />
-                      </a>
-                    </td>
-                    <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-2" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=2&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                  <td valign="top">
+                    <a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-1" target="_blank" xt="SPNOTRACK">
+                      <img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width"
+                        style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" />
+                    </a>
+                  </td>
+                  <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-2" target="_blank" xt="SPNOTRACK"><img
+                        src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=2&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width"
+                        style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
                 </tr>
                 <tr>
-                    <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-3" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=3&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
-                    <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-4" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=4&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                  <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-3" target="_blank" xt="SPNOTRACK"><img
+                        src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=3&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width"
+                        style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                  <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-4" target="_blank" xt="SPNOTRACK"><img
+                        src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=4&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width"
+                        style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
                 </tr>
                 <tr>
-                    <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-5" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=5&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
-                    <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-6" target="_blank" xt="SPNOTRACK"><img src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=6&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width" style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                  <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-5" target="_blank" xt="SPNOTRACK"><img
+                        src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=5&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width"
+                        style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
+                  <td valign="top"><a href="http://ris.res-x.com/?appid=TacoBell01&index=1&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_101020-vegetarians&utm_medium=email&utm_source=silverpop&utm_campaign=mktg_101020-vegetarians&utm_content=certona-6" target="_blank" xt="SPNOTRACK"><img
+                        src="http://ris.res-x.com/image.aspx?appid=TacoBell01&index=6&userid=%%HybrisGUID%%&scheme=campaign_rr&campaignid=mktg_100420-taco-gifter" alt="" name="Cont_2" width="320" height="452" class="image_full_width"
+                        style="max-width: 100%; border: none; border-radius: 0px; display: block; color:#ffffff; font-size: 16px; outline: none; text-decoration: none; height: 452px; width: 320px;" title="" /></a></td>
                 </tr>
               </table>
               <!-- Certona -->
@@ -1385,7 +1680,7 @@
                                     <tr>
                                       <td align="left" class="fontAktivExBold get_app_head" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; padding-top:20px; padding-bottom: 10px">
 
-                                        <p style="font-size: 24px; line-height: 32px;">
+                                        <p class="get_app_head" style="font-size: 24px; line-height: 32px;">
                                           Time to get rewarded
                                         </p>
 
@@ -1395,7 +1690,7 @@
 
                                     <tr>
                                       <td align="left" class="fontAktivRegular get_app_copy" style="font-family:Helvetica, Arial, sans-serif; color:#ffffff;padding-bottom: 20px">
-                                        <p style=" font-size: 14px; line-height: 22px;">
+                                        <p style=" font-size: 16px; line-height: 24px;">
                                           Use the Taco Bell app each time you order to earn points you can redeem for FREE food.
                                         </p>
 
@@ -1498,25 +1793,25 @@
                             <tr>
                               <td>
                                 <a href="http://www.example.com" target="_blank" aria-label="Facebook Link">
-                                  <img aria-hidden="true" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/social_fb.png" />
+                                  <img aria-hidden="true" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/fb-grey.png" />
                                 </a>
                               </td>
                               <td class="footer_social_spacer" width="30px" style="width: 30px;">&nbsp;</td>
                               <td>
                                 <a href="http://www.example.com" target="_blank" aria-label="Twitter Link">
-                                  <img aria-hidden="true" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/social_twitter.png" />
+                                  <img aria-hidden="true" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/twitter-grey.png" />
                                 </a>
                               </td>
                               <td class="footer_social_spacer" width="30px" style="width: 30px;">&nbsp;</td>
                               <td>
                                 <a href="http://www.example.com" target="_blank" aria-label="Instagram Link">
-                                  <img aria-hidden="true" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/social_instagram.png" />
+                                  <img aria-hidden="true" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/instagram-grey.png" />
                                 </a>
                               </td>
                               <td class="footer_social_spacer" width="30px" style="width: 30px;">&nbsp;</td>
                               <td>
                                 <a href="http://www.example.com" target="_blank" aria-label="Youtube Link">
-                                  <img aria-hidden="true" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/social_youtube.png" />
+                                  <img aria-hidden="true" src="https://rauxa-email.s3.amazonaws.com/TB/TEST/youtube-grey.png" />
                                 </a>
                               </td>
                             </tr>
@@ -1543,7 +1838,8 @@
                             <tr>
                               <td align="center" class="fontAktivRegular" style="font-family:Helvetica, Arial, sans-serif; color:#777777; padding-bottom: 20px;">
                                 <p style="font-size: 10px; line-height: 18px;">
-                                  Available at participating U.S. Taco Bell&#174; locations. Contact store for price, hours, and participation which vary Additional terms apply. Tax extra. Visit <a href="www.tacobell.come/delivery" style="color:#FF1988; text-decoration: underline">www.tacobell.come/delivery</a> for delivery availability. Delivery, service and small order delivery fees may apply &#169;2019 Taco Bell IP Holder, LLC.
+                                  Available at participating U.S. Taco Bell&#174; locations. Contact store for price, hours, and participation which vary Additional terms apply. Tax extra. Visit <a href="www.tacobell.come/delivery" style="color:#FF1988; text-decoration: underline">www.tacobell.come/delivery</a> for delivery availability. Delivery, service and small order delivery fees may apply
+                                  &#169;2019 Taco Bell IP Holder, LLC.
                                 </p>
 
                               </td>
@@ -1561,9 +1857,9 @@
 
                             <tr>
                               <td align="center" class="fontPoppins" style="font-family:Helvetica, Arial, sans-serif; color:#777777;">
-
                                 <p style="font-size: 10px; line-height: 18px;">
-                                  1 Glen Bell Way, Irvine, California 92618
+
+                                  <a style="color:#000000; text-decoration:none; pointer-events: none;">1 G&zwnj;l&zwnj;e&zwnj;n B&zwnj;e&zwnj;l&zwnj;l W&zwnj;a&zwnj;y, I&zwnj;r&zwnj;v&zwnj;i&zwnj;n&zwnj;e, C&zwnj;a&zwnj;l&zwnj;i&zwnj;f&zwnj;o&zwnj;r&zwnj;n&zwnj;i&zwnj;a 9&zwnj;2&zwnj;6&zwnj;1&zwnj;8</a>
                                 </p>
 
                               </td>
